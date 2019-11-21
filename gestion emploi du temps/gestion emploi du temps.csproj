@@ -83,11 +83,83 @@
     <Compile Include="admin_profile.Designer.cs">
       <DependentUpon>admin_profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="chef_acceueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chef_acceueil.Designer.cs">
+      <DependentUpon>chef_acceueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_choix_emploi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef_choix_emploi.Designer.cs">
+      <DependentUpon>chef_choix_emploi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_emploi_ens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chef_emploi_ens.Designer.cs">
+      <DependentUpon>chef_emploi_ens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_gestion_element.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef_gestion_element.Designer.cs">
+      <DependentUpon>chef_gestion_element.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_gestion_emploi_filiere.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chef_gestion_emploi_filiere.Designer.cs">
+      <DependentUpon>chef_gestion_emploi_filiere.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_gestion_ens.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef_gestion_ens.Designer.cs">
+      <DependentUpon>chef_gestion_ens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_gestion_module.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef_gestion_module.Designer.cs">
+      <DependentUpon>chef_gestion_module.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_gestion_salle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef_gestion_salle.Designer.cs">
+      <DependentUpon>chef_gestion_salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chef_profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="chef_profile.Designer.cs">
+      <DependentUpon>chef_profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="emploi_salle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="emploi_salle.Designer.cs">
       <DependentUpon>emploi_salle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ens_acceuil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ens_acceuil.Designer.cs">
+      <DependentUpon>ens_acceuil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ens_mon_emploi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ens_mon_emploi.Designer.cs">
+      <DependentUpon>ens_mon_emploi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ens_profile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ens_profile.Designer.cs">
+      <DependentUpon>ens_profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -100,8 +172,59 @@
     <EmbeddedResource Include="admin_acceuil.resx">
       <DependentUpon>admin_acceuil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_choix_emploi.resx">
+      <DependentUpon>admin_choix_emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_enseignant_emploi_filiere.resx">
+      <DependentUpon>admin_enseignant_emploi_filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_gestion_chef.resx">
+      <DependentUpon>admin_gestion_chef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_gestion_filiere.resx">
+      <DependentUpon>admin_gestion_filiere.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin_profile.resx">
       <DependentUpon>admin_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_acceueil.resx">
+      <DependentUpon>chef_acceueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_choix_emploi.resx">
+      <DependentUpon>chef_choix_emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_emploi_ens.resx">
+      <DependentUpon>chef_emploi_ens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_element.resx">
+      <DependentUpon>chef_gestion_element.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_emploi_filiere.resx">
+      <DependentUpon>chef_gestion_emploi_filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_ens.resx">
+      <DependentUpon>chef_gestion_ens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_module.resx">
+      <DependentUpon>chef_gestion_module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_salle.resx">
+      <DependentUpon>chef_gestion_salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_profile.resx">
+      <DependentUpon>chef_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emploi_salle.resx">
+      <DependentUpon>emploi_salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ens_acceuil.resx">
+      <DependentUpon>ens_acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ens_mon_emploi.resx">
+      <DependentUpon>ens_mon_emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ens_profile.resx">
+      <DependentUpon>ens_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

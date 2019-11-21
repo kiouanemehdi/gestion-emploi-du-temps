@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace gestion_emploi_du_temps
 {
-    public partial class admin_gestion_chef : UserControl
+    public partial class ens_profile : UserControl
     {
-        public admin_gestion_chef()
+        public ens_profile()
         {
             InitializeComponent();
-        }
-
-        private void admin_gestion_chef_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

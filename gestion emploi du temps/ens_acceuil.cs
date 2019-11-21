@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace gestion_emploi_du_temps
 {
-    public partial class admin_gestion_chef : UserControl
+    public partial class ens_acceuil : Form
     {
-        public admin_gestion_chef()
+        public ens_acceuil()
         {
             InitializeComponent();
-        }
-
-        private void admin_gestion_chef_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

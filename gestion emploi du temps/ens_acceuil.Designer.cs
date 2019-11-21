@@ -1,6 +1,6 @@
 ﻿namespace gestion_emploi_du_temps
 {
-    partial class admin_acceuil
+    partial class ens_acceuil
     {
         /// <summary>
         /// Required designer variable.
@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,11 +48,29 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 1);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(193, 448);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Vous etes enseignant";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(65, 37);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 17);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Nom";
             // 
             // button4
             // 
@@ -62,7 +80,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(187, 54);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Emploi du temps";
+            this.button4.Text = "Emploi des filieres";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -73,7 +91,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(187, 54);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Gestion filiere";
+            this.button3.Text = "emploi des salles";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -84,7 +102,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(187, 54);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Gestion chef";
+            this.button2.Text = "Mon emploi du temps";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -101,53 +119,34 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(200, 100);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(203, 100);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(595, 348);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Nom";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Vous etes administrateur";
+            this.flowLayoutPanel1.TabIndex = 3;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Firebrick;
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(601, 19);
+            this.button5.Location = new System.Drawing.Point(601, 11);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(187, 54);
-            this.button5.TabIndex = 6;
+            this.button5.TabIndex = 7;
             this.button5.Text = "Se Deconnecter";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // admin_acceuil
+            // ens_acceuil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "admin_acceuil";
-            this.Text = "admin_acceuil";
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Name = "ens_acceuil";
+            this.Text = "ens_acceuil";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -157,13 +156,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button5;
     }
 }
