@@ -100,6 +100,9 @@
     <EmbeddedResource Include="admin_acceuil.resx">
       <DependentUpon>admin_acceuil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_profile.resx">
+      <DependentUpon>admin_profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
