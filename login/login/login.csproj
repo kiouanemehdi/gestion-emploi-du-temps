@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{633818DE-1F46-4C16-B824-62A59AFB65DA}</ProjectGuid>
+    <ProjectGuid>{156CBB30-D8E7-4709-821C-9DB4370ADB0A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>gestion_emploi_du_temps</RootNamespace>
-    <AssemblyName>gestion emploi du temps</AssemblyName>
+    <RootNamespace>login</RootNamespace>
+    <AssemblyName>login</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,67 +46,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="admin_acceuil.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_acceuil.Designer.cs">
-      <DependentUpon>admin_acceuil.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_choix_emploi.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="admin_choix_emploi.Designer.cs">
-      <DependentUpon>admin_choix_emploi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_enseignant_emploi_filiere.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="admin_enseignant_emploi_filiere.Designer.cs">
-      <DependentUpon>admin_enseignant_emploi_filiere.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_gestion_chef.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="admin_gestion_chef.Designer.cs">
-      <DependentUpon>admin_gestion_chef.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_gestion_filiere.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="admin_gestion_filiere.Designer.cs">
-      <DependentUpon>admin_gestion_filiere.cs</DependentUpon>
-    </Compile>
-    <Compile Include="admin_profile.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="admin_profile.Designer.cs">
-      <DependentUpon>admin_profile.cs</DependentUpon>
-    </Compile>
-    <Compile Include="emploi_salle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="emploi_salle.Designer.cs">
-      <DependentUpon>emploi_salle.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="admin_acceuil.resx">
-      <DependentUpon>admin_acceuil.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl2.Designer.cs">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl3.Designer.cs">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl4.Designer.cs">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,8 +89,19 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl3.resx">
+      <DependentUpon>UserControl3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl4.resx">
+      <DependentUpon>UserControl4.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
