@@ -74,7 +74,7 @@ namespace gestion_emploi_du_temps
             sallebox.DisplayMember = "nom_salle";
             sallebox.ValueMember = "id_salle";
 
-            ////////////////pour semestre//////////////////////
+            ///semestre
             sc = new SqlCommand("select * from Semestre", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
@@ -82,7 +82,7 @@ namespace gestion_emploi_du_temps
             semestrebox.DataSource = tb;
             semestrebox.DisplayMember = "nom_semestre";
             semestrebox.ValueMember = "id_semestre";
-            ///////////////for module///////////////////////
+            //module
             sc = new SqlCommand("select * from Module M,Filiere F,ChefDpt CH,Semestre S where S.id_semestre= M.id_semestre and M.id_filiere=F.id_filiere and f.id_filiere=CH.id_filiere and F.id_filiere='" + idf + "' and S.Nom_semestre='" + semestrebox.Text + "'", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
@@ -90,7 +90,7 @@ namespace gestion_emploi_du_temps
             modulebox.DataSource = tb;
             modulebox.DisplayMember = "nom_module";
             modulebox.ValueMember = "id_module";
-            ////////////////////for matiere///////////////////////////////////////////////
+            ///element
             sc = new SqlCommand("select * from Module M,Element EL where M.id_module=EL.id_module and M.nom_module='" + modulebox.Text + "'", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
@@ -98,7 +98,7 @@ namespace gestion_emploi_du_temps
             elementbox.DataSource = tb;
             elementbox.DisplayMember = "nom_element";
             elementbox.ValueMember = "id_element";
-            ////////////////////////////////for ensignement//////////////////////////////////////////////
+            // enseinant
             sc = new SqlCommand("select * from Enseignant E , Element EL where  E.id_element=EL.id_enseignant and EL.id_enseignant='" + elementbox.Text + "'", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
