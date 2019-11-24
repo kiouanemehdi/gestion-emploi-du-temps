@@ -118,5 +118,10 @@ namespace gestion_emploi_du_temps
         {
             Environment.Exit(0);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
