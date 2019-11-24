@@ -36,7 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.milieu = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +82,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Emploi du temps";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -93,6 +94,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Gestion filiere";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -104,6 +106,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Gestion chef";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -116,6 +119,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Profile";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button5
             // 
@@ -126,16 +130,17 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(187, 54);
             this.button5.TabIndex = 10;
-            this.button5.Text = "Se Deconnecter";
+            this.button5.Text = "Quitter";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // flowLayoutPanel1
+            // milieu
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(203, 100);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(595, 348);
-            this.flowLayoutPanel1.TabIndex = 9;
+            this.milieu.Location = new System.Drawing.Point(203, 100);
+            this.milieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.milieu.Name = "milieu";
+            this.milieu.Size = new System.Drawing.Size(595, 348);
+            this.milieu.TabIndex = 9;
             // 
             // admin_acceuil
             // 
@@ -144,10 +149,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.milieu);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "admin_acceuil";
             this.Text = "admin_acceuil";
+            this.Load += new System.EventHandler(this.admin_acceuil_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -164,6 +170,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel milieu;
     }
 }

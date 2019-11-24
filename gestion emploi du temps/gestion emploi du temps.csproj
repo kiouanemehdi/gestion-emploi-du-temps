@@ -137,6 +137,7 @@
     <Compile Include="chef_profile.Designer.cs">
       <DependentUpon>chef_profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="connection.cs" />
     <Compile Include="emploi_salle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,12 +162,6 @@
     <Compile Include="ens_profile.Designer.cs">
       <DependentUpon>ens_profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +172,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="admin_acceuil.resx">
       <DependentUpon>admin_acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_choix_emploi.resx">
+      <DependentUpon>admin_choix_emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_enseignant_emploi_filiere.resx">
+      <DependentUpon>admin_enseignant_emploi_filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_gestion_chef.resx">
+      <DependentUpon>admin_gestion_chef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_gestion_filiere.resx">
+      <DependentUpon>admin_gestion_filiere.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
