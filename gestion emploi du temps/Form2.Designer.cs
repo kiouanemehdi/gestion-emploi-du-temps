@@ -36,6 +36,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.userControl31 = new gestion_emploi_du_temps.UserControl3();
+            this.userControl21 = new gestion_emploi_du_temps.UserControl2();
+            this.userControl11 = new gestion_emploi_du_temps.UserControl1();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +54,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Admin";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -61,6 +65,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Chef";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -71,6 +76,7 @@
             this.button3.TabIndex = 6;
             this.button3.Text = "Prof";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox2
             // 
@@ -116,11 +122,37 @@
             this.panel2.Size = new System.Drawing.Size(800, 53);
             this.panel2.TabIndex = 7;
             // 
+            // userControl31
+            // 
+            this.userControl31.Location = new System.Drawing.Point(396, 165);
+            this.userControl31.Name = "userControl31";
+            this.userControl31.Size = new System.Drawing.Size(328, 200);
+            this.userControl31.TabIndex = 10;
+            this.userControl31.Load += new System.EventHandler(this.userControl31_Load);
+            // 
+            // userControl21
+            // 
+            this.userControl21.Location = new System.Drawing.Point(412, 165);
+            this.userControl21.Name = "userControl21";
+            this.userControl21.Size = new System.Drawing.Size(323, 196);
+            this.userControl21.TabIndex = 9;
+            this.userControl21.Load += new System.EventHandler(this.userControl21_Load);
+            // 
+            // userControl11
+            // 
+            this.userControl11.Location = new System.Drawing.Point(438, 156);
+            this.userControl11.Name = "userControl11";
+            this.userControl11.Size = new System.Drawing.Size(286, 205);
+            this.userControl11.TabIndex = 8;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.userControl31);
+            this.Controls.Add(this.userControl21);
+            this.Controls.Add(this.userControl11);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Form2";
@@ -142,5 +174,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
+        private UserControl1 userControl11;
+        private UserControl2 userControl21;
+        private UserControl3 userControl31;
     }
 }
