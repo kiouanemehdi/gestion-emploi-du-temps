@@ -16,7 +16,7 @@ namespace gestion_emploi_du_temps
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new admin_acceuil(1));
         }
     }
 }

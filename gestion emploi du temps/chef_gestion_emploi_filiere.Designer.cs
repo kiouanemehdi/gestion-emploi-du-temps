@@ -29,231 +29,233 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.jourbox = new System.Windows.Forms.ComboBox();
+            this.hdbox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.modulebox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.sallebox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.groupebox = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.semestrebox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.ensbox = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.elementbox = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.typebox = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.hfbox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lundi8 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.lundi9 = new System.Windows.Forms.Panel();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
+            this.lundi14 = new System.Windows.Forms.Panel();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
             this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
+            this.lundi11 = new System.Windows.Forms.Panel();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
+            this.lundi17 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.panel27 = new System.Windows.Forms.Panel();
+            this.lundi15 = new System.Windows.Forms.Panel();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.panel28 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.panel30 = new System.Windows.Forms.Panel();
+            this.mardi17 = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
-            this.panel33 = new System.Windows.Forms.Panel();
+            this.mardi15 = new System.Windows.Forms.Panel();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.panel34 = new System.Windows.Forms.Panel();
             this.panel35 = new System.Windows.Forms.Panel();
-            this.panel36 = new System.Windows.Forms.Panel();
+            this.mardi14 = new System.Windows.Forms.Panel();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.panel37 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
-            this.panel39 = new System.Windows.Forms.Panel();
+            this.mardi9 = new System.Windows.Forms.Panel();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.panel40 = new System.Windows.Forms.Panel();
             this.panel41 = new System.Windows.Forms.Panel();
-            this.panel42 = new System.Windows.Forms.Panel();
+            this.mardi11 = new System.Windows.Forms.Panel();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.panel43 = new System.Windows.Forms.Panel();
             this.panel44 = new System.Windows.Forms.Panel();
-            this.panel45 = new System.Windows.Forms.Panel();
+            this.mardi8 = new System.Windows.Forms.Panel();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
             this.panel47 = new System.Windows.Forms.Panel();
-            this.panel48 = new System.Windows.Forms.Panel();
+            this.jeudi17 = new System.Windows.Forms.Panel();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.panel49 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
-            this.panel51 = new System.Windows.Forms.Panel();
+            this.mercredi17 = new System.Windows.Forms.Panel();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.panel52 = new System.Windows.Forms.Panel();
             this.panel53 = new System.Windows.Forms.Panel();
-            this.panel54 = new System.Windows.Forms.Panel();
+            this.jeudi15 = new System.Windows.Forms.Panel();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.panel55 = new System.Windows.Forms.Panel();
             this.panel56 = new System.Windows.Forms.Panel();
-            this.panel57 = new System.Windows.Forms.Panel();
+            this.mercredi15 = new System.Windows.Forms.Panel();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.panel58 = new System.Windows.Forms.Panel();
             this.panel59 = new System.Windows.Forms.Panel();
-            this.panel60 = new System.Windows.Forms.Panel();
+            this.jeudi14 = new System.Windows.Forms.Panel();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.panel61 = new System.Windows.Forms.Panel();
             this.panel62 = new System.Windows.Forms.Panel();
-            this.panel63 = new System.Windows.Forms.Panel();
+            this.mercredi14 = new System.Windows.Forms.Panel();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.panel64 = new System.Windows.Forms.Panel();
             this.panel65 = new System.Windows.Forms.Panel();
-            this.panel66 = new System.Windows.Forms.Panel();
+            this.jeudi9 = new System.Windows.Forms.Panel();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.panel67 = new System.Windows.Forms.Panel();
             this.panel68 = new System.Windows.Forms.Panel();
-            this.panel69 = new System.Windows.Forms.Panel();
+            this.mercredi9 = new System.Windows.Forms.Panel();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
             this.panel70 = new System.Windows.Forms.Panel();
             this.panel71 = new System.Windows.Forms.Panel();
-            this.panel72 = new System.Windows.Forms.Panel();
+            this.jeudi11 = new System.Windows.Forms.Panel();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.panel73 = new System.Windows.Forms.Panel();
             this.panel74 = new System.Windows.Forms.Panel();
-            this.panel75 = new System.Windows.Forms.Panel();
+            this.mercredi11 = new System.Windows.Forms.Panel();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.panel76 = new System.Windows.Forms.Panel();
             this.panel77 = new System.Windows.Forms.Panel();
-            this.panel78 = new System.Windows.Forms.Panel();
+            this.jeudi8 = new System.Windows.Forms.Panel();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
             this.panel79 = new System.Windows.Forms.Panel();
             this.panel80 = new System.Windows.Forms.Panel();
-            this.panel81 = new System.Windows.Forms.Panel();
+            this.mercredi8 = new System.Windows.Forms.Panel();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.panel82 = new System.Windows.Forms.Panel();
             this.panel83 = new System.Windows.Forms.Panel();
-            this.panel84 = new System.Windows.Forms.Panel();
+            this.vendredi17 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.panel85 = new System.Windows.Forms.Panel();
             this.panel86 = new System.Windows.Forms.Panel();
-            this.panel87 = new System.Windows.Forms.Panel();
+            this.vendredi15 = new System.Windows.Forms.Panel();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
             this.panel88 = new System.Windows.Forms.Panel();
             this.panel89 = new System.Windows.Forms.Panel();
-            this.panel90 = new System.Windows.Forms.Panel();
+            this.vendredi14 = new System.Windows.Forms.Panel();
             this.label100 = new System.Windows.Forms.Label();
             this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
             this.panel91 = new System.Windows.Forms.Panel();
             this.panel92 = new System.Windows.Forms.Panel();
-            this.panel93 = new System.Windows.Forms.Panel();
+            this.vendredi9 = new System.Windows.Forms.Panel();
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
             this.panel94 = new System.Windows.Forms.Panel();
             this.panel95 = new System.Windows.Forms.Panel();
-            this.panel96 = new System.Windows.Forms.Panel();
+            this.vendredi11 = new System.Windows.Forms.Panel();
             this.label106 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
             this.panel97 = new System.Windows.Forms.Panel();
             this.panel98 = new System.Windows.Forms.Panel();
-            this.panel99 = new System.Windows.Forms.Panel();
+            this.vendredi8 = new System.Windows.Forms.Panel();
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.label111 = new System.Windows.Forms.Label();
             this.panel100 = new System.Windows.Forms.Panel();
             this.panel101 = new System.Windows.Forms.Panel();
+            this.idbox = new System.Windows.Forms.TextBox();
+            this.label113 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -265,36 +267,36 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel15.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel24.SuspendLayout();
-            this.panel27.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel36.SuspendLayout();
-            this.panel39.SuspendLayout();
-            this.panel42.SuspendLayout();
-            this.panel45.SuspendLayout();
-            this.panel48.SuspendLayout();
-            this.panel51.SuspendLayout();
-            this.panel54.SuspendLayout();
-            this.panel57.SuspendLayout();
-            this.panel60.SuspendLayout();
-            this.panel63.SuspendLayout();
-            this.panel66.SuspendLayout();
-            this.panel69.SuspendLayout();
-            this.panel72.SuspendLayout();
-            this.panel75.SuspendLayout();
-            this.panel78.SuspendLayout();
-            this.panel81.SuspendLayout();
-            this.panel84.SuspendLayout();
-            this.panel87.SuspendLayout();
-            this.panel90.SuspendLayout();
-            this.panel93.SuspendLayout();
-            this.panel96.SuspendLayout();
-            this.panel99.SuspendLayout();
+            this.lundi8.SuspendLayout();
+            this.lundi9.SuspendLayout();
+            this.lundi14.SuspendLayout();
+            this.lundi11.SuspendLayout();
+            this.lundi17.SuspendLayout();
+            this.lundi15.SuspendLayout();
+            this.mardi17.SuspendLayout();
+            this.mardi15.SuspendLayout();
+            this.mardi14.SuspendLayout();
+            this.mardi9.SuspendLayout();
+            this.mardi11.SuspendLayout();
+            this.mardi8.SuspendLayout();
+            this.jeudi17.SuspendLayout();
+            this.mercredi17.SuspendLayout();
+            this.jeudi15.SuspendLayout();
+            this.mercredi15.SuspendLayout();
+            this.jeudi14.SuspendLayout();
+            this.mercredi14.SuspendLayout();
+            this.jeudi9.SuspendLayout();
+            this.mercredi9.SuspendLayout();
+            this.jeudi11.SuspendLayout();
+            this.mercredi11.SuspendLayout();
+            this.jeudi8.SuspendLayout();
+            this.mercredi8.SuspendLayout();
+            this.vendredi17.SuspendLayout();
+            this.vendredi15.SuspendLayout();
+            this.vendredi14.SuspendLayout();
+            this.vendredi9.SuspendLayout();
+            this.vendredi11.SuspendLayout();
+            this.vendredi8.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -306,21 +308,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Jour";
             // 
-            // comboBox1
+            // jourbox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(173, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 1;
+            this.jourbox.FormattingEnabled = true;
+            this.jourbox.Location = new System.Drawing.Point(173, 15);
+            this.jourbox.Name = "jourbox";
+            this.jourbox.Size = new System.Drawing.Size(121, 24);
+            this.jourbox.TabIndex = 1;
             // 
-            // comboBox2
+            // hdbox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(173, 45);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 3;
+            this.hdbox.FormattingEnabled = true;
+            this.hdbox.Location = new System.Drawing.Point(173, 45);
+            this.hdbox.Name = "hdbox";
+            this.hdbox.Size = new System.Drawing.Size(121, 24);
+            this.hdbox.TabIndex = 3;
             // 
             // label2
             // 
@@ -331,13 +333,14 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Heure Debut";
             // 
-            // comboBox3
+            // modulebox
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(440, 45);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 24);
-            this.comboBox3.TabIndex = 7;
+            this.modulebox.FormattingEnabled = true;
+            this.modulebox.Location = new System.Drawing.Point(440, 45);
+            this.modulebox.Name = "modulebox";
+            this.modulebox.Size = new System.Drawing.Size(121, 24);
+            this.modulebox.TabIndex = 7;
+            this.modulebox.SelectedIndexChanged += new System.EventHandler(this.modulebox_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -348,13 +351,13 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Module";
             // 
-            // comboBox4
+            // sallebox
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(440, 15);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 24);
-            this.comboBox4.TabIndex = 5;
+            this.sallebox.FormattingEnabled = true;
+            this.sallebox.Location = new System.Drawing.Point(440, 15);
+            this.sallebox.Name = "sallebox";
+            this.sallebox.Size = new System.Drawing.Size(121, 24);
+            this.sallebox.TabIndex = 5;
             // 
             // label4
             // 
@@ -365,13 +368,14 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Salle";
             // 
-            // comboBox5
+            // groupebox
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(704, 45);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 24);
-            this.comboBox5.TabIndex = 11;
+            this.groupebox.FormattingEnabled = true;
+            this.groupebox.Location = new System.Drawing.Point(704, 45);
+            this.groupebox.Name = "groupebox";
+            this.groupebox.Size = new System.Drawing.Size(121, 24);
+            this.groupebox.TabIndex = 11;
+            this.groupebox.SelectedIndexChanged += new System.EventHandler(this.groupebox_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -382,13 +386,15 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Groupe";
             // 
-            // comboBox6
+            // semestrebox
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(704, 15);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 24);
-            this.comboBox6.TabIndex = 9;
+            this.semestrebox.FormattingEnabled = true;
+            this.semestrebox.Location = new System.Drawing.Point(704, 15);
+            this.semestrebox.Name = "semestrebox";
+            this.semestrebox.Size = new System.Drawing.Size(121, 24);
+            this.semestrebox.TabIndex = 9;
+            this.semestrebox.SelectedIndexChanged += new System.EventHandler(this.semestrebox_SelectedIndexChanged);
+            this.semestrebox.SelectedValueChanged += new System.EventHandler(this.semestrebox_SelectedValueChanged);
             // 
             // label6
             // 
@@ -399,13 +405,13 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Semestre";
             // 
-            // comboBox7
+            // ensbox
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(440, 108);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(121, 24);
-            this.comboBox7.TabIndex = 15;
+            this.ensbox.FormattingEnabled = true;
+            this.ensbox.Location = new System.Drawing.Point(440, 108);
+            this.ensbox.Name = "ensbox";
+            this.ensbox.Size = new System.Drawing.Size(121, 24);
+            this.ensbox.TabIndex = 15;
             // 
             // label7
             // 
@@ -416,13 +422,14 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Enseignant";
             // 
-            // comboBox8
+            // elementbox
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(440, 78);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(121, 24);
-            this.comboBox8.TabIndex = 13;
+            this.elementbox.FormattingEnabled = true;
+            this.elementbox.Location = new System.Drawing.Point(440, 78);
+            this.elementbox.Name = "elementbox";
+            this.elementbox.Size = new System.Drawing.Size(121, 24);
+            this.elementbox.TabIndex = 13;
+            this.elementbox.SelectedIndexChanged += new System.EventHandler(this.elementbox_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -433,13 +440,13 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Element";
             // 
-            // comboBox9
+            // typebox
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(173, 105);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(121, 24);
-            this.comboBox9.TabIndex = 19;
+            this.typebox.FormattingEnabled = true;
+            this.typebox.Location = new System.Drawing.Point(173, 105);
+            this.typebox.Name = "typebox";
+            this.typebox.Size = new System.Drawing.Size(121, 24);
+            this.typebox.TabIndex = 19;
             // 
             // label9
             // 
@@ -450,13 +457,13 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Type";
             // 
-            // comboBox10
+            // hfbox
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(173, 75);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(121, 24);
-            this.comboBox10.TabIndex = 17;
+            this.hfbox.FormattingEnabled = true;
+            this.hfbox.Location = new System.Drawing.Point(173, 75);
+            this.hfbox.Name = "hfbox";
+            this.hfbox.Size = new System.Drawing.Size(121, 24);
+            this.hfbox.TabIndex = 17;
             // 
             // label10
             // 
@@ -470,12 +477,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(867, 117);
+            this.button3.Location = new System.Drawing.Point(1035, 7);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 28);
             this.button3.TabIndex = 23;
-            this.button3.Text = "Effacer";
+            this.button3.Text = "Retour";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -485,6 +493,7 @@
             this.button4.TabIndex = 22;
             this.button4.Text = "Modifier";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -494,6 +503,7 @@
             this.button2.TabIndex = 21;
             this.button2.Text = "Supprimer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -503,6 +513,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Ajouter";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -513,150 +524,6 @@
             this.panel1.Size = new System.Drawing.Size(130, 82);
             this.panel1.TabIndex = 25;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel2.Controls.Add(this.label19);
-            this.panel2.Location = new System.Drawing.Point(14, 283);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(130, 82);
-            this.panel2.TabIndex = 26;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel3.Controls.Add(this.label20);
-            this.panel3.Location = new System.Drawing.Point(14, 371);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(130, 82);
-            this.panel3.TabIndex = 26;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel4.Controls.Add(this.label21);
-            this.panel4.Location = new System.Drawing.Point(14, 459);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(130, 82);
-            this.panel4.TabIndex = 26;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.panel5.Controls.Add(this.label22);
-            this.panel5.Location = new System.Drawing.Point(14, 547);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(130, 82);
-            this.panel5.TabIndex = 26;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Location = new System.Drawing.Point(150, 153);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(157, 41);
-            this.panel6.TabIndex = 26;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Location = new System.Drawing.Point(313, 153);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(157, 41);
-            this.panel7.TabIndex = 27;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel8.Controls.Add(this.label15);
-            this.panel8.Location = new System.Drawing.Point(475, 153);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(157, 41);
-            this.panel8.TabIndex = 27;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel9.Controls.Add(this.label14);
-            this.panel9.Location = new System.Drawing.Point(638, 153);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(157, 41);
-            this.panel9.TabIndex = 27;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel10.Controls.Add(this.label16);
-            this.panel10.Location = new System.Drawing.Point(801, 153);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(157, 41);
-            this.panel10.TabIndex = 28;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel11.Controls.Add(this.label17);
-            this.panel11.Location = new System.Drawing.Point(964, 153);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(157, 41);
-            this.panel11.TabIndex = 29;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(33, 19);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 17);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "8 - 9.30";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(26, 19);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 17);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "9.45 - 11.15";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 19);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 17);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "14 - 15.30";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(38, 18);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(73, 17);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "11.30 - 13";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(24, 19);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 17);
-            this.label16.TabIndex = 2;
-            this.label16.Text = "15.45 - 17.15";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(20, 19);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 17);
-            this.label17.TabIndex = 3;
-            this.label17.Text = "17.30 - 19";
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -665,6 +532,15 @@
             this.label18.Size = new System.Drawing.Size(43, 17);
             this.label18.TabIndex = 1;
             this.label18.Text = "Lundi";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel2.Controls.Add(this.label19);
+            this.panel2.Location = new System.Drawing.Point(14, 283);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(130, 82);
+            this.panel2.TabIndex = 26;
             // 
             // label19
             // 
@@ -675,6 +551,15 @@
             this.label19.TabIndex = 2;
             this.label19.Text = "Mardi";
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel3.Controls.Add(this.label20);
+            this.panel3.Location = new System.Drawing.Point(14, 371);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(130, 82);
+            this.panel3.TabIndex = 26;
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -683,6 +568,15 @@
             this.label20.Size = new System.Drawing.Size(63, 17);
             this.label20.TabIndex = 3;
             this.label20.Text = "Mercredi";
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel4.Controls.Add(this.label21);
+            this.panel4.Location = new System.Drawing.Point(14, 459);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(130, 82);
+            this.panel4.TabIndex = 26;
             // 
             // label21
             // 
@@ -693,6 +587,15 @@
             this.label21.TabIndex = 4;
             this.label21.Text = "Jeudi";
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel5.Controls.Add(this.label22);
+            this.panel5.Location = new System.Drawing.Point(14, 547);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(130, 82);
+            this.panel5.TabIndex = 26;
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -702,53 +605,128 @@
             this.label22.TabIndex = 5;
             this.label22.Text = "Vendredi";
             // 
-            // panel12
+            // panel6
             // 
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.label24);
-            this.panel12.Controls.Add(this.label11);
-            this.panel12.Controls.Add(this.label23);
-            this.panel12.Controls.Add(this.panel14);
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(150, 195);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(157, 82);
-            this.panel12.TabIndex = 30;
-            this.panel12.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Location = new System.Drawing.Point(150, 153);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(157, 41);
+            this.panel6.TabIndex = 26;
             // 
-            // panel13
+            // label12
             // 
-            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel13.Location = new System.Drawing.Point(1, 52);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(157, 1);
-            this.panel13.TabIndex = 31;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(33, 19);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(57, 17);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "8 - 9.30";
             // 
-            // panel14
+            // panel7
             // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Location = new System.Drawing.Point(-1, 25);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(157, 1);
-            this.panel14.TabIndex = 32;
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel7.Controls.Add(this.label13);
+            this.panel7.Location = new System.Drawing.Point(313, 153);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(157, 41);
+            this.panel7.TabIndex = 27;
             // 
-            // label23
+            // label13
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(46, 5);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(54, 17);
-            this.label23.TabIndex = 31;
-            this.label23.Text = "label23";
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(26, 19);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(85, 17);
+            this.label13.TabIndex = 1;
+            this.label13.Text = "9.45 - 11.15";
             // 
-            // label11
+            // panel8
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(46, 32);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 17);
-            this.label11.TabIndex = 33;
-            this.label11.Text = "label11";
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel8.Controls.Add(this.label15);
+            this.panel8.Location = new System.Drawing.Point(475, 153);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(157, 41);
+            this.panel8.TabIndex = 27;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(38, 18);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(73, 17);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "11.30 - 13";
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel9.Controls.Add(this.label14);
+            this.panel9.Location = new System.Drawing.Point(638, 153);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(157, 41);
+            this.panel9.TabIndex = 27;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(33, 19);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(73, 17);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "14 - 15.30";
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel10.Controls.Add(this.label16);
+            this.panel10.Location = new System.Drawing.Point(801, 153);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(157, 41);
+            this.panel10.TabIndex = 28;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(24, 19);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(93, 17);
+            this.label16.TabIndex = 2;
+            this.label16.Text = "15.45 - 17.15";
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel11.Controls.Add(this.label17);
+            this.panel11.Location = new System.Drawing.Point(964, 153);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(157, 41);
+            this.panel11.TabIndex = 29;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(20, 19);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(73, 17);
+            this.label17.TabIndex = 3;
+            this.label17.Text = "17.30 - 19";
+            // 
+            // lundi8
+            // 
+            this.lundi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lundi8.Controls.Add(this.label24);
+            this.lundi8.Controls.Add(this.label11);
+            this.lundi8.Controls.Add(this.label23);
+            this.lundi8.Controls.Add(this.panel14);
+            this.lundi8.Controls.Add(this.panel13);
+            this.lundi8.Location = new System.Drawing.Point(150, 195);
+            this.lundi8.Name = "lundi8";
+            this.lundi8.Size = new System.Drawing.Size(157, 82);
+            this.lundi8.TabIndex = 30;
+            this.lundi8.Click += new System.EventHandler(this.lundi8_Click);
+            this.lundi8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel12_Paint);
             // 
             // label24
             // 
@@ -759,18 +737,53 @@
             this.label24.TabIndex = 34;
             this.label24.Text = "label24";
             // 
-            // panel15
+            // label11
             // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.label25);
-            this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.label27);
-            this.panel15.Controls.Add(this.panel16);
-            this.panel15.Controls.Add(this.panel17);
-            this.panel15.Location = new System.Drawing.Point(313, 195);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(157, 82);
-            this.panel15.TabIndex = 35;
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(46, 32);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(54, 17);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "label11";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(46, 5);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(54, 17);
+            this.label23.TabIndex = 31;
+            this.label23.Text = "label23";
+            // 
+            // panel14
+            // 
+            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel14.Location = new System.Drawing.Point(-1, 25);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(157, 1);
+            this.panel14.TabIndex = 32;
+            // 
+            // panel13
+            // 
+            this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel13.Location = new System.Drawing.Point(1, 52);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(157, 1);
+            this.panel13.TabIndex = 31;
+            // 
+            // lundi9
+            // 
+            this.lundi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lundi9.Controls.Add(this.label25);
+            this.lundi9.Controls.Add(this.label26);
+            this.lundi9.Controls.Add(this.label27);
+            this.lundi9.Controls.Add(this.panel16);
+            this.lundi9.Controls.Add(this.panel17);
+            this.lundi9.Location = new System.Drawing.Point(313, 195);
+            this.lundi9.Name = "lundi9";
+            this.lundi9.Size = new System.Drawing.Size(157, 82);
+            this.lundi9.TabIndex = 35;
+            this.lundi9.Click += new System.EventHandler(this.lundi9_Click);
             // 
             // label25
             // 
@@ -815,18 +828,19 @@
             this.panel17.Size = new System.Drawing.Size(157, 1);
             this.panel17.TabIndex = 31;
             // 
-            // panel18
+            // lundi14
             // 
-            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Controls.Add(this.label28);
-            this.panel18.Controls.Add(this.label29);
-            this.panel18.Controls.Add(this.label30);
-            this.panel18.Controls.Add(this.panel19);
-            this.panel18.Controls.Add(this.panel20);
-            this.panel18.Location = new System.Drawing.Point(638, 195);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(157, 82);
-            this.panel18.TabIndex = 37;
+            this.lundi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lundi14.Controls.Add(this.label28);
+            this.lundi14.Controls.Add(this.label29);
+            this.lundi14.Controls.Add(this.label30);
+            this.lundi14.Controls.Add(this.panel19);
+            this.lundi14.Controls.Add(this.panel20);
+            this.lundi14.Location = new System.Drawing.Point(638, 195);
+            this.lundi14.Name = "lundi14";
+            this.lundi14.Size = new System.Drawing.Size(157, 82);
+            this.lundi14.TabIndex = 37;
+            this.lundi14.Click += new System.EventHandler(this.lundi14_Click);
             // 
             // label28
             // 
@@ -871,18 +885,19 @@
             this.panel20.Size = new System.Drawing.Size(157, 1);
             this.panel20.TabIndex = 31;
             // 
-            // panel21
+            // lundi11
             // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Controls.Add(this.label31);
-            this.panel21.Controls.Add(this.label32);
-            this.panel21.Controls.Add(this.label33);
-            this.panel21.Controls.Add(this.panel22);
-            this.panel21.Controls.Add(this.panel23);
-            this.panel21.Location = new System.Drawing.Point(475, 195);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(157, 82);
-            this.panel21.TabIndex = 36;
+            this.lundi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lundi11.Controls.Add(this.label31);
+            this.lundi11.Controls.Add(this.label32);
+            this.lundi11.Controls.Add(this.label33);
+            this.lundi11.Controls.Add(this.panel22);
+            this.lundi11.Controls.Add(this.panel23);
+            this.lundi11.Location = new System.Drawing.Point(475, 195);
+            this.lundi11.Name = "lundi11";
+            this.lundi11.Size = new System.Drawing.Size(157, 82);
+            this.lundi11.TabIndex = 36;
+            this.lundi11.Click += new System.EventHandler(this.lundi11_Click);
             // 
             // label31
             // 
@@ -927,18 +942,19 @@
             this.panel23.Size = new System.Drawing.Size(157, 1);
             this.panel23.TabIndex = 31;
             // 
-            // panel24
+            // lundi17
             // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Controls.Add(this.label34);
-            this.panel24.Controls.Add(this.label35);
-            this.panel24.Controls.Add(this.label36);
-            this.panel24.Controls.Add(this.panel25);
-            this.panel24.Controls.Add(this.panel26);
-            this.panel24.Location = new System.Drawing.Point(964, 195);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(157, 82);
-            this.panel24.TabIndex = 39;
+            this.lundi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lundi17.Controls.Add(this.label34);
+            this.lundi17.Controls.Add(this.label35);
+            this.lundi17.Controls.Add(this.label36);
+            this.lundi17.Controls.Add(this.panel25);
+            this.lundi17.Controls.Add(this.panel26);
+            this.lundi17.Location = new System.Drawing.Point(964, 195);
+            this.lundi17.Name = "lundi17";
+            this.lundi17.Size = new System.Drawing.Size(157, 82);
+            this.lundi17.TabIndex = 39;
+            this.lundi17.Click += new System.EventHandler(this.lundi17_Click);
             // 
             // label34
             // 
@@ -983,18 +999,19 @@
             this.panel26.Size = new System.Drawing.Size(157, 1);
             this.panel26.TabIndex = 31;
             // 
-            // panel27
+            // lundi15
             // 
-            this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel27.Controls.Add(this.label37);
-            this.panel27.Controls.Add(this.label38);
-            this.panel27.Controls.Add(this.label39);
-            this.panel27.Controls.Add(this.panel28);
-            this.panel27.Controls.Add(this.panel29);
-            this.panel27.Location = new System.Drawing.Point(801, 195);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(157, 82);
-            this.panel27.TabIndex = 38;
+            this.lundi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lundi15.Controls.Add(this.label37);
+            this.lundi15.Controls.Add(this.label38);
+            this.lundi15.Controls.Add(this.label39);
+            this.lundi15.Controls.Add(this.panel28);
+            this.lundi15.Controls.Add(this.panel29);
+            this.lundi15.Location = new System.Drawing.Point(801, 195);
+            this.lundi15.Name = "lundi15";
+            this.lundi15.Size = new System.Drawing.Size(157, 82);
+            this.lundi15.TabIndex = 38;
+            this.lundi15.Click += new System.EventHandler(this.lundi15_Click);
             // 
             // label37
             // 
@@ -1039,18 +1056,18 @@
             this.panel29.Size = new System.Drawing.Size(157, 1);
             this.panel29.TabIndex = 31;
             // 
-            // panel30
+            // mardi17
             // 
-            this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel30.Controls.Add(this.label40);
-            this.panel30.Controls.Add(this.label41);
-            this.panel30.Controls.Add(this.label42);
-            this.panel30.Controls.Add(this.panel31);
-            this.panel30.Controls.Add(this.panel32);
-            this.panel30.Location = new System.Drawing.Point(964, 283);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(157, 82);
-            this.panel30.TabIndex = 45;
+            this.mardi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mardi17.Controls.Add(this.label40);
+            this.mardi17.Controls.Add(this.label41);
+            this.mardi17.Controls.Add(this.label42);
+            this.mardi17.Controls.Add(this.panel31);
+            this.mardi17.Controls.Add(this.panel32);
+            this.mardi17.Location = new System.Drawing.Point(964, 283);
+            this.mardi17.Name = "mardi17";
+            this.mardi17.Size = new System.Drawing.Size(157, 82);
+            this.mardi17.TabIndex = 45;
             // 
             // label40
             // 
@@ -1095,18 +1112,18 @@
             this.panel32.Size = new System.Drawing.Size(157, 1);
             this.panel32.TabIndex = 31;
             // 
-            // panel33
+            // mardi15
             // 
-            this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel33.Controls.Add(this.label43);
-            this.panel33.Controls.Add(this.label44);
-            this.panel33.Controls.Add(this.label45);
-            this.panel33.Controls.Add(this.panel34);
-            this.panel33.Controls.Add(this.panel35);
-            this.panel33.Location = new System.Drawing.Point(801, 283);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(157, 82);
-            this.panel33.TabIndex = 44;
+            this.mardi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mardi15.Controls.Add(this.label43);
+            this.mardi15.Controls.Add(this.label44);
+            this.mardi15.Controls.Add(this.label45);
+            this.mardi15.Controls.Add(this.panel34);
+            this.mardi15.Controls.Add(this.panel35);
+            this.mardi15.Location = new System.Drawing.Point(801, 283);
+            this.mardi15.Name = "mardi15";
+            this.mardi15.Size = new System.Drawing.Size(157, 82);
+            this.mardi15.TabIndex = 44;
             // 
             // label43
             // 
@@ -1151,18 +1168,18 @@
             this.panel35.Size = new System.Drawing.Size(157, 1);
             this.panel35.TabIndex = 31;
             // 
-            // panel36
+            // mardi14
             // 
-            this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel36.Controls.Add(this.label46);
-            this.panel36.Controls.Add(this.label47);
-            this.panel36.Controls.Add(this.label48);
-            this.panel36.Controls.Add(this.panel37);
-            this.panel36.Controls.Add(this.panel38);
-            this.panel36.Location = new System.Drawing.Point(638, 283);
-            this.panel36.Name = "panel36";
-            this.panel36.Size = new System.Drawing.Size(157, 82);
-            this.panel36.TabIndex = 43;
+            this.mardi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mardi14.Controls.Add(this.label46);
+            this.mardi14.Controls.Add(this.label47);
+            this.mardi14.Controls.Add(this.label48);
+            this.mardi14.Controls.Add(this.panel37);
+            this.mardi14.Controls.Add(this.panel38);
+            this.mardi14.Location = new System.Drawing.Point(638, 283);
+            this.mardi14.Name = "mardi14";
+            this.mardi14.Size = new System.Drawing.Size(157, 82);
+            this.mardi14.TabIndex = 43;
             // 
             // label46
             // 
@@ -1207,18 +1224,18 @@
             this.panel38.Size = new System.Drawing.Size(157, 1);
             this.panel38.TabIndex = 31;
             // 
-            // panel39
+            // mardi9
             // 
-            this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel39.Controls.Add(this.label49);
-            this.panel39.Controls.Add(this.label50);
-            this.panel39.Controls.Add(this.label51);
-            this.panel39.Controls.Add(this.panel40);
-            this.panel39.Controls.Add(this.panel41);
-            this.panel39.Location = new System.Drawing.Point(313, 283);
-            this.panel39.Name = "panel39";
-            this.panel39.Size = new System.Drawing.Size(157, 82);
-            this.panel39.TabIndex = 41;
+            this.mardi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mardi9.Controls.Add(this.label49);
+            this.mardi9.Controls.Add(this.label50);
+            this.mardi9.Controls.Add(this.label51);
+            this.mardi9.Controls.Add(this.panel40);
+            this.mardi9.Controls.Add(this.panel41);
+            this.mardi9.Location = new System.Drawing.Point(313, 283);
+            this.mardi9.Name = "mardi9";
+            this.mardi9.Size = new System.Drawing.Size(157, 82);
+            this.mardi9.TabIndex = 41;
             // 
             // label49
             // 
@@ -1263,18 +1280,18 @@
             this.panel41.Size = new System.Drawing.Size(157, 1);
             this.panel41.TabIndex = 31;
             // 
-            // panel42
+            // mardi11
             // 
-            this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel42.Controls.Add(this.label52);
-            this.panel42.Controls.Add(this.label53);
-            this.panel42.Controls.Add(this.label54);
-            this.panel42.Controls.Add(this.panel43);
-            this.panel42.Controls.Add(this.panel44);
-            this.panel42.Location = new System.Drawing.Point(475, 283);
-            this.panel42.Name = "panel42";
-            this.panel42.Size = new System.Drawing.Size(157, 82);
-            this.panel42.TabIndex = 42;
+            this.mardi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mardi11.Controls.Add(this.label52);
+            this.mardi11.Controls.Add(this.label53);
+            this.mardi11.Controls.Add(this.label54);
+            this.mardi11.Controls.Add(this.panel43);
+            this.mardi11.Controls.Add(this.panel44);
+            this.mardi11.Location = new System.Drawing.Point(475, 283);
+            this.mardi11.Name = "mardi11";
+            this.mardi11.Size = new System.Drawing.Size(157, 82);
+            this.mardi11.TabIndex = 42;
             // 
             // label52
             // 
@@ -1319,18 +1336,18 @@
             this.panel44.Size = new System.Drawing.Size(157, 1);
             this.panel44.TabIndex = 31;
             // 
-            // panel45
+            // mardi8
             // 
-            this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel45.Controls.Add(this.label55);
-            this.panel45.Controls.Add(this.label56);
-            this.panel45.Controls.Add(this.label57);
-            this.panel45.Controls.Add(this.panel46);
-            this.panel45.Controls.Add(this.panel47);
-            this.panel45.Location = new System.Drawing.Point(150, 283);
-            this.panel45.Name = "panel45";
-            this.panel45.Size = new System.Drawing.Size(157, 82);
-            this.panel45.TabIndex = 40;
+            this.mardi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mardi8.Controls.Add(this.label55);
+            this.mardi8.Controls.Add(this.label56);
+            this.mardi8.Controls.Add(this.label57);
+            this.mardi8.Controls.Add(this.panel46);
+            this.mardi8.Controls.Add(this.panel47);
+            this.mardi8.Location = new System.Drawing.Point(150, 283);
+            this.mardi8.Name = "mardi8";
+            this.mardi8.Size = new System.Drawing.Size(157, 82);
+            this.mardi8.TabIndex = 40;
             // 
             // label55
             // 
@@ -1375,18 +1392,18 @@
             this.panel47.Size = new System.Drawing.Size(157, 1);
             this.panel47.TabIndex = 31;
             // 
-            // panel48
+            // jeudi17
             // 
-            this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel48.Controls.Add(this.label58);
-            this.panel48.Controls.Add(this.label59);
-            this.panel48.Controls.Add(this.label60);
-            this.panel48.Controls.Add(this.panel49);
-            this.panel48.Controls.Add(this.panel50);
-            this.panel48.Location = new System.Drawing.Point(964, 459);
-            this.panel48.Name = "panel48";
-            this.panel48.Size = new System.Drawing.Size(157, 82);
-            this.panel48.TabIndex = 57;
+            this.jeudi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jeudi17.Controls.Add(this.label58);
+            this.jeudi17.Controls.Add(this.label59);
+            this.jeudi17.Controls.Add(this.label60);
+            this.jeudi17.Controls.Add(this.panel49);
+            this.jeudi17.Controls.Add(this.panel50);
+            this.jeudi17.Location = new System.Drawing.Point(964, 459);
+            this.jeudi17.Name = "jeudi17";
+            this.jeudi17.Size = new System.Drawing.Size(157, 82);
+            this.jeudi17.TabIndex = 57;
             // 
             // label58
             // 
@@ -1431,18 +1448,18 @@
             this.panel50.Size = new System.Drawing.Size(157, 1);
             this.panel50.TabIndex = 31;
             // 
-            // panel51
+            // mercredi17
             // 
-            this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel51.Controls.Add(this.label61);
-            this.panel51.Controls.Add(this.label62);
-            this.panel51.Controls.Add(this.label63);
-            this.panel51.Controls.Add(this.panel52);
-            this.panel51.Controls.Add(this.panel53);
-            this.panel51.Location = new System.Drawing.Point(964, 371);
-            this.panel51.Name = "panel51";
-            this.panel51.Size = new System.Drawing.Size(157, 82);
-            this.panel51.TabIndex = 51;
+            this.mercredi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mercredi17.Controls.Add(this.label61);
+            this.mercredi17.Controls.Add(this.label62);
+            this.mercredi17.Controls.Add(this.label63);
+            this.mercredi17.Controls.Add(this.panel52);
+            this.mercredi17.Controls.Add(this.panel53);
+            this.mercredi17.Location = new System.Drawing.Point(964, 371);
+            this.mercredi17.Name = "mercredi17";
+            this.mercredi17.Size = new System.Drawing.Size(157, 82);
+            this.mercredi17.TabIndex = 51;
             // 
             // label61
             // 
@@ -1487,18 +1504,18 @@
             this.panel53.Size = new System.Drawing.Size(157, 1);
             this.panel53.TabIndex = 31;
             // 
-            // panel54
+            // jeudi15
             // 
-            this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel54.Controls.Add(this.label64);
-            this.panel54.Controls.Add(this.label65);
-            this.panel54.Controls.Add(this.label66);
-            this.panel54.Controls.Add(this.panel55);
-            this.panel54.Controls.Add(this.panel56);
-            this.panel54.Location = new System.Drawing.Point(801, 459);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(157, 82);
-            this.panel54.TabIndex = 56;
+            this.jeudi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jeudi15.Controls.Add(this.label64);
+            this.jeudi15.Controls.Add(this.label65);
+            this.jeudi15.Controls.Add(this.label66);
+            this.jeudi15.Controls.Add(this.panel55);
+            this.jeudi15.Controls.Add(this.panel56);
+            this.jeudi15.Location = new System.Drawing.Point(801, 459);
+            this.jeudi15.Name = "jeudi15";
+            this.jeudi15.Size = new System.Drawing.Size(157, 82);
+            this.jeudi15.TabIndex = 56;
             // 
             // label64
             // 
@@ -1543,18 +1560,18 @@
             this.panel56.Size = new System.Drawing.Size(157, 1);
             this.panel56.TabIndex = 31;
             // 
-            // panel57
+            // mercredi15
             // 
-            this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel57.Controls.Add(this.label67);
-            this.panel57.Controls.Add(this.label68);
-            this.panel57.Controls.Add(this.label69);
-            this.panel57.Controls.Add(this.panel58);
-            this.panel57.Controls.Add(this.panel59);
-            this.panel57.Location = new System.Drawing.Point(801, 371);
-            this.panel57.Name = "panel57";
-            this.panel57.Size = new System.Drawing.Size(157, 82);
-            this.panel57.TabIndex = 50;
+            this.mercredi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mercredi15.Controls.Add(this.label67);
+            this.mercredi15.Controls.Add(this.label68);
+            this.mercredi15.Controls.Add(this.label69);
+            this.mercredi15.Controls.Add(this.panel58);
+            this.mercredi15.Controls.Add(this.panel59);
+            this.mercredi15.Location = new System.Drawing.Point(801, 371);
+            this.mercredi15.Name = "mercredi15";
+            this.mercredi15.Size = new System.Drawing.Size(157, 82);
+            this.mercredi15.TabIndex = 50;
             // 
             // label67
             // 
@@ -1599,18 +1616,18 @@
             this.panel59.Size = new System.Drawing.Size(157, 1);
             this.panel59.TabIndex = 31;
             // 
-            // panel60
+            // jeudi14
             // 
-            this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel60.Controls.Add(this.label70);
-            this.panel60.Controls.Add(this.label71);
-            this.panel60.Controls.Add(this.label72);
-            this.panel60.Controls.Add(this.panel61);
-            this.panel60.Controls.Add(this.panel62);
-            this.panel60.Location = new System.Drawing.Point(638, 459);
-            this.panel60.Name = "panel60";
-            this.panel60.Size = new System.Drawing.Size(157, 82);
-            this.panel60.TabIndex = 55;
+            this.jeudi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jeudi14.Controls.Add(this.label70);
+            this.jeudi14.Controls.Add(this.label71);
+            this.jeudi14.Controls.Add(this.label72);
+            this.jeudi14.Controls.Add(this.panel61);
+            this.jeudi14.Controls.Add(this.panel62);
+            this.jeudi14.Location = new System.Drawing.Point(638, 459);
+            this.jeudi14.Name = "jeudi14";
+            this.jeudi14.Size = new System.Drawing.Size(157, 82);
+            this.jeudi14.TabIndex = 55;
             // 
             // label70
             // 
@@ -1655,18 +1672,18 @@
             this.panel62.Size = new System.Drawing.Size(157, 1);
             this.panel62.TabIndex = 31;
             // 
-            // panel63
+            // mercredi14
             // 
-            this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel63.Controls.Add(this.label73);
-            this.panel63.Controls.Add(this.label74);
-            this.panel63.Controls.Add(this.label75);
-            this.panel63.Controls.Add(this.panel64);
-            this.panel63.Controls.Add(this.panel65);
-            this.panel63.Location = new System.Drawing.Point(638, 371);
-            this.panel63.Name = "panel63";
-            this.panel63.Size = new System.Drawing.Size(157, 82);
-            this.panel63.TabIndex = 49;
+            this.mercredi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mercredi14.Controls.Add(this.label73);
+            this.mercredi14.Controls.Add(this.label74);
+            this.mercredi14.Controls.Add(this.label75);
+            this.mercredi14.Controls.Add(this.panel64);
+            this.mercredi14.Controls.Add(this.panel65);
+            this.mercredi14.Location = new System.Drawing.Point(638, 371);
+            this.mercredi14.Name = "mercredi14";
+            this.mercredi14.Size = new System.Drawing.Size(157, 82);
+            this.mercredi14.TabIndex = 49;
             // 
             // label73
             // 
@@ -1711,18 +1728,18 @@
             this.panel65.Size = new System.Drawing.Size(157, 1);
             this.panel65.TabIndex = 31;
             // 
-            // panel66
+            // jeudi9
             // 
-            this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel66.Controls.Add(this.label76);
-            this.panel66.Controls.Add(this.label77);
-            this.panel66.Controls.Add(this.label78);
-            this.panel66.Controls.Add(this.panel67);
-            this.panel66.Controls.Add(this.panel68);
-            this.panel66.Location = new System.Drawing.Point(313, 459);
-            this.panel66.Name = "panel66";
-            this.panel66.Size = new System.Drawing.Size(157, 82);
-            this.panel66.TabIndex = 53;
+            this.jeudi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jeudi9.Controls.Add(this.label76);
+            this.jeudi9.Controls.Add(this.label77);
+            this.jeudi9.Controls.Add(this.label78);
+            this.jeudi9.Controls.Add(this.panel67);
+            this.jeudi9.Controls.Add(this.panel68);
+            this.jeudi9.Location = new System.Drawing.Point(313, 459);
+            this.jeudi9.Name = "jeudi9";
+            this.jeudi9.Size = new System.Drawing.Size(157, 82);
+            this.jeudi9.TabIndex = 53;
             // 
             // label76
             // 
@@ -1767,18 +1784,18 @@
             this.panel68.Size = new System.Drawing.Size(157, 1);
             this.panel68.TabIndex = 31;
             // 
-            // panel69
+            // mercredi9
             // 
-            this.panel69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel69.Controls.Add(this.label79);
-            this.panel69.Controls.Add(this.label80);
-            this.panel69.Controls.Add(this.label81);
-            this.panel69.Controls.Add(this.panel70);
-            this.panel69.Controls.Add(this.panel71);
-            this.panel69.Location = new System.Drawing.Point(313, 371);
-            this.panel69.Name = "panel69";
-            this.panel69.Size = new System.Drawing.Size(157, 82);
-            this.panel69.TabIndex = 47;
+            this.mercredi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mercredi9.Controls.Add(this.label79);
+            this.mercredi9.Controls.Add(this.label80);
+            this.mercredi9.Controls.Add(this.label81);
+            this.mercredi9.Controls.Add(this.panel70);
+            this.mercredi9.Controls.Add(this.panel71);
+            this.mercredi9.Location = new System.Drawing.Point(313, 371);
+            this.mercredi9.Name = "mercredi9";
+            this.mercredi9.Size = new System.Drawing.Size(157, 82);
+            this.mercredi9.TabIndex = 47;
             // 
             // label79
             // 
@@ -1823,18 +1840,18 @@
             this.panel71.Size = new System.Drawing.Size(157, 1);
             this.panel71.TabIndex = 31;
             // 
-            // panel72
+            // jeudi11
             // 
-            this.panel72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel72.Controls.Add(this.label82);
-            this.panel72.Controls.Add(this.label83);
-            this.panel72.Controls.Add(this.label84);
-            this.panel72.Controls.Add(this.panel73);
-            this.panel72.Controls.Add(this.panel74);
-            this.panel72.Location = new System.Drawing.Point(475, 459);
-            this.panel72.Name = "panel72";
-            this.panel72.Size = new System.Drawing.Size(157, 82);
-            this.panel72.TabIndex = 54;
+            this.jeudi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jeudi11.Controls.Add(this.label82);
+            this.jeudi11.Controls.Add(this.label83);
+            this.jeudi11.Controls.Add(this.label84);
+            this.jeudi11.Controls.Add(this.panel73);
+            this.jeudi11.Controls.Add(this.panel74);
+            this.jeudi11.Location = new System.Drawing.Point(475, 459);
+            this.jeudi11.Name = "jeudi11";
+            this.jeudi11.Size = new System.Drawing.Size(157, 82);
+            this.jeudi11.TabIndex = 54;
             // 
             // label82
             // 
@@ -1879,18 +1896,18 @@
             this.panel74.Size = new System.Drawing.Size(157, 1);
             this.panel74.TabIndex = 31;
             // 
-            // panel75
+            // mercredi11
             // 
-            this.panel75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel75.Controls.Add(this.label85);
-            this.panel75.Controls.Add(this.label86);
-            this.panel75.Controls.Add(this.label87);
-            this.panel75.Controls.Add(this.panel76);
-            this.panel75.Controls.Add(this.panel77);
-            this.panel75.Location = new System.Drawing.Point(475, 371);
-            this.panel75.Name = "panel75";
-            this.panel75.Size = new System.Drawing.Size(157, 82);
-            this.panel75.TabIndex = 48;
+            this.mercredi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mercredi11.Controls.Add(this.label85);
+            this.mercredi11.Controls.Add(this.label86);
+            this.mercredi11.Controls.Add(this.label87);
+            this.mercredi11.Controls.Add(this.panel76);
+            this.mercredi11.Controls.Add(this.panel77);
+            this.mercredi11.Location = new System.Drawing.Point(475, 371);
+            this.mercredi11.Name = "mercredi11";
+            this.mercredi11.Size = new System.Drawing.Size(157, 82);
+            this.mercredi11.TabIndex = 48;
             // 
             // label85
             // 
@@ -1935,18 +1952,18 @@
             this.panel77.Size = new System.Drawing.Size(157, 1);
             this.panel77.TabIndex = 31;
             // 
-            // panel78
+            // jeudi8
             // 
-            this.panel78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel78.Controls.Add(this.label88);
-            this.panel78.Controls.Add(this.label89);
-            this.panel78.Controls.Add(this.label90);
-            this.panel78.Controls.Add(this.panel79);
-            this.panel78.Controls.Add(this.panel80);
-            this.panel78.Location = new System.Drawing.Point(150, 459);
-            this.panel78.Name = "panel78";
-            this.panel78.Size = new System.Drawing.Size(157, 82);
-            this.panel78.TabIndex = 52;
+            this.jeudi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.jeudi8.Controls.Add(this.label88);
+            this.jeudi8.Controls.Add(this.label89);
+            this.jeudi8.Controls.Add(this.label90);
+            this.jeudi8.Controls.Add(this.panel79);
+            this.jeudi8.Controls.Add(this.panel80);
+            this.jeudi8.Location = new System.Drawing.Point(150, 459);
+            this.jeudi8.Name = "jeudi8";
+            this.jeudi8.Size = new System.Drawing.Size(157, 82);
+            this.jeudi8.TabIndex = 52;
             // 
             // label88
             // 
@@ -1991,18 +2008,18 @@
             this.panel80.Size = new System.Drawing.Size(157, 1);
             this.panel80.TabIndex = 31;
             // 
-            // panel81
+            // mercredi8
             // 
-            this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel81.Controls.Add(this.label91);
-            this.panel81.Controls.Add(this.label92);
-            this.panel81.Controls.Add(this.label93);
-            this.panel81.Controls.Add(this.panel82);
-            this.panel81.Controls.Add(this.panel83);
-            this.panel81.Location = new System.Drawing.Point(150, 371);
-            this.panel81.Name = "panel81";
-            this.panel81.Size = new System.Drawing.Size(157, 82);
-            this.panel81.TabIndex = 46;
+            this.mercredi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mercredi8.Controls.Add(this.label91);
+            this.mercredi8.Controls.Add(this.label92);
+            this.mercredi8.Controls.Add(this.label93);
+            this.mercredi8.Controls.Add(this.panel82);
+            this.mercredi8.Controls.Add(this.panel83);
+            this.mercredi8.Location = new System.Drawing.Point(150, 371);
+            this.mercredi8.Name = "mercredi8";
+            this.mercredi8.Size = new System.Drawing.Size(157, 82);
+            this.mercredi8.TabIndex = 46;
             // 
             // label91
             // 
@@ -2047,18 +2064,18 @@
             this.panel83.Size = new System.Drawing.Size(157, 1);
             this.panel83.TabIndex = 31;
             // 
-            // panel84
+            // vendredi17
             // 
-            this.panel84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel84.Controls.Add(this.label94);
-            this.panel84.Controls.Add(this.label95);
-            this.panel84.Controls.Add(this.label96);
-            this.panel84.Controls.Add(this.panel85);
-            this.panel84.Controls.Add(this.panel86);
-            this.panel84.Location = new System.Drawing.Point(964, 547);
-            this.panel84.Name = "panel84";
-            this.panel84.Size = new System.Drawing.Size(157, 82);
-            this.panel84.TabIndex = 63;
+            this.vendredi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vendredi17.Controls.Add(this.label94);
+            this.vendredi17.Controls.Add(this.label95);
+            this.vendredi17.Controls.Add(this.label96);
+            this.vendredi17.Controls.Add(this.panel85);
+            this.vendredi17.Controls.Add(this.panel86);
+            this.vendredi17.Location = new System.Drawing.Point(964, 547);
+            this.vendredi17.Name = "vendredi17";
+            this.vendredi17.Size = new System.Drawing.Size(157, 82);
+            this.vendredi17.TabIndex = 63;
             // 
             // label94
             // 
@@ -2103,18 +2120,18 @@
             this.panel86.Size = new System.Drawing.Size(157, 1);
             this.panel86.TabIndex = 31;
             // 
-            // panel87
+            // vendredi15
             // 
-            this.panel87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel87.Controls.Add(this.label97);
-            this.panel87.Controls.Add(this.label98);
-            this.panel87.Controls.Add(this.label99);
-            this.panel87.Controls.Add(this.panel88);
-            this.panel87.Controls.Add(this.panel89);
-            this.panel87.Location = new System.Drawing.Point(801, 547);
-            this.panel87.Name = "panel87";
-            this.panel87.Size = new System.Drawing.Size(157, 82);
-            this.panel87.TabIndex = 62;
+            this.vendredi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vendredi15.Controls.Add(this.label97);
+            this.vendredi15.Controls.Add(this.label98);
+            this.vendredi15.Controls.Add(this.label99);
+            this.vendredi15.Controls.Add(this.panel88);
+            this.vendredi15.Controls.Add(this.panel89);
+            this.vendredi15.Location = new System.Drawing.Point(801, 547);
+            this.vendredi15.Name = "vendredi15";
+            this.vendredi15.Size = new System.Drawing.Size(157, 82);
+            this.vendredi15.TabIndex = 62;
             // 
             // label97
             // 
@@ -2159,18 +2176,18 @@
             this.panel89.Size = new System.Drawing.Size(157, 1);
             this.panel89.TabIndex = 31;
             // 
-            // panel90
+            // vendredi14
             // 
-            this.panel90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel90.Controls.Add(this.label100);
-            this.panel90.Controls.Add(this.label101);
-            this.panel90.Controls.Add(this.label102);
-            this.panel90.Controls.Add(this.panel91);
-            this.panel90.Controls.Add(this.panel92);
-            this.panel90.Location = new System.Drawing.Point(638, 547);
-            this.panel90.Name = "panel90";
-            this.panel90.Size = new System.Drawing.Size(157, 82);
-            this.panel90.TabIndex = 61;
+            this.vendredi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vendredi14.Controls.Add(this.label100);
+            this.vendredi14.Controls.Add(this.label101);
+            this.vendredi14.Controls.Add(this.label102);
+            this.vendredi14.Controls.Add(this.panel91);
+            this.vendredi14.Controls.Add(this.panel92);
+            this.vendredi14.Location = new System.Drawing.Point(638, 547);
+            this.vendredi14.Name = "vendredi14";
+            this.vendredi14.Size = new System.Drawing.Size(157, 82);
+            this.vendredi14.TabIndex = 61;
             // 
             // label100
             // 
@@ -2215,18 +2232,18 @@
             this.panel92.Size = new System.Drawing.Size(157, 1);
             this.panel92.TabIndex = 31;
             // 
-            // panel93
+            // vendredi9
             // 
-            this.panel93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel93.Controls.Add(this.label103);
-            this.panel93.Controls.Add(this.label104);
-            this.panel93.Controls.Add(this.label105);
-            this.panel93.Controls.Add(this.panel94);
-            this.panel93.Controls.Add(this.panel95);
-            this.panel93.Location = new System.Drawing.Point(313, 547);
-            this.panel93.Name = "panel93";
-            this.panel93.Size = new System.Drawing.Size(157, 82);
-            this.panel93.TabIndex = 59;
+            this.vendredi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vendredi9.Controls.Add(this.label103);
+            this.vendredi9.Controls.Add(this.label104);
+            this.vendredi9.Controls.Add(this.label105);
+            this.vendredi9.Controls.Add(this.panel94);
+            this.vendredi9.Controls.Add(this.panel95);
+            this.vendredi9.Location = new System.Drawing.Point(313, 547);
+            this.vendredi9.Name = "vendredi9";
+            this.vendredi9.Size = new System.Drawing.Size(157, 82);
+            this.vendredi9.TabIndex = 59;
             // 
             // label103
             // 
@@ -2271,18 +2288,18 @@
             this.panel95.Size = new System.Drawing.Size(157, 1);
             this.panel95.TabIndex = 31;
             // 
-            // panel96
+            // vendredi11
             // 
-            this.panel96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel96.Controls.Add(this.label106);
-            this.panel96.Controls.Add(this.label107);
-            this.panel96.Controls.Add(this.label108);
-            this.panel96.Controls.Add(this.panel97);
-            this.panel96.Controls.Add(this.panel98);
-            this.panel96.Location = new System.Drawing.Point(475, 547);
-            this.panel96.Name = "panel96";
-            this.panel96.Size = new System.Drawing.Size(157, 82);
-            this.panel96.TabIndex = 60;
+            this.vendredi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vendredi11.Controls.Add(this.label106);
+            this.vendredi11.Controls.Add(this.label107);
+            this.vendredi11.Controls.Add(this.label108);
+            this.vendredi11.Controls.Add(this.panel97);
+            this.vendredi11.Controls.Add(this.panel98);
+            this.vendredi11.Location = new System.Drawing.Point(475, 547);
+            this.vendredi11.Name = "vendredi11";
+            this.vendredi11.Size = new System.Drawing.Size(157, 82);
+            this.vendredi11.TabIndex = 60;
             // 
             // label106
             // 
@@ -2327,18 +2344,18 @@
             this.panel98.Size = new System.Drawing.Size(157, 1);
             this.panel98.TabIndex = 31;
             // 
-            // panel99
+            // vendredi8
             // 
-            this.panel99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel99.Controls.Add(this.label109);
-            this.panel99.Controls.Add(this.label110);
-            this.panel99.Controls.Add(this.label111);
-            this.panel99.Controls.Add(this.panel100);
-            this.panel99.Controls.Add(this.panel101);
-            this.panel99.Location = new System.Drawing.Point(150, 547);
-            this.panel99.Name = "panel99";
-            this.panel99.Size = new System.Drawing.Size(157, 82);
-            this.panel99.TabIndex = 58;
+            this.vendredi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.vendredi8.Controls.Add(this.label109);
+            this.vendredi8.Controls.Add(this.label110);
+            this.vendredi8.Controls.Add(this.label111);
+            this.vendredi8.Controls.Add(this.panel100);
+            this.vendredi8.Controls.Add(this.panel101);
+            this.vendredi8.Location = new System.Drawing.Point(150, 547);
+            this.vendredi8.Name = "vendredi8";
+            this.vendredi8.Size = new System.Drawing.Size(157, 82);
+            this.vendredi8.TabIndex = 58;
             // 
             // label109
             // 
@@ -2383,41 +2400,59 @@
             this.panel101.Size = new System.Drawing.Size(157, 1);
             this.panel101.TabIndex = 31;
             // 
+            // idbox
+            // 
+            this.idbox.Location = new System.Drawing.Point(704, 111);
+            this.idbox.Name = "idbox";
+            this.idbox.Size = new System.Drawing.Size(121, 22);
+            this.idbox.TabIndex = 64;
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(605, 114);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(21, 17);
+            this.label113.TabIndex = 66;
+            this.label113.Text = "ID";
+            // 
             // chef_gestion_emploi_filiere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1133, 641);
-            this.Controls.Add(this.panel84);
-            this.Controls.Add(this.panel48);
-            this.Controls.Add(this.panel87);
-            this.Controls.Add(this.panel30);
-            this.Controls.Add(this.panel90);
-            this.Controls.Add(this.panel51);
-            this.Controls.Add(this.panel93);
-            this.Controls.Add(this.panel24);
-            this.Controls.Add(this.panel96);
-            this.Controls.Add(this.panel54);
-            this.Controls.Add(this.panel99);
-            this.Controls.Add(this.panel33);
-            this.Controls.Add(this.panel57);
-            this.Controls.Add(this.panel27);
-            this.Controls.Add(this.panel60);
-            this.Controls.Add(this.panel36);
-            this.Controls.Add(this.panel63);
-            this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel66);
-            this.Controls.Add(this.panel39);
-            this.Controls.Add(this.panel69);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel72);
-            this.Controls.Add(this.panel42);
-            this.Controls.Add(this.panel75);
-            this.Controls.Add(this.panel21);
-            this.Controls.Add(this.panel78);
-            this.Controls.Add(this.panel45);
-            this.Controls.Add(this.panel81);
-            this.Controls.Add(this.panel12);
+            this.Controls.Add(this.label113);
+            this.Controls.Add(this.idbox);
+            this.Controls.Add(this.vendredi17);
+            this.Controls.Add(this.jeudi17);
+            this.Controls.Add(this.vendredi15);
+            this.Controls.Add(this.mardi17);
+            this.Controls.Add(this.vendredi14);
+            this.Controls.Add(this.mercredi17);
+            this.Controls.Add(this.vendredi9);
+            this.Controls.Add(this.lundi17);
+            this.Controls.Add(this.vendredi11);
+            this.Controls.Add(this.jeudi15);
+            this.Controls.Add(this.vendredi8);
+            this.Controls.Add(this.mardi15);
+            this.Controls.Add(this.mercredi15);
+            this.Controls.Add(this.lundi15);
+            this.Controls.Add(this.jeudi14);
+            this.Controls.Add(this.mardi14);
+            this.Controls.Add(this.mercredi14);
+            this.Controls.Add(this.lundi14);
+            this.Controls.Add(this.jeudi9);
+            this.Controls.Add(this.mardi9);
+            this.Controls.Add(this.mercredi9);
+            this.Controls.Add(this.lundi9);
+            this.Controls.Add(this.jeudi11);
+            this.Controls.Add(this.mardi11);
+            this.Controls.Add(this.mercredi11);
+            this.Controls.Add(this.lundi11);
+            this.Controls.Add(this.jeudi8);
+            this.Controls.Add(this.mardi8);
+            this.Controls.Add(this.mercredi8);
+            this.Controls.Add(this.lundi8);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
@@ -2433,28 +2468,29 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox9);
+            this.Controls.Add(this.typebox);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.comboBox10);
+            this.Controls.Add(this.hfbox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox7);
+            this.Controls.Add(this.ensbox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox8);
+            this.Controls.Add(this.elementbox);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.groupebox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.semestrebox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.modulebox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.sallebox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.hdbox);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.jourbox);
             this.Controls.Add(this.label1);
             this.Name = "chef_gestion_emploi_filiere";
             this.Text = "chef_gestion_emploi_filiere";
+            this.Load += new System.EventHandler(this.chef_gestion_emploi_filiere_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -2477,66 +2513,66 @@
             this.panel10.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            this.panel18.ResumeLayout(false);
-            this.panel18.PerformLayout();
-            this.panel21.ResumeLayout(false);
-            this.panel21.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
-            this.panel36.ResumeLayout(false);
-            this.panel36.PerformLayout();
-            this.panel39.ResumeLayout(false);
-            this.panel39.PerformLayout();
-            this.panel42.ResumeLayout(false);
-            this.panel42.PerformLayout();
-            this.panel45.ResumeLayout(false);
-            this.panel45.PerformLayout();
-            this.panel48.ResumeLayout(false);
-            this.panel48.PerformLayout();
-            this.panel51.ResumeLayout(false);
-            this.panel51.PerformLayout();
-            this.panel54.ResumeLayout(false);
-            this.panel54.PerformLayout();
-            this.panel57.ResumeLayout(false);
-            this.panel57.PerformLayout();
-            this.panel60.ResumeLayout(false);
-            this.panel60.PerformLayout();
-            this.panel63.ResumeLayout(false);
-            this.panel63.PerformLayout();
-            this.panel66.ResumeLayout(false);
-            this.panel66.PerformLayout();
-            this.panel69.ResumeLayout(false);
-            this.panel69.PerformLayout();
-            this.panel72.ResumeLayout(false);
-            this.panel72.PerformLayout();
-            this.panel75.ResumeLayout(false);
-            this.panel75.PerformLayout();
-            this.panel78.ResumeLayout(false);
-            this.panel78.PerformLayout();
-            this.panel81.ResumeLayout(false);
-            this.panel81.PerformLayout();
-            this.panel84.ResumeLayout(false);
-            this.panel84.PerformLayout();
-            this.panel87.ResumeLayout(false);
-            this.panel87.PerformLayout();
-            this.panel90.ResumeLayout(false);
-            this.panel90.PerformLayout();
-            this.panel93.ResumeLayout(false);
-            this.panel93.PerformLayout();
-            this.panel96.ResumeLayout(false);
-            this.panel96.PerformLayout();
-            this.panel99.ResumeLayout(false);
-            this.panel99.PerformLayout();
+            this.lundi8.ResumeLayout(false);
+            this.lundi8.PerformLayout();
+            this.lundi9.ResumeLayout(false);
+            this.lundi9.PerformLayout();
+            this.lundi14.ResumeLayout(false);
+            this.lundi14.PerformLayout();
+            this.lundi11.ResumeLayout(false);
+            this.lundi11.PerformLayout();
+            this.lundi17.ResumeLayout(false);
+            this.lundi17.PerformLayout();
+            this.lundi15.ResumeLayout(false);
+            this.lundi15.PerformLayout();
+            this.mardi17.ResumeLayout(false);
+            this.mardi17.PerformLayout();
+            this.mardi15.ResumeLayout(false);
+            this.mardi15.PerformLayout();
+            this.mardi14.ResumeLayout(false);
+            this.mardi14.PerformLayout();
+            this.mardi9.ResumeLayout(false);
+            this.mardi9.PerformLayout();
+            this.mardi11.ResumeLayout(false);
+            this.mardi11.PerformLayout();
+            this.mardi8.ResumeLayout(false);
+            this.mardi8.PerformLayout();
+            this.jeudi17.ResumeLayout(false);
+            this.jeudi17.PerformLayout();
+            this.mercredi17.ResumeLayout(false);
+            this.mercredi17.PerformLayout();
+            this.jeudi15.ResumeLayout(false);
+            this.jeudi15.PerformLayout();
+            this.mercredi15.ResumeLayout(false);
+            this.mercredi15.PerformLayout();
+            this.jeudi14.ResumeLayout(false);
+            this.jeudi14.PerformLayout();
+            this.mercredi14.ResumeLayout(false);
+            this.mercredi14.PerformLayout();
+            this.jeudi9.ResumeLayout(false);
+            this.jeudi9.PerformLayout();
+            this.mercredi9.ResumeLayout(false);
+            this.mercredi9.PerformLayout();
+            this.jeudi11.ResumeLayout(false);
+            this.jeudi11.PerformLayout();
+            this.mercredi11.ResumeLayout(false);
+            this.mercredi11.PerformLayout();
+            this.jeudi8.ResumeLayout(false);
+            this.jeudi8.PerformLayout();
+            this.mercredi8.ResumeLayout(false);
+            this.mercredi8.PerformLayout();
+            this.vendredi17.ResumeLayout(false);
+            this.vendredi17.PerformLayout();
+            this.vendredi15.ResumeLayout(false);
+            this.vendredi15.PerformLayout();
+            this.vendredi14.ResumeLayout(false);
+            this.vendredi14.PerformLayout();
+            this.vendredi9.ResumeLayout(false);
+            this.vendredi9.PerformLayout();
+            this.vendredi11.ResumeLayout(false);
+            this.vendredi11.PerformLayout();
+            this.vendredi8.ResumeLayout(false);
+            this.vendredi8.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2545,24 +2581,24 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox jourbox;
+        private System.Windows.Forms.ComboBox hdbox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox modulebox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox sallebox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox groupebox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox semestrebox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox ensbox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox elementbox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox typebox;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox hfbox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -2590,185 +2626,187 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel lundi8;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Panel lundi9;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
+        private System.Windows.Forms.Panel lundi14;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel21;
+        private System.Windows.Forms.Panel lundi11;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel22;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel24;
+        private System.Windows.Forms.Panel lundi17;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Panel lundi15;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel mardi17;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.Panel mardi15;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.Panel panel36;
+        private System.Windows.Forms.Panel mardi14;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Panel panel37;
         private System.Windows.Forms.Panel panel38;
-        private System.Windows.Forms.Panel panel39;
+        private System.Windows.Forms.Panel mardi9;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Panel panel40;
         private System.Windows.Forms.Panel panel41;
-        private System.Windows.Forms.Panel panel42;
+        private System.Windows.Forms.Panel mardi11;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Panel panel44;
-        private System.Windows.Forms.Panel panel45;
+        private System.Windows.Forms.Panel mardi8;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Panel panel46;
         private System.Windows.Forms.Panel panel47;
-        private System.Windows.Forms.Panel panel48;
+        private System.Windows.Forms.Panel jeudi17;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.Panel panel50;
-        private System.Windows.Forms.Panel panel51;
+        private System.Windows.Forms.Panel mercredi17;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Panel panel52;
         private System.Windows.Forms.Panel panel53;
-        private System.Windows.Forms.Panel panel54;
+        private System.Windows.Forms.Panel jeudi15;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Panel panel55;
         private System.Windows.Forms.Panel panel56;
-        private System.Windows.Forms.Panel panel57;
+        private System.Windows.Forms.Panel mercredi15;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Panel panel58;
         private System.Windows.Forms.Panel panel59;
-        private System.Windows.Forms.Panel panel60;
+        private System.Windows.Forms.Panel jeudi14;
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Panel panel61;
         private System.Windows.Forms.Panel panel62;
-        private System.Windows.Forms.Panel panel63;
+        private System.Windows.Forms.Panel mercredi14;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Panel panel64;
         private System.Windows.Forms.Panel panel65;
-        private System.Windows.Forms.Panel panel66;
+        private System.Windows.Forms.Panel jeudi9;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Panel panel67;
         private System.Windows.Forms.Panel panel68;
-        private System.Windows.Forms.Panel panel69;
+        private System.Windows.Forms.Panel mercredi9;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Panel panel70;
         private System.Windows.Forms.Panel panel71;
-        private System.Windows.Forms.Panel panel72;
+        private System.Windows.Forms.Panel jeudi11;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Panel panel73;
         private System.Windows.Forms.Panel panel74;
-        private System.Windows.Forms.Panel panel75;
+        private System.Windows.Forms.Panel mercredi11;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
         private System.Windows.Forms.Panel panel76;
         private System.Windows.Forms.Panel panel77;
-        private System.Windows.Forms.Panel panel78;
+        private System.Windows.Forms.Panel jeudi8;
         private System.Windows.Forms.Label label88;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label90;
         private System.Windows.Forms.Panel panel79;
         private System.Windows.Forms.Panel panel80;
-        private System.Windows.Forms.Panel panel81;
+        private System.Windows.Forms.Panel mercredi8;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Panel panel82;
         private System.Windows.Forms.Panel panel83;
-        private System.Windows.Forms.Panel panel84;
+        private System.Windows.Forms.Panel vendredi17;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Panel panel85;
         private System.Windows.Forms.Panel panel86;
-        private System.Windows.Forms.Panel panel87;
+        private System.Windows.Forms.Panel vendredi15;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Panel panel88;
         private System.Windows.Forms.Panel panel89;
-        private System.Windows.Forms.Panel panel90;
+        private System.Windows.Forms.Panel vendredi14;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Panel panel91;
         private System.Windows.Forms.Panel panel92;
-        private System.Windows.Forms.Panel panel93;
+        private System.Windows.Forms.Panel vendredi9;
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.Label label105;
         private System.Windows.Forms.Panel panel94;
         private System.Windows.Forms.Panel panel95;
-        private System.Windows.Forms.Panel panel96;
+        private System.Windows.Forms.Panel vendredi11;
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.Panel panel97;
         private System.Windows.Forms.Panel panel98;
-        private System.Windows.Forms.Panel panel99;
+        private System.Windows.Forms.Panel vendredi8;
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label111;
         private System.Windows.Forms.Panel panel100;
         private System.Windows.Forms.Panel panel101;
+        private System.Windows.Forms.TextBox idbox;
+        private System.Windows.Forms.Label label113;
     }
 }
