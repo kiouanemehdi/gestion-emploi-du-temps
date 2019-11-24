@@ -50,6 +50,7 @@ namespace gestion_emploi_du_temps
         public  void checkLogin(string userType)
         {
            
+             //all variable declaration
                 string userName;
                 string password;
                 string sql;
