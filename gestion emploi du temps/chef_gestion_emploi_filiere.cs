@@ -282,11 +282,20 @@ namespace gestion_emploi_du_temps
                     cmd.Parameters.Add("@salle", SqlDbType.Int).Value = sallebox.SelectedValue;
                     cmd.Parameters.Add("@filiere", SqlDbType.Int).Value = idf;
                     cmd.Parameters.Add("@type", SqlDbType.VarChar).Value = typebox.Text;
-                    
-                    cmd.ExecuteNonQuery();
+                cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+                cmd.ExecuteNonQuery();
+                int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
 
-                MessageBox.Show("seance bien ajouter");
+                if (a == 0)
+                {
+                    MessageBox.Show("seance bien ajouter");
                     refresh();
+                }
+                else
+                {
+                    MessageBox.Show("Choisissez un temps disponible");
+                    
+                }
                 }
             catch(SqlException ex)
             {
@@ -488,11 +497,20 @@ namespace gestion_emploi_du_temps
                     cmd.Parameters.Add("@salle", SqlDbType.Int).Value = sallebox.SelectedValue;
                     cmd.Parameters.Add("@filiere", SqlDbType.Int).Value = idf;
                     cmd.Parameters.Add("@type", SqlDbType.VarChar).Value = typebox.Text;
-                    
+                    cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
                     cmd.ExecuteNonQuery();
+                    int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
 
-                    MessageBox.Show("salle bien modifier");
-                    refresh();
+                    if (a == 0)
+                    {
+                        MessageBox.Show("seance bien modifier");
+                        refresh();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Choisissez un temps disponible");
+
+                    }
                 }
                 catch (SqlException ex)
                 {

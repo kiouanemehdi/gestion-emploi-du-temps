@@ -34,9 +34,9 @@ namespace gestion_emploi_du_temps
                 sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
                 dataset = new DataSet();
-                sqlAdapter.Fill(dataset, "ChefDepartement");
+                sqlAdapter.Fill(dataset, "ChefDpt");
                 dataGridView1.DataSource = null;
-                dataGridView1.DataSource = dataset.Tables["ChefDepartement"];
+                dataGridView1.DataSource = dataset.Tables["ChefDpt"];
 
                 for (int i = 0; i < dataGridView1.Rows.Count; i++)
 
@@ -63,7 +63,7 @@ namespace gestion_emploi_du_temps
             dt1.Load(dr1);
             filierebox.DataSource = dt1;
             filierebox.ValueMember = "id_filiere";
-            filierebox.DisplayMember = "Nom_filiere";
+            filierebox.DisplayMember = "nom_filiere";
             filierebox.Text = "";
             dr1.Close();
             cn.conn.Close();
@@ -105,22 +105,53 @@ namespace gestion_emploi_du_temps
 
         private void button4_Click(object sender, EventArgs e)
         {
-            if (cn.execute_query("Update ChefDpt set nom='" + nombox.Text + "',prenom='" + prenombox.Text + "',chef_username='" + usernamebox.Text + "',chef_password='" + passwordbox.Text + "',id_filiere='" + filierebox.SelectedValue + "' where id_chef='" + idbox.Text + "'"))
+
+            SqlCommand cmd = new SqlCommand("valid_email_tele", cn.conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@email", SqlDbType.Int).Value = emailbox.Text;
+            cmd.Parameters.Add("@tele", SqlDbType.Int).Value = portablebox.Text;
+            cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+            cmd.ExecuteNonQuery();
+            int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
+            if (a == 1)
+                MessageBox.Show("email format invalid");
+            else if (a == 2)
+                MessageBox.Show("numero de telephone format invalid");
+            else
             {
-                MessageBox.Show("Bien modifier");
-                
-               refresh();
+                if (cn.execute_query("Update ChefDpt set nom='" + nombox.Text + "',prenom='" + prenombox.Text + "',chef_username='" + usernamebox.Text + "',chef_password='" + passwordbox.Text + "',email='" + emailbox + "',portable='" + portablebox + "',id_filiere='" + filierebox.SelectedValue + "' where id_chef='" + idbox.Text + "'"))
+                {
+                    MessageBox.Show("Bien modifier");
+
+                    refresh();
+                }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (cn.execute_query("insert into ChefDpt values('" + nombox.Text + "', '" + prenombox.Text + "', '" + usernamebox.Text + "', '" + passwordbox.Text + "','" + filierebox.SelectedValue + "')"))
+
+                SqlCommand cmd = new SqlCommand("valid_email_tele", cn.conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@email", SqlDbType.Int).Value = emailbox.Text;
+                cmd.Parameters.Add("@tele", SqlDbType.Int).Value = portablebox.Text;
+                cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+                cmd.ExecuteNonQuery();
+                int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
+            if (a == 1)
+                MessageBox.Show("email format invalid");
+            else if (a == 2)
+                MessageBox.Show("numero de telephone format invalid");
+            else
             {
-                MessageBox.Show("Bien ajouter");
-               
-                refresh();
+                if (cn.execute_query("insert into ChefDpt(nom,prenom,chef_username,chef_password,email,portable,id_filiere) values('" + nombox.Text + "', '" + prenombox.Text + "', '" + usernamebox.Text + "', '" + passwordbox.Text + "','" + emailbox.Text + "','" + portablebox.Text + "','" + filierebox.SelectedValue + "')"))
+                {
+                    MessageBox.Show("Bien ajouter");
+
+                    refresh();
+                }
             }
+
         }
 
         private void button3_Click(object sender, EventArgs e)

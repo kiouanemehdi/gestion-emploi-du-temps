@@ -81,6 +81,7 @@ namespace gestion_emploi_du_temps
 
         private void admin_acceuil_Load(object sender, EventArgs e)
         {
+            
             admin_profile ap = new admin_profile(this, prenom, nom, username, email, portable);
             afficher_milieu(ap);
            // ap.Dock = DockStyle.Fill;
