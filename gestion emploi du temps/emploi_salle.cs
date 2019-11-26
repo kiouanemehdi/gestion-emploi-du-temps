@@ -16,5 +16,30 @@ namespace gestion_emploi_du_temps
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void emploi_salle_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label23_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel18_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

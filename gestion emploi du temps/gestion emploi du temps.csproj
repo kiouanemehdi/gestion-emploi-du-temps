@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="admin_acceuil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,12 @@
     </Compile>
     <Compile Include="admin_profile.Designer.cs">
       <DependentUpon>admin_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefLogincs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChefLogincs.Designer.cs">
+      <DependentUpon>ChefLogincs.cs</DependentUpon>
     </Compile>
     <Compile Include="chef_acceueil.cs">
       <SubType>Form</SubType>
@@ -162,14 +174,23 @@
     <Compile Include="ens_profile.Designer.cs">
       <DependentUpon>ens_profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="EseignantLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EseignantLogin.Designer.cs">
+      <DependentUpon>EseignantLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAcceuill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="LoginAcceuill.Designer.cs">
+      <DependentUpon>LoginAcceuill.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="admin_acceuil.resx">
       <DependentUpon>admin_acceuil.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,8 +206,32 @@
     <EmbeddedResource Include="admin_gestion_filiere.resx">
       <DependentUpon>admin_gestion_filiere.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChefLogincs.resx">
+      <DependentUpon>ChefLogincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_acceueil.resx">
+      <DependentUpon>chef_acceueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_element.resx">
+      <DependentUpon>chef_gestion_element.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="chef_gestion_emploi_filiere.resx">
       <DependentUpon>chef_gestion_emploi_filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_module.resx">
+      <DependentUpon>chef_gestion_module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emploi_salle.resx">
+      <DependentUpon>emploi_salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ens_acceuil.resx">
+      <DependentUpon>ens_acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EseignantLogin.resx">
+      <DependentUpon>EseignantLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAcceuill.resx">
+      <DependentUpon>LoginAcceuill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
