@@ -65,17 +65,17 @@ namespace gestion_emploi_du_temps
             portable = (string)dt.Rows[0]["admin_username"];
         }
         // pour afficher user cotrle au milieu de panel//
-        private void afficher_milieu(Control ctrl)
+        private void afficher_milieu(Control c)
         {
-            if (!milieu.Controls.Contains(ctrl))
+            if (!milieu.Controls.Contains(c))
             {
-                milieu.Controls.Add(ctrl);
-                ctrl.Dock = DockStyle.Fill;
-                ctrl.BringToFront();
+                milieu.Controls.Add(c);
+                c.Dock = DockStyle.Fill;
+                c.BringToFront();
             }
             else
             {
-                ctrl.BringToFront();
+                c.BringToFront();
             }
         }
 

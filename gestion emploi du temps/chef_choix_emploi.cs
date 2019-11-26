@@ -10,11 +10,32 @@ using System.Windows.Forms;
 
 namespace gestion_emploi_du_temps
 {
+
     public partial class chef_choix_emploi : UserControl
     {
-        public chef_choix_emploi()
+        int idf;
+        public chef_choix_emploi(int idf)
         {
             InitializeComponent();
+            this.idf = idf;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            emploi_salle es = new emploi_salle();
+            es.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            chef_gestion_emploi_filiere ef = new chef_gestion_emploi_filiere(idf);
+            ef.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            chef_emploi_ens es = new chef_emploi_ens();
+            es.Show();
         }
     }
 }

@@ -212,6 +212,9 @@
     <EmbeddedResource Include="chef_acceueil.resx">
       <DependentUpon>chef_acceueil.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="chef_choix_emploi.resx">
+      <DependentUpon>chef_choix_emploi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="chef_gestion_element.resx">
       <DependentUpon>chef_gestion_element.cs</DependentUpon>
     </EmbeddedResource>
@@ -220,6 +223,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="chef_gestion_module.resx">
       <DependentUpon>chef_gestion_module.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_salle.resx">
+      <DependentUpon>chef_gestion_salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_profile.resx">
+      <DependentUpon>chef_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="emploi_salle.resx">
       <DependentUpon>emploi_salle.cs</DependentUpon>

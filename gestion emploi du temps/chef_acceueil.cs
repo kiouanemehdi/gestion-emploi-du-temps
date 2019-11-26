@@ -12,21 +12,53 @@ namespace gestion_emploi_du_temps
 {
     public partial class chef_acceueil : Form
     {
-        connection cn;
-        int ida;
-        string nom, prenom, username;
+        private connection cn;
+        private string filiere;
+        public string Filiere { get => filiere; set => filiere = value; }
+        private string nom;
+        public string Nom { get => nom; set => nom = value; }
+        private string prenom;
+        public string Prenom { get => prenom; set => prenom = value; }
+        private string email;
+        private string tele;
+        private string username;
+        public string Username { get => username; set => username = value; }
+        private int idFiliere;
+        public int IdFiliere { get => idFiliere; set => idFiliere = value; }
+        private int id;
+        public int Id { get => id; set => id = value; }
         public chef_acceueil(int id)
         {
             InitializeComponent();
             cn = new connection();
-            this.ida = id;
-            DataTable dt = cn.query("select * from Enseignant where id_enseignant='" + ida + "'");
-            nom = (string)dt.Rows[0]["Nom"];
-            prenom = (string)dt.Rows[0]["Prenom"];
+            this.id = id;
+            DataTable dt = cn.query("select * from ChefDpt C,Filiere F where F.id_Filiere=C.id_Filiere and C.id_Chefdpt='" + id + "'");
+            idFiliere = (int)dt.Rows[0]["id_filiere"];
+            filiere = (string)dt.Rows[0]["nom_filiere"];
+            nom = (string)dt.Rows[0]["nom"];
+            prenom = (string)dt.Rows[0]["prenom"];
+             email = (string)dt.Rows[0]["email"];
             username = (string)dt.Rows[0]["chef_username"];
-           
-        }
+              tele = (string)dt.Rows[0]["portable"];
+            label1.Text = prenom + " " + nom;
+            label3.Text = "Filière  " + filiere;
 
+        }
+        private void afficher_milieu(Control c)
+        {
+            if (!milieu.Controls.Contains(c))
+            {
+                milieu.Controls.Add(c);
+                c.Dock = DockStyle.Fill;
+                c.BringToFront();
+                // c.Actualiser();
+            }
+            else
+            {
+                c.BringToFront();
+                //  c.Actualiser();
+            }
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -37,6 +69,36 @@ namespace gestion_emploi_du_temps
 
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            chef_gestion_ens ge = new chef_gestion_ens();
+            afficher_milieu(ge);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            chef_gestion_salle gs = new chef_gestion_salle();
+            afficher_milieu(gs);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            chef_gestion_module gm = new chef_gestion_module();
+            afficher_milieu(gm);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            chef_gestion_element gse = new chef_gestion_element();
+            afficher_milieu(gse);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            chef_choix_emploi ce = new chef_choix_emploi(idFiliere);
+            afficher_milieu(ce);
+        }
+
         private void button6_Click(object sender, EventArgs e)
         {
 
@@ -44,7 +106,8 @@ namespace gestion_emploi_du_temps
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            chef_profile cp = new chef_profile(this,prenom,nom,username,filiere,email,tele);
+            afficher_milieu(cp);
         }
     }
 }
