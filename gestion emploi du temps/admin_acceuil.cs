@@ -55,14 +55,14 @@ namespace gestion_emploi_du_temps
         public admin_acceuil(int id)
         {
             InitializeComponent();
-            cn = new connection();
+          cn = new connection();
             this.ida = id;
-            DataTable dt = cn.query("select * from Administrateur");
-            nom = (string)dt.Rows[0]["nom"];
+            DataTable dt = cn.query("select * from Admini where id_admin='"+ida+"'");
+            nom = (string)dt.Rows[0]["Nom"];
             prenom = (string)dt.Rows[0]["prenom"];
             username = (string)dt.Rows[0]["admin_username"];
-            email = (string)dt.Rows[0]["email"];
-            portable = (string)dt.Rows[0]["portable"];
+            email = (string)dt.Rows[0]["admin_username"];
+            portable = (string)dt.Rows[0]["admin_username"];
         }
         // pour afficher user cotrle au milieu de panel//
         private void afficher_milieu(Control ctrl)
@@ -119,6 +119,9 @@ namespace gestion_emploi_du_temps
             Environment.Exit(0);
         }
 
-   
+        private void milieu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

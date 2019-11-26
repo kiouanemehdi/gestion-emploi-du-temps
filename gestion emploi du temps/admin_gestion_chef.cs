@@ -134,5 +134,10 @@ namespace gestion_emploi_du_temps
             filierebox.Items.Clear();
             portablebox.Clear();
         }
+
+        private void nombox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
