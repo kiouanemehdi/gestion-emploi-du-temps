@@ -57,7 +57,7 @@ namespace gestion_emploi_du_temps
             InitializeComponent();
           cn = new connection();
             this.ida = id;
-            DataTable dt = cn.query("select * from Admini where id_admin='"+ida+"'");
+            DataTable dt = cn.query("select * from Administrateur where id_admin='"+ida+"'");
             nom = (string)dt.Rows[0]["Nom"];
             prenom = (string)dt.Rows[0]["prenom"];
             username = (string)dt.Rows[0]["admin_username"];
