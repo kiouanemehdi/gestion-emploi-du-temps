@@ -206,6 +206,9 @@
     <EmbeddedResource Include="admin_gestion_filiere.resx">
       <DependentUpon>admin_gestion_filiere.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="admin_profile.resx">
+      <DependentUpon>admin_profile.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChefLogincs.resx">
       <DependentUpon>ChefLogincs.cs</DependentUpon>
     </EmbeddedResource>

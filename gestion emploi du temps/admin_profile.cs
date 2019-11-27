@@ -13,6 +13,12 @@ namespace gestion_emploi_du_temps
     public partial class admin_profile : UserControl
     {
         string nom, prenom, username, email, portable;
+
+        private void admin_profile_Load(object sender, EventArgs e)
+        {
+            
+        }
+
         admin_acceuil accueil;
         public admin_profile(admin_acceuil accueil, string prenom, string nom, string username, string email, string portable)
         {

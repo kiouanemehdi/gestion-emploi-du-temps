@@ -30,7 +30,7 @@ namespace gestion_emploi_du_temps
             try
 
             {
-                sqlAdapter = new SqlDataAdapter("SELECT id_chef as Id,nom as [Nom],prenom as Prénom,chef_username as [Nom d'utilisateur],chef_password as [Mot de passe],email as [email],portable as [portable], nom_filiere as Filière FROM ChefDpt C,Filiere F where C.id_filiere=F.id_filiere", cn.conn);
+               /* sqlAdapter = new SqlDataAdapter("SELECT id_chef as Id,nom as [Nom],prenom as Prénom,chef_username as [Nom d'utilisateur],chef_password as [Mot de passe],email as [email],portable as [portable], nom_filiere as Filière FROM ChefDpt C,Filiere F where C.id_filiere=F.id_filiere", cn.conn);
                 sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
                 dataset = new DataSet();
@@ -43,7 +43,7 @@ namespace gestion_emploi_du_temps
                 {
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
                     dataGridView1[5, i] = linkCell;
-                }
+                }*/
             }
 
             catch (Exception ex)
