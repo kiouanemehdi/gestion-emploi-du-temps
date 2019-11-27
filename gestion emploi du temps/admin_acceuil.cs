@@ -63,19 +63,22 @@ namespace gestion_emploi_du_temps
             username = (string)dt.Rows[0]["admin_username"];
             email = (string)dt.Rows[0]["admin_username"];
             portable = (string)dt.Rows[0]["admin_username"];
+            
+            //new admin_gestion_chef();
         }
         // pour afficher user cotrle au milieu de panel//
-        private void afficher_milieu(Control ctrl)
+        private void afficher_milieu(Control c)
         {
-            if (!milieu.Controls.Contains(ctrl))
+            if (!milieu.Controls.Contains(c))
             {
-                milieu.Controls.Add(ctrl);
-                ctrl.Dock = DockStyle.Fill;
-                ctrl.BringToFront();
+               milieu.Controls.Add(c);
+                //c.Dock = DockStyle.Fill;
+                c.BringToFront();
+               
             }
             else
             {
-                ctrl.BringToFront();
+                c.BringToFront();
             }
         }
 
@@ -83,23 +86,28 @@ namespace gestion_emploi_du_temps
         {
             admin_profile ap = new admin_profile(this, prenom, nom, username, email, portable);
             afficher_milieu(ap);
+            
            // ap.Dock = DockStyle.Fill;
             //this.Controls.Add(ap);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            admin_profile ap1 = new admin_profile(this, prenom, nom, username, email, portable);
-            afficher_milieu(ap1);
+           admin_profile ap1 = new admin_profile(this, prenom, nom, username, email, portable);
+           afficher_milieu(ap1);
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             admin_gestion_chef gc = new admin_gestion_chef();
-            afficher_milieu(gc);
-            /*gc.Dock = DockStyle.Fill;
-            this.Controls.Add(gc);
-            milieu.Controls.Add(gc);*/
+          /*  gc.Show();
+            gc.Location = this.Location;*/
+          
+           afficher_milieu(gc);
+            //gc.Dock = DockStyle.Fill;
+           // this.Controls.Add(gc);
+            //milieu.Controls.Add(gc);*/
         }
 
         private void button3_Click(object sender, EventArgs e)

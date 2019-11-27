@@ -98,5 +98,10 @@ namespace gestion_emploi_du_temps
             idbox.Clear();
             filierebox.Clear();
         }
+
+        private void admin_gestion_filiere_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
