@@ -57,8 +57,8 @@ namespace gestion_emploi_du_temps
             InitializeComponent();
           cn = new connection();
             this.ida = id;
-            DataTable dt = cn.query("select * from Admini where id_admin='"+ida+"'");
-            nom = (string)dt.Rows[0]["Nom"];
+            DataTable dt = cn.query("select * from Administrateur where id_admin='"+ida+"'");
+            nom = (string)dt.Rows[0]["nom"];
             prenom = (string)dt.Rows[0]["prenom"];
             username = (string)dt.Rows[0]["admin_username"];
             email = (string)dt.Rows[0]["admin_username"];
@@ -70,7 +70,7 @@ namespace gestion_emploi_du_temps
             if (!milieu.Controls.Contains(c))
             {
                 milieu.Controls.Add(c);
-                c.Dock = DockStyle.Fill;
+                //c.Dock = DockStyle.Fill;
                 c.BringToFront();
             }
             else

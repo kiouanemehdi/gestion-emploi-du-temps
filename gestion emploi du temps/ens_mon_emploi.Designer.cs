@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.semestrebox = new System.Windows.Forms.ComboBox();
             this.panel84 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
@@ -284,13 +284,14 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Semestre";
             // 
-            // comboBox2
+            // semestrebox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(554, 46);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 8;
+            this.semestrebox.FormattingEnabled = true;
+            this.semestrebox.Location = new System.Drawing.Point(554, 46);
+            this.semestrebox.Name = "semestrebox";
+            this.semestrebox.Size = new System.Drawing.Size(121, 24);
+            this.semestrebox.TabIndex = 8;
+            this.semestrebox.SelectedIndexChanged += new System.EventHandler(this.semestrebox_SelectedIndexChanged);
             // 
             // panel84
             // 
@@ -2217,9 +2218,10 @@
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.semestrebox);
             this.Name = "ens_mon_emploi";
             this.Text = "ens_mon_emploi";
+            this.Load += new System.EventHandler(this.ens_mon_emploi_Load);
             this.panel84.ResumeLayout(false);
             this.panel84.PerformLayout();
             this.panel48.ResumeLayout(false);
@@ -2310,7 +2312,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox semestrebox;
         private System.Windows.Forms.Panel panel84;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;

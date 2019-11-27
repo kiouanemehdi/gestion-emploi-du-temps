@@ -30,8 +30,8 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.semestrebox = new System.Windows.Forms.ComboBox();
+            this.ensbox = new System.Windows.Forms.ComboBox();
             this.panel84 = new System.Windows.Forms.Panel();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
@@ -295,21 +295,23 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Enseignant";
             // 
-            // comboBox2
+            // semestrebox
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(696, 55);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 5;
+            this.semestrebox.FormattingEnabled = true;
+            this.semestrebox.Location = new System.Drawing.Point(696, 55);
+            this.semestrebox.Name = "semestrebox";
+            this.semestrebox.Size = new System.Drawing.Size(121, 24);
+            this.semestrebox.TabIndex = 5;
+            this.semestrebox.SelectedIndexChanged += new System.EventHandler(this.semestrebox_SelectedIndexChanged);
             // 
-            // comboBox1
+            // ensbox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(391, 55);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 4;
+            this.ensbox.FormattingEnabled = true;
+            this.ensbox.Location = new System.Drawing.Point(391, 55);
+            this.ensbox.Name = "ensbox";
+            this.ensbox.Size = new System.Drawing.Size(121, 24);
+            this.ensbox.TabIndex = 4;
+            this.ensbox.SelectedIndexChanged += new System.EventHandler(this.ensbox_SelectedIndexChanged);
             // 
             // panel84
             // 
@@ -2237,10 +2239,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.semestrebox);
+            this.Controls.Add(this.ensbox);
             this.Name = "chef_emploi_ens";
             this.Text = "chef_emploi_ens";
+            this.Load += new System.EventHandler(this.chef_emploi_ens_Load);
             this.panel84.ResumeLayout(false);
             this.panel84.PerformLayout();
             this.panel48.ResumeLayout(false);
@@ -2332,8 +2335,8 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox semestrebox;
+        private System.Windows.Forms.ComboBox ensbox;
         private System.Windows.Forms.Panel panel84;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;

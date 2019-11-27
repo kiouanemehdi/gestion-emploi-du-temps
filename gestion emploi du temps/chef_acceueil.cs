@@ -32,7 +32,7 @@ namespace gestion_emploi_du_temps
             InitializeComponent();
             cn = new connection();
             this.id = id;
-            DataTable dt = cn.query("select * from ChefDpt C,Filiere F where F.id_Filiere=C.id_Filiere and C.id_Chefdpt='" + id + "'");
+            DataTable dt = cn.query("select * from ChefDpt C,Filiere F where F.id_Filiere=C.id_Filiere and C.id_Chef='" + id + "'");
             idFiliere = (int)dt.Rows[0]["id_filiere"];
             filiere = (string)dt.Rows[0]["nom_filiere"];
             nom = (string)dt.Rows[0]["nom"];
@@ -49,7 +49,7 @@ namespace gestion_emploi_du_temps
             if (!milieu.Controls.Contains(c))
             {
                 milieu.Controls.Add(c);
-                c.Dock = DockStyle.Fill;
+              //  c.Dock = DockStyle.Fill;
                 c.BringToFront();
                 // c.Actualiser();
             }

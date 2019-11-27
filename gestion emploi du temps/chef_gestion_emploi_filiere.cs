@@ -143,7 +143,7 @@ namespace gestion_emploi_du_temps
 
         private void seance(string jour, string hdebut, string hfin, Label label1, Label label2, Label label3)
         {
-            String query = "select * from seance S ,Element M,module MO,semestre Se,Filiere F , Salle SA,Groupe G ,Enseignant E where E.id_enseignant=S.id_enseignant and G.id_groupe=S.id_groupe and SA.id_salle=S.id_salle and  S.id_element=M.id_element and MO.id_semestre=SE.id_semestre and MO.id_module=S.id_module and S.heure_debut='" + hdebut + "' and S.Heure_fine='" + hfin + "' and MO.id_filiere=F.id_filiere and jour='" + jour + "' and nom_semestre='" + semestrebox.Text + "'and F.id_filiere='" + idf + "' and G.nom_groupe = '" + groupebox.Text + "'";
+            String query = "select * from seance S ,Element M,module MO,semestre Se,Filiere F , Salle SA,Groupe G ,Enseignant E where E.id_enseignant=S.id_enseignant and G.id_groupe=S.id_groupe and SA.id_salle=S.id_salle and  S.id_element=M.id_element and MO.id_semestre=SE.id_semestre and MO.id_module=S.id_module and S.heure_debut='" + hdebut + "' and S.heure_fin='" + hfin + "' and MO.id_filiere=F.id_filiere and jour='" + jour + "' and nom_semestre='" + semestrebox.Text + "'and F.id_filiere='" + idf + "' and G.nom_groupe = '" + groupebox.Text + "'";
             SqlCommand smd = new SqlCommand(query, cn);
             SqlDataReader dr1 = smd.ExecuteReader();
 

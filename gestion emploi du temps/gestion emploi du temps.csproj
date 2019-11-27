@@ -218,11 +218,17 @@
     <EmbeddedResource Include="chef_choix_emploi.resx">
       <DependentUpon>chef_choix_emploi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="chef_emploi_ens.resx">
+      <DependentUpon>chef_emploi_ens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="chef_gestion_element.resx">
       <DependentUpon>chef_gestion_element.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="chef_gestion_emploi_filiere.resx">
       <DependentUpon>chef_gestion_emploi_filiere.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chef_gestion_ens.resx">
+      <DependentUpon>chef_gestion_ens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="chef_gestion_module.resx">
       <DependentUpon>chef_gestion_module.cs</DependentUpon>
@@ -238,6 +244,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ens_acceuil.resx">
       <DependentUpon>ens_acceuil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ens_mon_emploi.resx">
+      <DependentUpon>ens_mon_emploi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ens_profile.resx">
+      <DependentUpon>ens_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EseignantLogin.resx">
       <DependentUpon>EseignantLogin.cs</DependentUpon>

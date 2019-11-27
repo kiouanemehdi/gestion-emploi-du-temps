@@ -30,7 +30,7 @@ namespace gestion_emploi_du_temps
             try
 
             {
-               /* sqlAdapter = new SqlDataAdapter("SELECT id_chef as Id,nom as [Nom],prenom as Prénom,chef_username as [Nom d'utilisateur],chef_password as [Mot de passe],email as [email],portable as [portable], nom_filiere as Filière FROM ChefDpt C,Filiere F where C.id_filiere=F.id_filiere", cn.conn);
+               sqlAdapter = new SqlDataAdapter("SELECT id_chef as Id,nom as [Nom],prenom as Prénom,chef_username as [Nom d'utilisateur],chef_password as [Mot de passe],email as [email],portable as [portable], nom_filiere as Filière FROM ChefDpt C,Filiere F where C.id_filiere=F.id_filiere", cn.conn);
                 sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
                 dataset = new DataSet();
@@ -42,8 +42,8 @@ namespace gestion_emploi_du_temps
 
                 {
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                    dataGridView1[5, i] = linkCell;
-                }*/
+                    dataGridView1[7, i] = linkCell;
+                }
             }
 
             catch (Exception ex)
@@ -111,8 +111,10 @@ namespace gestion_emploi_du_temps
             cmd.Parameters.Add("@email", SqlDbType.Int).Value = emailbox.Text;
             cmd.Parameters.Add("@tele", SqlDbType.Int).Value = portablebox.Text;
             cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+            cn.conn.Open();
             cmd.ExecuteNonQuery();
             int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
+            cn.conn.Close();
             if (a == 1)
                 MessageBox.Show("email format invalid");
             else if (a == 2)
@@ -133,14 +135,17 @@ namespace gestion_emploi_du_temps
 
                 SqlCommand cmd = new SqlCommand("valid_email_tele", cn.conn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@email", SqlDbType.Int).Value = emailbox.Text;
-                cmd.Parameters.Add("@tele", SqlDbType.Int).Value = portablebox.Text;
-                cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
-                cmd.ExecuteNonQuery();
-                int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
-            if (a == 1)
+                cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = emailbox.Text;
+                cmd.Parameters.Add("@tele", SqlDbType.VarChar).Value = portablebox.Text;
+                cmd.Parameters.Add("@resultat", SqlDbType.Int).Direction = ParameterDirection.Output;
+  
+            cn.conn.Open();
+            cmd.ExecuteNonQuery();
+                int resultat = int.Parse(cmd.Parameters["@resultat"].Value.ToString());
+            
+            if (resultat == 1)
                 MessageBox.Show("email format invalid");
-            else if (a == 2)
+            else if (resultat == 2)
                 MessageBox.Show("numero de telephone format invalid");
             else
             {
@@ -151,6 +156,7 @@ namespace gestion_emploi_du_temps
                     refresh();
                 }
             }
+            cn.conn.Close();
 
         }
 
@@ -162,7 +168,7 @@ namespace gestion_emploi_du_temps
             emailbox.Clear();
             usernamebox.Clear();
             passwordbox.Clear();
-            filierebox.Items.Clear();
+            filierebox.Text="";
             portablebox.Clear();
         }
 
