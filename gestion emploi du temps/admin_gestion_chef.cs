@@ -42,7 +42,7 @@ namespace gestion_emploi_du_temps
 
                 {
                     DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                    dataGridView1[7, i] = linkCell;
+                    dataGridView1[5, i] = linkCell;
                 }
             }
 
@@ -81,10 +81,10 @@ namespace gestion_emploi_du_temps
             idbox.Text = selectedRow.Cells[0].Value.ToString();
             nombox.Text = selectedRow.Cells[1].Value.ToString();
             prenombox.Text = selectedRow.Cells[2].Value.ToString();
-            emailbox.Text = selectedRow.Cells[3].Value.ToString();
-            portablebox.Text = selectedRow.Cells[4].Value.ToString();
-            usernamebox.Text = selectedRow.Cells[5].Value.ToString();
-            passwordbox.Text = selectedRow.Cells[6].Value.ToString();
+            usernamebox.Text = selectedRow.Cells[3].Value.ToString();
+            passwordbox.Text = selectedRow.Cells[4].Value.ToString();
+            emailbox.Text = selectedRow.Cells[5].Value.ToString();
+            portablebox.Text = selectedRow.Cells[6].Value.ToString();
             filierebox.Text = selectedRow.Cells[7].Value.ToString();
         }
 
@@ -108,20 +108,22 @@ namespace gestion_emploi_du_temps
 
             SqlCommand cmd = new SqlCommand("valid_email_tele", cn.conn);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@email", SqlDbType.Int).Value = emailbox.Text;
-            cmd.Parameters.Add("@tele", SqlDbType.Int).Value = portablebox.Text;
-            cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = emailbox.Text;
+            cmd.Parameters.Add("@tele", SqlDbType.VarChar).Value = portablebox.Text;
+            cmd.Parameters.Add("@resultat", SqlDbType.Int).Direction = ParameterDirection.Output;
+
             cn.conn.Open();
             cmd.ExecuteNonQuery();
-            int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
+
+            int resultat = int.Parse(cmd.Parameters["@resultat"].Value.ToString());
             cn.conn.Close();
-            if (a == 1)
+            if (resultat == 1)
                 MessageBox.Show("email format invalid");
-            else if (a == 2)
+            else if (resultat == 2)
                 MessageBox.Show("numero de telephone format invalid");
             else
             {
-                if (cn.execute_query("Update ChefDpt set nom='" + nombox.Text + "',prenom='" + prenombox.Text + "',chef_username='" + usernamebox.Text + "',chef_password='" + passwordbox.Text + "',email='" + emailbox + "',portable='" + portablebox + "',id_filiere='" + filierebox.SelectedValue + "' where id_chef='" + idbox.Text + "'"))
+                if (cn.execute_query("Update ChefDpt set nom='" + nombox.Text + "',prenom='" + prenombox.Text + "',chef_username='" + usernamebox.Text + "',chef_password='" + passwordbox.Text + "',email='" + emailbox.Text + "',portable='" + portablebox.Text + "',id_filiere='" + filierebox.SelectedValue + "' where id_chef='" + idbox.Text + "'"))
                 {
                     MessageBox.Show("Bien modifier");
 
@@ -141,8 +143,9 @@ namespace gestion_emploi_du_temps
   
             cn.conn.Open();
             cmd.ExecuteNonQuery();
+
                 int resultat = int.Parse(cmd.Parameters["@resultat"].Value.ToString());
-            
+            cn.conn.Close();
             if (resultat == 1)
                 MessageBox.Show("email format invalid");
             else if (resultat == 2)
@@ -156,7 +159,7 @@ namespace gestion_emploi_du_temps
                     refresh();
                 }
             }
-            cn.conn.Close();
+            //cn.conn.Close();
 
         }
 

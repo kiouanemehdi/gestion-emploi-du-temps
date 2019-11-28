@@ -99,7 +99,9 @@ namespace gestion_emploi_du_temps
             elementbox.DisplayMember = "nom_element";
             elementbox.ValueMember = "id_element";
             // enseinant
-            sc = new SqlCommand("select * from Enseignant E , Element EL where  E.id_element=EL.id_enseignant and EL.id_enseignant='" + elementbox.Text + "'", cn);
+            // sc = new SqlCommand("select * from Enseignant E , Element EL where  E.id_enseignant=EL.id_enseignant and EL.id_enseignant='" + elementbox.Text + "'", cn);
+            sc = new SqlCommand("select * from Enseignant ", cn);
+
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
             sda.Fill(tb);
@@ -137,6 +139,7 @@ namespace gestion_emploi_du_temps
 
         private void chef_gestion_emploi_filiere_Load(object sender, EventArgs e)
         {
+            ajouter();
             choix_emploi();
             refresh();
         }

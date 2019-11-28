@@ -191,10 +191,10 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 180);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 189);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(734, 366);
+            this.dataGridView1.Size = new System.Drawing.Size(956, 366);
             this.dataGridView1.TabIndex = 28;
             // 
             // label7
@@ -212,6 +212,7 @@
             this.recherchebox.Name = "recherchebox";
             this.recherchebox.Size = new System.Drawing.Size(243, 22);
             this.recherchebox.TabIndex = 45;
+            this.recherchebox.TextChanged += new System.EventHandler(this.recherchebox_TextChanged);
             // 
             // label8
             // 
@@ -255,7 +256,7 @@
             this.Controls.Add(this.nombox);
             this.Controls.Add(this.dataGridView1);
             this.Name = "chef_gestion_ens";
-            this.Size = new System.Drawing.Size(789, 558);
+            this.Size = new System.Drawing.Size(1023, 558);
             this.Load += new System.EventHandler(this.chef_gestion_ens_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

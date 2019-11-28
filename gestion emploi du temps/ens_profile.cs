@@ -12,9 +12,11 @@ namespace gestion_emploi_du_temps
 {
     public partial class ens_profile : UserControl
     {
-        ens_acceuil accueil;
+        
         string nom, prenom, username, email, tele;
        
+
+        ens_acceuil accueil;
         public ens_profile(ens_acceuil accueil, string prenom, string nom, string username, string email, string tele)
         {
             InitializeComponent();

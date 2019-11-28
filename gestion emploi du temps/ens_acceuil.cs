@@ -40,14 +40,15 @@ namespace gestion_emploi_du_temps
 
         private void ens_acceuil_Load(object sender, EventArgs e)
         {
-
+            ens_profile p = new ens_profile(this, prenom, nom, username, email, tele);
+            afficher_milieu(p);
         }
         private void afficher_milieu(Control c)
         {
             if (!milieu.Controls.Contains(c))
             {
                 milieu.Controls.Add(c);
-               // c.Dock = DockStyle.Fill;
+                //c.Dock = DockStyle.Fill;
                 c.BringToFront();
             }
             else

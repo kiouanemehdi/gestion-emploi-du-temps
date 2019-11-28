@@ -52,6 +52,22 @@ namespace gestion_emploi_du_temps
         {
             this.username = username;
         }
+        public string get_email()
+        {
+            return this.email;
+        }
+        public void set_email(string email)
+        {
+            this.email = email;
+        }
+        public string get_portable()
+        {
+            return this.portable;
+        }
+        public void set_portable(string portable)
+        {
+            this.portable = portable;
+        }
         public admin_acceuil(int id)
         {
             InitializeComponent();
@@ -61,8 +77,8 @@ namespace gestion_emploi_du_temps
             nom = (string)dt.Rows[0]["nom"];
             prenom = (string)dt.Rows[0]["prenom"];
             username = (string)dt.Rows[0]["admin_username"];
-            email = (string)dt.Rows[0]["admin_username"];
-            portable = (string)dt.Rows[0]["admin_username"];
+            email = (string)dt.Rows[0]["email"];
+            portable = (string)dt.Rows[0]["portable"];
         }
         // pour afficher user cotrle au milieu de panel//
         private void afficher_milieu(Control c)

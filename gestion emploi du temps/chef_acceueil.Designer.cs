@@ -166,7 +166,7 @@
             this.milieu.Location = new System.Drawing.Point(225, 110);
             this.milieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.milieu.Name = "milieu";
-            this.milieu.Size = new System.Drawing.Size(595, 394);
+            this.milieu.Size = new System.Drawing.Size(919, 520);
             this.milieu.TabIndex = 5;
             // 
             // button6
@@ -186,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 544);
+            this.ClientSize = new System.Drawing.Size(1172, 680);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.milieu);

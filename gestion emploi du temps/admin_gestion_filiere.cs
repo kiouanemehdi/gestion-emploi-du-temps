@@ -101,7 +101,7 @@ namespace gestion_emploi_du_temps
 
         private void admin_gestion_filiere_Load(object sender, EventArgs e)
         {
-
+            refresh();
         }
     }
 }

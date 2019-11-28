@@ -443,6 +443,10 @@
             // typebox
             // 
             this.typebox.FormattingEnabled = true;
+            this.typebox.Items.AddRange(new object[] {
+            "TD",
+            "TP",
+            "COURS"});
             this.typebox.Location = new System.Drawing.Point(173, 105);
             this.typebox.Name = "typebox";
             this.typebox.Size = new System.Drawing.Size(121, 24);
