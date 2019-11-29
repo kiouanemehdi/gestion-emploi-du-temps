@@ -69,7 +69,7 @@ namespace gestion_emploi_du_temps
 
         private void chef_acceueil_Load(object sender, EventArgs e)
         {
-
+            //MessageBox.Show(""+IdFiliere);
         }
 
         private void button2_Click(object sender, EventArgs e)

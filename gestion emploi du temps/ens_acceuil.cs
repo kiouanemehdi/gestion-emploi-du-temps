@@ -40,8 +40,8 @@ namespace gestion_emploi_du_temps
 
         private void ens_acceuil_Load(object sender, EventArgs e)
         {
-            ens_profile p = new ens_profile(this, prenom, nom, username, email, tele);
-            afficher_milieu(p);
+          //  MessageBox.Show(""+ IdEnseignant);
+
         }
         private void afficher_milieu(Control c)
         {
@@ -61,7 +61,7 @@ namespace gestion_emploi_du_temps
         {
             ens_profile ps = new ens_profile(this, prenom, nom, username, email, tele);
             afficher_milieu(ps);
-            ps.Show();
+           // ps.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

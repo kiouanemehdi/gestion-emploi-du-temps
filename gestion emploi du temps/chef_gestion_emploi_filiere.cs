@@ -17,9 +17,9 @@ namespace gestion_emploi_du_temps
         public chef_gestion_emploi_filiere(int idf)
         {
             InitializeComponent();
-            this.cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+           // this.cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
 
-          //  cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+           this.cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
             try
             {
                 cn.Open();
@@ -85,7 +85,7 @@ namespace gestion_emploi_du_temps
             semestrebox.DisplayMember = "nom_semestre";
             semestrebox.ValueMember = "id_semestre";
             //module
-            sc = new SqlCommand("select * from Module M,Filiere F,ChefDpt CH,Semestre S where S.id_semestre= M.id_semestre and M.id_filiere=F.id_filiere and f.id_filiere=CH.id_filiere and F.id_filiere='" + idf + "' and S.Nom_semestre='" + semestrebox.Text + "'", cn);
+            sc = new SqlCommand("select * from Module M,Filiere F,ChefDpt CH,Semestre S where S.id_semestre= M.id_semestre and M.id_filiere=F.id_filiere and f.id_filiere=CH.id_filiere and F.id_filiere='" + idf + "' and S.id_semestre='" + semestrebox.Text + "'", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
             sda.Fill(tb);
@@ -93,7 +93,7 @@ namespace gestion_emploi_du_temps
             modulebox.DisplayMember = "nom_module";
             modulebox.ValueMember = "id_module";
             ///element
-            sc = new SqlCommand("select * from Module M,Element EL where M.id_module=EL.id_module and M.nom_module='" + modulebox.Text + "'", cn);
+            sc = new SqlCommand("select * from Module M,Element EL where M.id_module=EL.id_module and M.id_module=(select id_module from Module where nom_module='" + modulebox.Text + "')", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
             sda.Fill(tb);
@@ -101,8 +101,8 @@ namespace gestion_emploi_du_temps
             elementbox.DisplayMember = "nom_element";
             elementbox.ValueMember = "id_element";
             // enseinant
-            // sc = new SqlCommand("select * from Enseignant E , Element EL where  E.id_enseignant=EL.id_enseignant and EL.id_enseignant='" + elementbox.Text + "'", cn);
-            sc = new SqlCommand("select * from Enseignant ", cn);
+                // sc = new SqlCommand("select * from Enseignant E , Element EL where  E.id_enseignant=EL.id_enseignant and EL.id_enseignant='" + elementbox.Text + "'", cn);
+        sc = new SqlCommand("select * from Enseignant ", cn);
 
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();

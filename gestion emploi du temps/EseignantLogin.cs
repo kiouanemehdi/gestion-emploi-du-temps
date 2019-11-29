@@ -38,7 +38,7 @@ namespace gestion_emploi_du_temps
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@UserN", SqlDbType.VarChar).Value = textBox1.Text;
                 cmd.Parameters.Add("@PassW", SqlDbType.VarChar).Value = textBox2.Text;
-                var returnParametre = cmd.Parameters.Add("@ReturnVal", SqlDbType.Bit);
+                var returnParametre = cmd.Parameters.Add("@ReturnVal", SqlDbType.Int);
                 returnParametre.Direction = ParameterDirection.ReturnValue;
                 conn.conn.Open();
                 cmd.ExecuteNonQuery();

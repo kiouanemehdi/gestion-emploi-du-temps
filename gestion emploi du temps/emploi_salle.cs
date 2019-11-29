@@ -15,7 +15,7 @@ namespace gestion_emploi_du_temps
         SqlConnection cn;
         public emploi_salle()
         {
-            cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true ; MultipleActiveResultSets=true;");
+            cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true ; MultipleActiveResultSets=true;");
             try
             {
                 cn.Open();
