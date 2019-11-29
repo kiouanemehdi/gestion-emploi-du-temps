@@ -17,7 +17,9 @@ namespace gestion_emploi_du_temps
         public chef_gestion_emploi_filiere(int idf)
         {
             InitializeComponent();
-            cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            this.cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+
+          //  cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
             try
             {
                 cn.Open();
@@ -108,6 +110,14 @@ namespace gestion_emploi_du_temps
             ensbox.DataSource = tb;
             ensbox.DisplayMember = "nom_enseignant";
             ensbox.ValueMember = "id_enseignant";
+            sc = new SqlCommand("select * from Salle ", cn);
+
+            sda = new SqlDataAdapter(sc);
+            tb = new DataTable();
+            sda.Fill(tb);
+            sallebox.DataSource = tb;
+            sallebox.DisplayMember = "nom_salle";
+            sallebox.ValueMember = "id_salle";
         }
 
         private void choix_emploi()
@@ -277,12 +287,14 @@ namespace gestion_emploi_du_temps
                     cmd.Parameters.Add("@jour", SqlDbType.VarChar).Value = jourbox.Text;
                     cmd.Parameters.Add("@hd", SqlDbType.Time).Value = time;
                     cmd.Parameters.Add("@hf", SqlDbType.Time).Value = time1;
-                    cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;
-                    cmd.Parameters.Add("@semestre", SqlDbType.Int).Value = semestrebox.SelectedValue;
+                cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;
+                cmd.Parameters.Add("@salle", SqlDbType.Int).Value = sallebox.SelectedValue;
+
+                cmd.Parameters.Add("@semestre", SqlDbType.Int).Value = semestrebox.SelectedValue;
                     cmd.Parameters.Add("@element", SqlDbType.Int).Value = elementbox.SelectedValue;
                     cmd.Parameters.Add("@module", SqlDbType.Int).Value = modulebox.SelectedValue;
                     cmd.Parameters.Add("@groupe", SqlDbType.Int).Value = groupebox.SelectedValue;
-                    cmd.Parameters.Add("@salle", SqlDbType.Int).Value = sallebox.SelectedValue;
+                   
                     cmd.Parameters.Add("@filiere", SqlDbType.Int).Value = idf;
                     cmd.Parameters.Add("@type", SqlDbType.VarChar).Value = typebox.Text;
                 cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
@@ -538,6 +550,11 @@ namespace gestion_emploi_du_temps
         private void button3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void sallebox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
