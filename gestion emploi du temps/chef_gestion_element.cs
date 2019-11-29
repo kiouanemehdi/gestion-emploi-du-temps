@@ -42,7 +42,7 @@ namespace gestion_emploi_du_temps
 
         private void chef_gestion_element_Load(object sender, EventArgs e)
         {
-
+            remplir();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -82,14 +82,7 @@ namespace gestion_emploi_du_temps
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
-                index = e.RowIndex; 
-    
-                DataGridViewRow selectedRow = dataGridView1.Rows[index];
-             
-           
-                textBox1.Text = selectedRow.Cells[1].Value.ToString();
-                comboBox1.Text = selectedRow.Cells[2].Value.ToString();
-               comboBox2.Text= selectedRow.Cells[4].Value.ToString();
+
 
 
         }
@@ -126,20 +119,26 @@ namespace gestion_emploi_du_temps
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
-            {
-                DataGridViewRow selectedRow = dataGridView1.Rows[index];
-                string vv = "delete from  Element where id_element='" + selectedRow.Cells[0].Value.ToString() + "'";
-                SqlCommand cmd = new SqlCommand(vv, conn.conn);
-                cmd.ExecuteNonQuery();
-            }catch(SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-                
-            
+            DialogResult dialogResult = MessageBox.Show("Sure", "Etes-vous sûr de vouloir supprimer ? ", MessageBoxButtons.YesNo);
 
-          
+            if (dialogResult == DialogResult.Yes)
+            {
+                try
+                {
+                    DataGridViewRow selectedRow = dataGridView1.Rows[index];
+                    string vv = "delete from  Element where id_element='" + selectedRow.Cells[0].Value.ToString() + "'";
+                    SqlCommand cmd = new SqlCommand(vv, conn.conn);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            refreshGrid();
+
+
+
         }
         private void refreshGrid()
         {
@@ -164,6 +163,37 @@ namespace gestion_emploi_du_temps
             textBox1.Text = "";
             comboBox1.Text = "";
             comboBox2.Text = "";
+        }
+        private void remplir()
+        {
+            SqlCommand sc = new SqlCommand("select * from Module", conn.conn);
+            SqlDataAdapter sda = new SqlDataAdapter(sc);
+            DataTable tb = new DataTable();
+            sda.Fill(tb);
+            comboBox1.DataSource = tb;
+            comboBox1.DisplayMember = "nom_module";
+            comboBox1.ValueMember = "id_module";
+
+            ///semestre
+            sc = new SqlCommand("select * from Enseignant", conn.conn);
+            sda = new SqlDataAdapter(sc);
+            tb = new DataTable();
+            sda.Fill(tb);
+            comboBox2.DataSource = tb;
+            comboBox2.DisplayMember = "nom_enseignant";
+            comboBox2.ValueMember = "id_enseignant";
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            index = e.RowIndex;
+
+            DataGridViewRow selectedRow = dataGridView1.Rows[index];
+
+
+            textBox1.Text = selectedRow.Cells[1].Value.ToString();
+            comboBox1.Text = selectedRow.Cells[2].Value.ToString();
+            comboBox2.Text = selectedRow.Cells[4].Value.ToString();
         }
     }
 }

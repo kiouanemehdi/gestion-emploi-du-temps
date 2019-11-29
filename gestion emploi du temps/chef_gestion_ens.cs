@@ -56,6 +56,7 @@ namespace gestion_emploi_du_temps
         private void chef_gestion_ens_Load(object sender, EventArgs e)
         {
             refresh();
+            idbox.Enabled = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -135,15 +136,7 @@ namespace gestion_emploi_du_temps
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;// get the Row Index
-            DataGridViewRow selectedRow = dataGridView1.Rows[index];
-            idbox.Text = selectedRow.Cells[0].Value.ToString();
-            nombox.Text = selectedRow.Cells[1].Value.ToString();
-            prenombox.Text = selectedRow.Cells[2].Value.ToString();
-            userbox.Text = selectedRow.Cells[3].Value.ToString();
-            passbox.Text = selectedRow.Cells[4].Value.ToString();
-            emailbox.Text = selectedRow.Cells[5].Value.ToString();
-            telebox.Text = selectedRow.Cells[6].Value.ToString();
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -160,6 +153,19 @@ namespace gestion_emploi_du_temps
         private void recherchebox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;// get the Row Index
+            DataGridViewRow selectedRow = dataGridView1.Rows[index];
+            idbox.Text = selectedRow.Cells[0].Value.ToString();
+            nombox.Text = selectedRow.Cells[1].Value.ToString();
+            prenombox.Text = selectedRow.Cells[2].Value.ToString();
+            userbox.Text = selectedRow.Cells[3].Value.ToString();
+            passbox.Text = selectedRow.Cells[4].Value.ToString();
+            emailbox.Text = selectedRow.Cells[5].Value.ToString();
+            telebox.Text = selectedRow.Cells[6].Value.ToString();
         }
         //bare de recherche
         /*private void recherchebox_TextChanged(object sender, EventArgs e)

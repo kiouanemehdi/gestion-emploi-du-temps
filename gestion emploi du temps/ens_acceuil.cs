@@ -59,8 +59,9 @@ namespace gestion_emploi_du_temps
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ens_profile p = new ens_profile(this, prenom, nom, username, email, tele);
-            afficher_milieu(p);
+            ens_profile ps = new ens_profile(this, prenom, nom, username, email, tele);
+            afficher_milieu(ps);
+            ps.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -84,7 +85,9 @@ namespace gestion_emploi_du_temps
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            LoginAcceuill login = new LoginAcceuill();
+            login.Show();
+            this.Close();
         }
     }
 }

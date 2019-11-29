@@ -133,7 +133,9 @@ namespace gestion_emploi_du_temps
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            LoginAcceuill login = new LoginAcceuill();
+            login.Show();
+            this.Close();
         }
 
         private void milieu_Paint(object sender, PaintEventArgs e)

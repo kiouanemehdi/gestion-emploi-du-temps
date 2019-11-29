@@ -56,15 +56,11 @@ namespace gestion_emploi_du_temps
         private void chef_gestion_salle_Load(object sender, EventArgs e)
         {
             refresh();
+            idbox.Enabled = false;
         }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            int index = e.RowIndex;// get the Row Index
-            DataGridViewRow selectedRow = dataGridView1.Rows[index];
-            idbox.Text = selectedRow.Cells[0].Value.ToString();
-            nombox.Text = selectedRow.Cells[1].Value.ToString();
-            capacitebox.Text = selectedRow.Cells[2].Value.ToString();
-            typebox.Text = selectedRow.Cells[3].Value.ToString();
+   
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -107,6 +103,16 @@ namespace gestion_emploi_du_temps
             nombox.Clear();
             capacitebox.Clear();
             typebox.Items.Clear();
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            int index = e.RowIndex;// get the Row Index
+            DataGridViewRow selectedRow = dataGridView1.Rows[index];
+            idbox.Text = selectedRow.Cells[0].Value.ToString();
+            nombox.Text = selectedRow.Cells[1].Value.ToString();
+            capacitebox.Text = selectedRow.Cells[2].Value.ToString();
+            typebox.Text = selectedRow.Cells[3].Value.ToString();
         }
     }
 

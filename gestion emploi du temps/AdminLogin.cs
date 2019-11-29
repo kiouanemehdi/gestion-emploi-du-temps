@@ -43,7 +43,11 @@ namespace gestion_emploi_du_temps
                 if(i!=0)
                 {
                     MessageBox.Show("login successe");
+ LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
+                    obj.Hide();
                     new admin_acceuil(i).Show();
+                   
+                    
                     
                     
                 }

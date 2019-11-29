@@ -44,8 +44,10 @@ namespace gestion_emploi_du_temps
                 {
                     
                     MessageBox.Show("the users existe");
+LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
+                    obj.Hide();
                     new chef_acceueil(i).Show();
-
+                    
 
                 }
                 else

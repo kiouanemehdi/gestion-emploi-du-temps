@@ -104,7 +104,9 @@ namespace gestion_emploi_du_temps
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            LoginAcceuill login = new LoginAcceuill();
+            login.Show();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
