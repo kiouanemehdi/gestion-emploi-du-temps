@@ -15,7 +15,9 @@ namespace gestion_emploi_du_temps
         private connection cn;
         private string filiere;
         public string Filiere { get => filiere; set => filiere = value; }
+      
         private string nom;
+        public static int filierecef;
         public string Nom { get => nom; set => nom = value; }
         private string prenom;
         public string Prenom { get => prenom; set => prenom = value; }
@@ -35,6 +37,7 @@ namespace gestion_emploi_du_temps
             DataTable dt = cn.query("select * from ChefDpt C,Filiere F where F.id_Filiere=C.id_Filiere and C.id_Chef='" + id + "'");
             idFiliere = (int)dt.Rows[0]["id_filiere"];
             filiere = (string)dt.Rows[0]["nom_filiere"];
+            filierecef = idFiliere;
             nom = (string)dt.Rows[0]["nom"];
             prenom = (string)dt.Rows[0]["prenom"];
              email = (string)dt.Rows[0]["email"];
@@ -109,5 +112,11 @@ namespace gestion_emploi_du_temps
             chef_profile cp = new chef_profile(this,prenom,nom,username,filiere,email,tele);
             afficher_milieu(cp);
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+        public static int getfilere() { return filierecef; }
     }
 }

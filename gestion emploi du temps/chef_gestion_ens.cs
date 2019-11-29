@@ -156,6 +156,11 @@ namespace gestion_emploi_du_temps
             emailbox.Clear();
             telebox.Clear();
         }
+
+        private void recherchebox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
         //bare de recherche
         /*private void recherchebox_TextChanged(object sender, EventArgs e)
         {

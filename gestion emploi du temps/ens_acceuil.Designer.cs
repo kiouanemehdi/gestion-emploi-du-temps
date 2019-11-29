@@ -48,37 +48,39 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(3, 1);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(193, 448);
+            this.panel1.Size = new System.Drawing.Size(145, 364);
             this.panel1.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 66);
+            this.label2.Location = new System.Drawing.Point(9, 54);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 17);
+            this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Vous etes enseignant";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 37);
+            this.label1.Location = new System.Drawing.Point(49, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 17);
+            this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Nom";
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.LightCoral;
-            this.button4.Location = new System.Drawing.Point(3, 313);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(2, 254);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(187, 54);
+            this.button4.Size = new System.Drawing.Size(140, 44);
             this.button4.TabIndex = 3;
             this.button4.Text = "Emploi des filieres";
             this.button4.UseVisualStyleBackColor = false;
@@ -87,10 +89,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightCoral;
-            this.button3.Location = new System.Drawing.Point(3, 252);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Location = new System.Drawing.Point(2, 205);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(187, 54);
+            this.button3.Size = new System.Drawing.Size(140, 44);
             this.button3.TabIndex = 2;
             this.button3.Text = "emploi des salles";
             this.button3.UseVisualStyleBackColor = false;
@@ -99,10 +101,10 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightCoral;
-            this.button2.Location = new System.Drawing.Point(3, 192);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Location = new System.Drawing.Point(2, 156);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 54);
+            this.button2.Size = new System.Drawing.Size(140, 44);
             this.button2.TabIndex = 1;
             this.button2.Text = "Mon emploi du temps";
             this.button2.UseVisualStyleBackColor = false;
@@ -112,10 +114,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(3, 132);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(2, 107);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(187, 54);
+            this.button1.Size = new System.Drawing.Size(140, 44);
             this.button1.TabIndex = 0;
             this.button1.Text = "Profile";
             this.button1.UseVisualStyleBackColor = false;
@@ -123,33 +125,34 @@
             // 
             // milieu
             // 
-            this.milieu.Location = new System.Drawing.Point(203, 100);
-            this.milieu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.milieu.Location = new System.Drawing.Point(152, 81);
+            this.milieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.milieu.Name = "milieu";
-            this.milieu.Size = new System.Drawing.Size(595, 348);
+            this.milieu.Size = new System.Drawing.Size(446, 283);
             this.milieu.TabIndex = 3;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Firebrick;
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(601, 11);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Location = new System.Drawing.Point(451, 9);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(187, 54);
+            this.button5.Size = new System.Drawing.Size(140, 44);
             this.button5.TabIndex = 7;
             this.button5.Text = "Se Deconnecter";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // ens_acceuil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.milieu);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ens_acceuil";
             this.Text = "ens_acceuil";
             this.Load += new System.EventHandler(this.ens_acceuil_Load);

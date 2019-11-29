@@ -61,6 +61,7 @@ namespace gestion_emploi_du_temps
             SqlDataReader dr1 = cmd1.ExecuteReader();
             DataTable dt1 = new DataTable();
             dt1.Load(dr1);
+            
             filierebox.DataSource = dt1;
             filierebox.ValueMember = "id_filiere";
             filierebox.DisplayMember = "nom_filiere";
@@ -176,6 +177,11 @@ namespace gestion_emploi_du_temps
         }
 
         private void nombox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void filierebox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
