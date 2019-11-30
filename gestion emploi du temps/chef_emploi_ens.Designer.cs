@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(chef_emploi_ens));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.semestrebox = new System.Windows.Forms.ComboBox();
@@ -234,6 +235,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel84.SuspendLayout();
             this.panel48.SuspendLayout();
             this.panel87.SuspendLayout();
@@ -275,30 +278,33 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(579, 58);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(605, 66);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 17);
+            this.label2.Size = new System.Drawing.Size(89, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Semestre";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(275, 58);
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(295, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 17);
+            this.label1.Size = new System.Drawing.Size(104, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Enseignant";
             // 
             // semestrebox
             // 
             this.semestrebox.FormattingEnabled = true;
-            this.semestrebox.Location = new System.Drawing.Point(696, 55);
+            this.semestrebox.Location = new System.Drawing.Point(721, 66);
             this.semestrebox.Name = "semestrebox";
             this.semestrebox.Size = new System.Drawing.Size(121, 24);
             this.semestrebox.TabIndex = 5;
@@ -307,7 +313,7 @@
             // ensbox
             // 
             this.ensbox.FormattingEnabled = true;
-            this.ensbox.Location = new System.Drawing.Point(391, 55);
+            this.ensbox.Location = new System.Drawing.Point(414, 68);
             this.ensbox.Name = "ensbox";
             this.ensbox.Size = new System.Drawing.Size(121, 24);
             this.ensbox.TabIndex = 4;
@@ -1995,8 +2001,10 @@
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel11.BackColor = System.Drawing.Color.Black;
             this.panel11.Controls.Add(this.label17);
+            this.panel11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(960, 108);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(157, 41);
@@ -2005,16 +2013,18 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(20, 19);
+            this.label17.Location = new System.Drawing.Point(19, 8);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(73, 17);
+            this.label17.Size = new System.Drawing.Size(111, 27);
             this.label17.TabIndex = 3;
             this.label17.Text = "17.30 - 19";
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel10.BackColor = System.Drawing.Color.Black;
             this.panel10.Controls.Add(this.label16);
+            this.panel10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel10.ForeColor = System.Drawing.Color.White;
             this.panel10.Location = new System.Drawing.Point(797, 108);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(157, 41);
@@ -2023,16 +2033,18 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(24, 19);
+            this.label16.Location = new System.Drawing.Point(3, 8);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 17);
+            this.label16.Size = new System.Drawing.Size(141, 27);
             this.label16.TabIndex = 2;
             this.label16.Text = "15.45 - 17.15";
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel9.BackColor = System.Drawing.Color.Black;
             this.panel9.Controls.Add(this.label14);
+            this.panel9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel9.ForeColor = System.Drawing.Color.White;
             this.panel9.Location = new System.Drawing.Point(634, 108);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(157, 41);
@@ -2041,16 +2053,18 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(33, 19);
+            this.label14.Location = new System.Drawing.Point(19, 8);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 17);
+            this.label14.Size = new System.Drawing.Size(111, 27);
             this.label14.TabIndex = 1;
             this.label14.Text = "14 - 15.30";
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel8.BackColor = System.Drawing.Color.Black;
             this.panel8.Controls.Add(this.label15);
+            this.panel8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(471, 108);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(157, 41);
@@ -2059,16 +2073,18 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(38, 18);
+            this.label15.Location = new System.Drawing.Point(21, 8);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(73, 17);
+            this.label15.Size = new System.Drawing.Size(111, 27);
             this.label15.TabIndex = 2;
             this.label15.Text = "11.30 - 13";
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.label13);
+            this.panel7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel7.ForeColor = System.Drawing.Color.White;
             this.panel7.Location = new System.Drawing.Point(309, 108);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(157, 41);
@@ -2077,16 +2093,18 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(26, 19);
+            this.label13.Location = new System.Drawing.Point(13, 8);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 17);
+            this.label13.Size = new System.Drawing.Size(129, 27);
             this.label13.TabIndex = 1;
             this.label13.Text = "9.45 - 11.15";
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Controls.Add(this.label12);
+            this.panel6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(146, 108);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(157, 41);
@@ -2095,16 +2113,18 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(33, 19);
+            this.label12.Location = new System.Drawing.Point(31, 8);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(57, 17);
+            this.label12.Size = new System.Drawing.Size(87, 27);
             this.label12.TabIndex = 0;
             this.label12.Text = "8 - 9.30";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label19);
+            this.panel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(10, 238);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(130, 82);
@@ -2113,16 +2133,18 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(31, 18);
+            this.label19.Location = new System.Drawing.Point(27, 27);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(43, 17);
+            this.label19.Size = new System.Drawing.Size(72, 27);
             this.label19.TabIndex = 2;
             this.label19.Text = "Mardi";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.label20);
+            this.panel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(10, 326);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(130, 82);
@@ -2131,16 +2153,18 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(31, 18);
+            this.label20.Location = new System.Drawing.Point(13, 25);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(63, 17);
+            this.label20.Size = new System.Drawing.Size(102, 27);
             this.label20.TabIndex = 3;
             this.label20.Text = "Mercredi";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Controls.Add(this.label21);
+            this.panel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(10, 414);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(130, 82);
@@ -2149,16 +2173,18 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(27, 17);
+            this.label21.Location = new System.Drawing.Point(31, 25);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(42, 17);
+            this.label21.Size = new System.Drawing.Size(65, 27);
             this.label21.TabIndex = 4;
             this.label21.Text = "Jeudi";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.label22);
+            this.panel5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(10, 502);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(130, 82);
@@ -2167,16 +2193,18 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(27, 15);
+            this.label22.Location = new System.Drawing.Point(12, 25);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(65, 17);
+            this.label22.Size = new System.Drawing.Size(103, 27);
             this.label22.TabIndex = 5;
             this.label22.Text = "Vendredi";
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label18);
+            this.panel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(10, 150);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(130, 82);
@@ -2185,17 +2213,44 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(31, 18);
+            this.label18.Location = new System.Drawing.Point(31, 27);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(43, 17);
+            this.label18.Size = new System.Drawing.Size(68, 27);
             this.label18.TabIndex = 1;
             this.label18.Text = "Lundi";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(309, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(552, 42);
+            this.label4.TabIndex = 108;
+            this.label4.Text = "Emplois Du Temps Des Enseignants";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 66);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 109;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // chef_emploi_ens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1131, 603);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel84);
             this.Controls.Add(this.panel48);
             this.Controls.Add(this.panel87);
@@ -2326,6 +2381,7 @@
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2539,5 +2595,7 @@
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

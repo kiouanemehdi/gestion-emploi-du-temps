@@ -17,6 +17,9 @@ namespace gestion_emploi_du_temps
         public AdminLogin()
         {
             InitializeComponent();
+            textBox1.BackColor=Color.AliceBlue;
+            textBox2.BackColor = Color.AliceBlue;
+            //pictureBox3. = Color.FromArgb(55, 77, 123);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

@@ -16,6 +16,8 @@ namespace gestion_emploi_du_temps
         public ChefLogincs()
         {
             InitializeComponent();
+            textBox1.BackColor = Color.AliceBlue;
+            textBox2.BackColor = Color.AliceBlue;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

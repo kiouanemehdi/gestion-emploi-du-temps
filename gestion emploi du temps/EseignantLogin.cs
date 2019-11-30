@@ -16,6 +16,8 @@ namespace gestion_emploi_du_temps
         public EseignantLogin()
         {
             InitializeComponent();
+            textBox1.BackColor = Color.AliceBlue;
+            textBox2.BackColor = Color.AliceBlue;
         }
 
         private void label3_Click(object sender, EventArgs e)

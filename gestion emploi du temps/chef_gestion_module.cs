@@ -31,6 +31,7 @@ namespace gestion_emploi_du_temps
         private void chef_gestion_module_Load(object sender, EventArgs e)
         {
             remplir();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,7 +40,7 @@ namespace gestion_emploi_du_temps
             moduleN = textBox1.Text;
             semestre = comboBox1.Text;
             int filiere = chef_acceueil.getfilere();
-            requete = "insert into Module values('"+moduleN+"','"+semestre+ "','" + filiere + "')";
+            requete = "insert into Module values('"+moduleN+"','" + filiere + "','"+semestre+ "')";
             SqlCommand cmd = new SqlCommand(requete,conn.conn);//conn.conn.Open();
             cmd.ExecuteNonQuery();
         }
@@ -62,7 +63,8 @@ namespace gestion_emploi_du_temps
         }
         private void refreshGrid()
         {
-            sqlAdapter = new SqlDataAdapter("select  id_module,nom_module,id_semestre from Module;", conn.conn);
+            int filiere = chef_acceueil.getfilere();
+            sqlAdapter = new SqlDataAdapter("select  id_module,nom_module,id_semestre from Module where id_filiere="+ filiere, conn.conn);
             sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
             dataset = new DataSet();

@@ -97,7 +97,7 @@ namespace gestion_emploi_du_temps
 
         private void admin_acceuil_Load(object sender, EventArgs e)
         {
-            
+            label1.Text = nom+" "+prenom;
             admin_profile ap = new admin_profile(this, prenom, nom, username, email, portable);
             afficher_milieu(ap);
            // ap.Dock = DockStyle.Fill;
@@ -133,14 +133,21 @@ namespace gestion_emploi_du_temps
 
         private void button5_Click(object sender, EventArgs e)
         {
-            LoginAcceuill login = new LoginAcceuill();
+            /*LoginAcceuill login = new LoginAcceuill();
             login.Show();
-            this.Close();
+            this.Close();*/
         }
 
         private void milieu_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            LoginAcceuill login = new LoginAcceuill();
+            login.Show();
+            this.Close();
         }
     }
 }

@@ -22,27 +22,12 @@ namespace gestion_emploi_du_temps
         {
             conn = new connection();
             conn.conn.Open();
-            InitializeComponent();
-            sqlAdapter = new SqlDataAdapter("SELECT id_element as IdlElement,nom_element as Nom,M.nom_module as ModuleId,email as email,es.nom_enseignant as EnseignantId FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=m.id_module", conn.conn);
-            sqlCommand = new SqlCommandBuilder(sqlAdapter);
-
-            dataset = new DataSet();
-            sqlAdapter.Fill(dataset, "Element");
-            dataGridView1.DataSource = null;
-            dataGridView1.DataSource = dataset.Tables["Element"];
-
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-
-            {
-                DataGridViewLinkCell linkCell = new DataGridViewLinkCell();
-                dataGridView1[0, i] = linkCell;
-            }
-
         }
 
         private void chef_gestion_element_Load(object sender, EventArgs e)
         {
             remplir();
+            refreshGrid();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -142,7 +127,8 @@ namespace gestion_emploi_du_temps
         }
         private void refreshGrid()
         {
-            sqlAdapter = new SqlDataAdapter("SELECT id_element as IdlElement,nom_element as Nom,M.nom_module as ModuleId,email as email,es.nom_enseignant as EnseignantId FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=m.id_module", conn.conn);
+            int filiere = chef_acceueil.getfilere();
+            sqlAdapter = new SqlDataAdapter("SELECT id_element as IdlElement,nom_element as Nom,M.nom_module as ModuleId,email as email,es.nom_enseignant as EnseignantId FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=m.id_module where id_filiere=" + filiere, conn.conn);
             sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
             dataset = new DataSet();

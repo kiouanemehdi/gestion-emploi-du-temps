@@ -62,7 +62,7 @@ namespace gestion_emploi_du_temps
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void eseignantLogin1_Load(object sender, EventArgs e)
