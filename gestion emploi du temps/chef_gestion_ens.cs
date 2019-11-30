@@ -167,6 +167,16 @@ namespace gestion_emploi_du_temps
             emailbox.Text = selectedRow.Cells[5].Value.ToString();
             telebox.Text = selectedRow.Cells[6].Value.ToString();
         }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         //bare de recherche
         /*private void recherchebox_TextChanged(object sender, EventArgs e)
         {

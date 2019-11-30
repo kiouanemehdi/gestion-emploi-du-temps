@@ -18,6 +18,7 @@ namespace gestion_emploi_du_temps
             InitializeComponent();
             textBox1.BackColor = Color.AliceBlue;
             textBox2.BackColor = Color.AliceBlue;
+            textBox2.PasswordChar = '*';
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -44,8 +45,9 @@ namespace gestion_emploi_du_temps
                 if (i !=0 )
 
                 {
-                    
-                    MessageBox.Show("the users existe");
+
+                    // MessageBox.Show("the users existe");
+                    errorlabel.Text = "welcome chef departement";
 LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                     obj.Hide();
                     new chef_acceueil(i).Show();
@@ -54,7 +56,7 @@ LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                 }
                 else
                 {
-                    MessageBox.Show("the user doesn't existe");
+                       errorlabel.Text= "username ou mot de passe incorect !";
                 }
 
                 /*  cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;
@@ -75,6 +77,11 @@ LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

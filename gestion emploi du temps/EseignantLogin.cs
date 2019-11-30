@@ -18,6 +18,7 @@ namespace gestion_emploi_du_temps
             InitializeComponent();
             textBox1.BackColor = Color.AliceBlue;
             textBox2.BackColor = Color.AliceBlue;
+            textBox2.PasswordChar = '*';
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -49,7 +50,8 @@ namespace gestion_emploi_du_temps
                 if (i!=0)
 
                 {
-                    MessageBox.Show("Login suuccesse");
+                    errorlabel.Text = "welcome Enseignant";
+                    //MessageBox.Show("Login suuccesse");
 LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                     obj.Hide();
                     new ens_acceuil(i).Show();
@@ -58,7 +60,8 @@ LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                 }
                 else
                 {
-                    MessageBox.Show("the user doesn't existe");
+                   // MessageBox.Show("the user doesn't existe");
+                   errorlabel.Text= "username ou mot de passe incorect !";
                 }
 
                 /*  cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;
@@ -90,6 +93,24 @@ LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void EseignantLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+
+            // textBox1.Focus();
+           // textBox1.Select();
         }
     }
 }

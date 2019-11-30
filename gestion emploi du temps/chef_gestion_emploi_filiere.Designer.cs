@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(chef_gestion_emploi_filiere));
             this.label1 = new System.Windows.Forms.Label();
             this.jourbox = new System.Windows.Forms.ComboBox();
             this.hdbox = new System.Windows.Forms.ComboBox();
@@ -48,7 +49,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.hfbox = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -256,6 +256,7 @@
             this.panel101 = new System.Windows.Forms.Panel();
             this.idbox = new System.Windows.Forms.TextBox();
             this.label113 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -297,23 +298,25 @@
             this.vendredi9.SuspendLayout();
             this.vendredi11.SuspendLayout();
             this.vendredi8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(56, 15);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(93, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(42, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Jour";
             // 
             // jourbox
             // 
             this.jourbox.FormattingEnabled = true;
-            this.jourbox.Location = new System.Drawing.Point(130, 12);
-            this.jourbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jourbox.Location = new System.Drawing.Point(199, 12);
+            this.jourbox.Margin = new System.Windows.Forms.Padding(2);
             this.jourbox.Name = "jourbox";
             this.jourbox.Size = new System.Drawing.Size(92, 21);
             this.jourbox.TabIndex = 1;
@@ -321,8 +324,8 @@
             // hdbox
             // 
             this.hdbox.FormattingEnabled = true;
-            this.hdbox.Location = new System.Drawing.Point(130, 37);
-            this.hdbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hdbox.Location = new System.Drawing.Point(199, 37);
+            this.hdbox.Margin = new System.Windows.Forms.Padding(2);
             this.hdbox.Name = "hdbox";
             this.hdbox.Size = new System.Drawing.Size(92, 21);
             this.hdbox.TabIndex = 3;
@@ -330,18 +333,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(56, 39);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(93, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(102, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Heure Debut";
             // 
             // modulebox
             // 
             this.modulebox.FormattingEnabled = true;
-            this.modulebox.Location = new System.Drawing.Point(330, 37);
-            this.modulebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.modulebox.Location = new System.Drawing.Point(399, 37);
+            this.modulebox.Margin = new System.Windows.Forms.Padding(2);
             this.modulebox.Name = "modulebox";
             this.modulebox.Size = new System.Drawing.Size(92, 21);
             this.modulebox.TabIndex = 7;
@@ -350,10 +354,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(256, 39);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(303, 37);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 13);
+            this.label3.Size = new System.Drawing.Size(63, 18);
             this.label3.TabIndex = 6;
             this.label3.Text = "Module";
             // 
@@ -362,8 +367,8 @@
             this.sallebox.FormattingEnabled = true;
             this.sallebox.Items.AddRange(new object[] {
             "1"});
-            this.sallebox.Location = new System.Drawing.Point(330, 12);
-            this.sallebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sallebox.Location = new System.Drawing.Point(399, 12);
+            this.sallebox.Margin = new System.Windows.Forms.Padding(2);
             this.sallebox.Name = "sallebox";
             this.sallebox.Size = new System.Drawing.Size(92, 21);
             this.sallebox.TabIndex = 5;
@@ -372,18 +377,19 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(256, 15);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(303, 13);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.Size = new System.Drawing.Size(45, 18);
             this.label4.TabIndex = 4;
             this.label4.Text = "Salle";
             // 
             // groupebox
             // 
             this.groupebox.FormattingEnabled = true;
-            this.groupebox.Location = new System.Drawing.Point(528, 37);
-            this.groupebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupebox.Location = new System.Drawing.Point(597, 37);
+            this.groupebox.Margin = new System.Windows.Forms.Padding(2);
             this.groupebox.Name = "groupebox";
             this.groupebox.Size = new System.Drawing.Size(92, 21);
             this.groupebox.TabIndex = 11;
@@ -392,18 +398,19 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(454, 39);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(501, 37);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.Size = new System.Drawing.Size(64, 18);
             this.label5.TabIndex = 10;
             this.label5.Text = "Groupe";
             // 
             // semestrebox
             // 
             this.semestrebox.FormattingEnabled = true;
-            this.semestrebox.Location = new System.Drawing.Point(528, 12);
-            this.semestrebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.semestrebox.Location = new System.Drawing.Point(597, 12);
+            this.semestrebox.Margin = new System.Windows.Forms.Padding(2);
             this.semestrebox.Name = "semestrebox";
             this.semestrebox.Size = new System.Drawing.Size(92, 21);
             this.semestrebox.TabIndex = 9;
@@ -413,18 +420,19 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(454, 15);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(501, 13);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(51, 13);
+            this.label6.Size = new System.Drawing.Size(80, 18);
             this.label6.TabIndex = 8;
             this.label6.Text = "Semestre";
             // 
             // ensbox
             // 
             this.ensbox.FormattingEnabled = true;
-            this.ensbox.Location = new System.Drawing.Point(330, 88);
-            this.ensbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ensbox.Location = new System.Drawing.Point(399, 88);
+            this.ensbox.Margin = new System.Windows.Forms.Padding(2);
             this.ensbox.Name = "ensbox";
             this.ensbox.Size = new System.Drawing.Size(92, 21);
             this.ensbox.TabIndex = 15;
@@ -432,18 +440,19 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(256, 90);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(303, 88);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(60, 13);
+            this.label7.Size = new System.Drawing.Size(91, 18);
             this.label7.TabIndex = 14;
             this.label7.Text = "Enseignant";
             // 
             // elementbox
             // 
             this.elementbox.FormattingEnabled = true;
-            this.elementbox.Location = new System.Drawing.Point(330, 63);
-            this.elementbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.elementbox.Location = new System.Drawing.Point(399, 63);
+            this.elementbox.Margin = new System.Windows.Forms.Padding(2);
             this.elementbox.Name = "elementbox";
             this.elementbox.Size = new System.Drawing.Size(92, 21);
             this.elementbox.TabIndex = 13;
@@ -452,10 +461,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(256, 66);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(303, 64);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.Size = new System.Drawing.Size(69, 18);
             this.label8.TabIndex = 12;
             this.label8.Text = "Element";
             // 
@@ -466,8 +476,8 @@
             "TD",
             "TP",
             "COURS"});
-            this.typebox.Location = new System.Drawing.Point(130, 85);
-            this.typebox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.typebox.Location = new System.Drawing.Point(199, 85);
+            this.typebox.Margin = new System.Windows.Forms.Padding(2);
             this.typebox.Name = "typebox";
             this.typebox.Size = new System.Drawing.Size(92, 21);
             this.typebox.TabIndex = 19;
@@ -475,18 +485,19 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(56, 88);
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(93, 88);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.Size = new System.Drawing.Size(44, 18);
             this.label9.TabIndex = 18;
             this.label9.Text = "Type";
             // 
             // hfbox
             // 
             this.hfbox.FormattingEnabled = true;
-            this.hfbox.Location = new System.Drawing.Point(130, 61);
-            this.hfbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hfbox.Location = new System.Drawing.Point(199, 61);
+            this.hfbox.Margin = new System.Windows.Forms.Padding(2);
             this.hfbox.Name = "hfbox";
             this.hfbox.Size = new System.Drawing.Size(92, 21);
             this.hfbox.TabIndex = 17;
@@ -494,64 +505,65 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(56, 63);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(93, 63);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 13);
+            this.label10.Size = new System.Drawing.Size(81, 18);
             this.label10.TabIndex = 16;
             this.label10.Text = "Heure Fin";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(776, 6);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(66, 23);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Retour";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(650, 39);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.BackColor = System.Drawing.Color.Black;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(735, 46);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(66, 23);
+            this.button4.Size = new System.Drawing.Size(104, 35);
             this.button4.TabIndex = 22;
             this.button4.Text = "Modifier";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(650, 66);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(735, 82);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 23);
+            this.button2.Size = new System.Drawing.Size(104, 35);
             this.button2.TabIndex = 21;
             this.button2.Text = "Supprimer";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(650, 10);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(735, 8);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 23);
+            this.button1.Size = new System.Drawing.Size(104, 35);
             this.button1.TabIndex = 20;
             this.button1.Text = "Ajouter";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label18);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.ForeColor = System.Drawing.Color.White;
             this.panel1.Location = new System.Drawing.Point(10, 158);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(98, 67);
             this.panel1.TabIndex = 25;
@@ -559,19 +571,21 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(23, 15);
+            this.label18.Location = new System.Drawing.Point(20, 23);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(33, 13);
+            this.label18.Size = new System.Drawing.Size(48, 18);
             this.label18.TabIndex = 1;
             this.label18.Text = "Lundi";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label19);
+            this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(10, 230);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(98, 67);
             this.panel2.TabIndex = 26;
@@ -582,16 +596,18 @@
             this.label19.Location = new System.Drawing.Point(23, 15);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(33, 13);
+            this.label19.Size = new System.Drawing.Size(50, 18);
             this.label19.TabIndex = 2;
             this.label19.Text = "Mardi";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.label20);
+            this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.ForeColor = System.Drawing.Color.White;
             this.panel3.Location = new System.Drawing.Point(10, 301);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(98, 67);
             this.panel3.TabIndex = 26;
@@ -599,19 +615,21 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(23, 15);
+            this.label20.Location = new System.Drawing.Point(19, 21);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(48, 13);
+            this.label20.Size = new System.Drawing.Size(74, 18);
             this.label20.TabIndex = 3;
             this.label20.Text = "Mercredi";
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Controls.Add(this.label21);
+            this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.ForeColor = System.Drawing.Color.White;
             this.panel4.Location = new System.Drawing.Point(10, 373);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(98, 67);
             this.panel4.TabIndex = 26;
@@ -622,16 +640,18 @@
             this.label21.Location = new System.Drawing.Point(20, 14);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(32, 13);
+            this.label21.Size = new System.Drawing.Size(48, 18);
             this.label21.TabIndex = 4;
             this.label21.Text = "Jeudi";
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.label22);
+            this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(10, 444);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(98, 67);
             this.panel5.TabIndex = 26;
@@ -642,16 +662,18 @@
             this.label22.Location = new System.Drawing.Point(20, 12);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(49, 13);
+            this.label22.Size = new System.Drawing.Size(73, 18);
             this.label22.TabIndex = 5;
             this.label22.Text = "Vendredi";
             // 
             // panel6
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Controls.Add(this.label12);
+            this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel6.ForeColor = System.Drawing.Color.White;
             this.panel6.Location = new System.Drawing.Point(112, 124);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(118, 33);
             this.panel6.TabIndex = 26;
@@ -659,19 +681,24 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(25, 15);
+            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(18, 14);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 13);
+            this.label12.Size = new System.Drawing.Size(65, 18);
             this.label12.TabIndex = 0;
             this.label12.Text = "8 - 9.30";
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.label13);
+            this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel7.ForeColor = System.Drawing.Color.White;
             this.panel7.Location = new System.Drawing.Point(235, 124);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(118, 33);
             this.panel7.TabIndex = 27;
@@ -682,16 +709,18 @@
             this.label13.Location = new System.Drawing.Point(20, 15);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 13);
+            this.label13.Size = new System.Drawing.Size(97, 18);
             this.label13.TabIndex = 1;
             this.label13.Text = "9.45 - 11.15";
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel8.BackColor = System.Drawing.Color.Black;
             this.panel8.Controls.Add(this.label15);
+            this.panel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel8.ForeColor = System.Drawing.Color.White;
             this.panel8.Location = new System.Drawing.Point(356, 124);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(118, 33);
             this.panel8.TabIndex = 27;
@@ -702,16 +731,18 @@
             this.label15.Location = new System.Drawing.Point(28, 15);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 13);
+            this.label15.Size = new System.Drawing.Size(83, 18);
             this.label15.TabIndex = 2;
             this.label15.Text = "11.30 - 13";
             // 
             // panel9
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel9.BackColor = System.Drawing.Color.Black;
             this.panel9.Controls.Add(this.label14);
+            this.panel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel9.ForeColor = System.Drawing.Color.White;
             this.panel9.Location = new System.Drawing.Point(478, 124);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(118, 33);
             this.panel9.TabIndex = 27;
@@ -722,16 +753,18 @@
             this.label14.Location = new System.Drawing.Point(25, 15);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 13);
+            this.label14.Size = new System.Drawing.Size(83, 18);
             this.label14.TabIndex = 1;
             this.label14.Text = "14 - 15.30";
             // 
             // panel10
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel10.BackColor = System.Drawing.Color.Black;
             this.panel10.Controls.Add(this.label16);
+            this.panel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel10.ForeColor = System.Drawing.Color.White;
             this.panel10.Location = new System.Drawing.Point(601, 124);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(118, 33);
             this.panel10.TabIndex = 28;
@@ -742,16 +775,18 @@
             this.label16.Location = new System.Drawing.Point(18, 15);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(70, 13);
+            this.label16.Size = new System.Drawing.Size(106, 18);
             this.label16.TabIndex = 2;
             this.label16.Text = "15.45 - 17.15";
             // 
             // panel11
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel11.BackColor = System.Drawing.Color.Black;
             this.panel11.Controls.Add(this.label17);
+            this.panel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(723, 124);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(118, 33);
             this.panel11.TabIndex = 29;
@@ -762,7 +797,7 @@
             this.label17.Location = new System.Drawing.Point(15, 15);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(55, 13);
+            this.label17.Size = new System.Drawing.Size(83, 18);
             this.label17.TabIndex = 3;
             this.label17.Text = "17.30 - 19";
             // 
@@ -775,7 +810,7 @@
             this.lundi8.Controls.Add(this.panel14);
             this.lundi8.Controls.Add(this.panel13);
             this.lundi8.Location = new System.Drawing.Point(112, 158);
-            this.lundi8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lundi8.Margin = new System.Windows.Forms.Padding(2);
             this.lundi8.Name = "lundi8";
             this.lundi8.Size = new System.Drawing.Size(118, 67);
             this.lundi8.TabIndex = 30;
@@ -816,7 +851,7 @@
             // 
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Location = new System.Drawing.Point(-1, 20);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(118, 1);
             this.panel14.TabIndex = 32;
@@ -825,7 +860,7 @@
             // 
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Location = new System.Drawing.Point(1, 42);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(118, 1);
             this.panel13.TabIndex = 31;
@@ -839,7 +874,7 @@
             this.lundi9.Controls.Add(this.panel16);
             this.lundi9.Controls.Add(this.panel17);
             this.lundi9.Location = new System.Drawing.Point(235, 158);
-            this.lundi9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lundi9.Margin = new System.Windows.Forms.Padding(2);
             this.lundi9.Name = "lundi9";
             this.lundi9.Size = new System.Drawing.Size(118, 67);
             this.lundi9.TabIndex = 35;
@@ -879,7 +914,7 @@
             // 
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Location = new System.Drawing.Point(-1, 20);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(118, 1);
             this.panel16.TabIndex = 32;
@@ -888,7 +923,7 @@
             // 
             this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Location = new System.Drawing.Point(1, 42);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(118, 1);
             this.panel17.TabIndex = 31;
@@ -902,7 +937,7 @@
             this.lundi14.Controls.Add(this.panel19);
             this.lundi14.Controls.Add(this.panel20);
             this.lundi14.Location = new System.Drawing.Point(478, 158);
-            this.lundi14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lundi14.Margin = new System.Windows.Forms.Padding(2);
             this.lundi14.Name = "lundi14";
             this.lundi14.Size = new System.Drawing.Size(118, 67);
             this.lundi14.TabIndex = 37;
@@ -942,7 +977,7 @@
             // 
             this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Location = new System.Drawing.Point(-1, 20);
-            this.panel19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel19.Margin = new System.Windows.Forms.Padding(2);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(118, 1);
             this.panel19.TabIndex = 32;
@@ -951,7 +986,7 @@
             // 
             this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel20.Location = new System.Drawing.Point(1, 42);
-            this.panel20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel20.Margin = new System.Windows.Forms.Padding(2);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(118, 1);
             this.panel20.TabIndex = 31;
@@ -965,7 +1000,7 @@
             this.lundi11.Controls.Add(this.panel22);
             this.lundi11.Controls.Add(this.panel23);
             this.lundi11.Location = new System.Drawing.Point(356, 158);
-            this.lundi11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lundi11.Margin = new System.Windows.Forms.Padding(2);
             this.lundi11.Name = "lundi11";
             this.lundi11.Size = new System.Drawing.Size(118, 67);
             this.lundi11.TabIndex = 36;
@@ -1005,7 +1040,7 @@
             // 
             this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel22.Location = new System.Drawing.Point(-1, 20);
-            this.panel22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel22.Margin = new System.Windows.Forms.Padding(2);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(118, 1);
             this.panel22.TabIndex = 32;
@@ -1014,7 +1049,7 @@
             // 
             this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel23.Location = new System.Drawing.Point(1, 42);
-            this.panel23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel23.Margin = new System.Windows.Forms.Padding(2);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(118, 1);
             this.panel23.TabIndex = 31;
@@ -1028,7 +1063,7 @@
             this.lundi17.Controls.Add(this.panel25);
             this.lundi17.Controls.Add(this.panel26);
             this.lundi17.Location = new System.Drawing.Point(723, 158);
-            this.lundi17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lundi17.Margin = new System.Windows.Forms.Padding(2);
             this.lundi17.Name = "lundi17";
             this.lundi17.Size = new System.Drawing.Size(118, 67);
             this.lundi17.TabIndex = 39;
@@ -1068,7 +1103,7 @@
             // 
             this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel25.Location = new System.Drawing.Point(-1, 20);
-            this.panel25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel25.Margin = new System.Windows.Forms.Padding(2);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(118, 1);
             this.panel25.TabIndex = 32;
@@ -1077,7 +1112,7 @@
             // 
             this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel26.Location = new System.Drawing.Point(1, 42);
-            this.panel26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel26.Margin = new System.Windows.Forms.Padding(2);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(118, 1);
             this.panel26.TabIndex = 31;
@@ -1091,7 +1126,7 @@
             this.lundi15.Controls.Add(this.panel28);
             this.lundi15.Controls.Add(this.panel29);
             this.lundi15.Location = new System.Drawing.Point(601, 158);
-            this.lundi15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lundi15.Margin = new System.Windows.Forms.Padding(2);
             this.lundi15.Name = "lundi15";
             this.lundi15.Size = new System.Drawing.Size(118, 67);
             this.lundi15.TabIndex = 38;
@@ -1131,7 +1166,7 @@
             // 
             this.panel28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel28.Location = new System.Drawing.Point(-1, 20);
-            this.panel28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel28.Margin = new System.Windows.Forms.Padding(2);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(118, 1);
             this.panel28.TabIndex = 32;
@@ -1140,7 +1175,7 @@
             // 
             this.panel29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel29.Location = new System.Drawing.Point(1, 42);
-            this.panel29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel29.Margin = new System.Windows.Forms.Padding(2);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(118, 1);
             this.panel29.TabIndex = 31;
@@ -1154,7 +1189,7 @@
             this.mardi17.Controls.Add(this.panel31);
             this.mardi17.Controls.Add(this.panel32);
             this.mardi17.Location = new System.Drawing.Point(723, 230);
-            this.mardi17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mardi17.Margin = new System.Windows.Forms.Padding(2);
             this.mardi17.Name = "mardi17";
             this.mardi17.Size = new System.Drawing.Size(118, 67);
             this.mardi17.TabIndex = 45;
@@ -1193,7 +1228,7 @@
             // 
             this.panel31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel31.Location = new System.Drawing.Point(-1, 20);
-            this.panel31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel31.Margin = new System.Windows.Forms.Padding(2);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(118, 1);
             this.panel31.TabIndex = 32;
@@ -1202,7 +1237,7 @@
             // 
             this.panel32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel32.Location = new System.Drawing.Point(1, 42);
-            this.panel32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel32.Margin = new System.Windows.Forms.Padding(2);
             this.panel32.Name = "panel32";
             this.panel32.Size = new System.Drawing.Size(118, 1);
             this.panel32.TabIndex = 31;
@@ -1216,7 +1251,7 @@
             this.mardi15.Controls.Add(this.panel34);
             this.mardi15.Controls.Add(this.panel35);
             this.mardi15.Location = new System.Drawing.Point(601, 230);
-            this.mardi15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mardi15.Margin = new System.Windows.Forms.Padding(2);
             this.mardi15.Name = "mardi15";
             this.mardi15.Size = new System.Drawing.Size(118, 67);
             this.mardi15.TabIndex = 44;
@@ -1255,7 +1290,7 @@
             // 
             this.panel34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel34.Location = new System.Drawing.Point(-1, 20);
-            this.panel34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel34.Margin = new System.Windows.Forms.Padding(2);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(118, 1);
             this.panel34.TabIndex = 32;
@@ -1264,7 +1299,7 @@
             // 
             this.panel35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel35.Location = new System.Drawing.Point(1, 42);
-            this.panel35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel35.Margin = new System.Windows.Forms.Padding(2);
             this.panel35.Name = "panel35";
             this.panel35.Size = new System.Drawing.Size(118, 1);
             this.panel35.TabIndex = 31;
@@ -1278,7 +1313,7 @@
             this.mardi14.Controls.Add(this.panel37);
             this.mardi14.Controls.Add(this.panel38);
             this.mardi14.Location = new System.Drawing.Point(478, 230);
-            this.mardi14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mardi14.Margin = new System.Windows.Forms.Padding(2);
             this.mardi14.Name = "mardi14";
             this.mardi14.Size = new System.Drawing.Size(118, 67);
             this.mardi14.TabIndex = 43;
@@ -1317,7 +1352,7 @@
             // 
             this.panel37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel37.Location = new System.Drawing.Point(-1, 20);
-            this.panel37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel37.Margin = new System.Windows.Forms.Padding(2);
             this.panel37.Name = "panel37";
             this.panel37.Size = new System.Drawing.Size(118, 1);
             this.panel37.TabIndex = 32;
@@ -1326,7 +1361,7 @@
             // 
             this.panel38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel38.Location = new System.Drawing.Point(1, 42);
-            this.panel38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel38.Margin = new System.Windows.Forms.Padding(2);
             this.panel38.Name = "panel38";
             this.panel38.Size = new System.Drawing.Size(118, 1);
             this.panel38.TabIndex = 31;
@@ -1340,7 +1375,7 @@
             this.mardi9.Controls.Add(this.panel40);
             this.mardi9.Controls.Add(this.panel41);
             this.mardi9.Location = new System.Drawing.Point(235, 230);
-            this.mardi9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mardi9.Margin = new System.Windows.Forms.Padding(2);
             this.mardi9.Name = "mardi9";
             this.mardi9.Size = new System.Drawing.Size(118, 67);
             this.mardi9.TabIndex = 41;
@@ -1379,7 +1414,7 @@
             // 
             this.panel40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel40.Location = new System.Drawing.Point(-1, 20);
-            this.panel40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel40.Margin = new System.Windows.Forms.Padding(2);
             this.panel40.Name = "panel40";
             this.panel40.Size = new System.Drawing.Size(118, 1);
             this.panel40.TabIndex = 32;
@@ -1388,7 +1423,7 @@
             // 
             this.panel41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel41.Location = new System.Drawing.Point(1, 42);
-            this.panel41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel41.Margin = new System.Windows.Forms.Padding(2);
             this.panel41.Name = "panel41";
             this.panel41.Size = new System.Drawing.Size(118, 1);
             this.panel41.TabIndex = 31;
@@ -1402,7 +1437,7 @@
             this.mardi11.Controls.Add(this.panel43);
             this.mardi11.Controls.Add(this.panel44);
             this.mardi11.Location = new System.Drawing.Point(356, 230);
-            this.mardi11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mardi11.Margin = new System.Windows.Forms.Padding(2);
             this.mardi11.Name = "mardi11";
             this.mardi11.Size = new System.Drawing.Size(118, 67);
             this.mardi11.TabIndex = 42;
@@ -1441,7 +1476,7 @@
             // 
             this.panel43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel43.Location = new System.Drawing.Point(-1, 20);
-            this.panel43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel43.Margin = new System.Windows.Forms.Padding(2);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(118, 1);
             this.panel43.TabIndex = 32;
@@ -1450,7 +1485,7 @@
             // 
             this.panel44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel44.Location = new System.Drawing.Point(1, 42);
-            this.panel44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel44.Margin = new System.Windows.Forms.Padding(2);
             this.panel44.Name = "panel44";
             this.panel44.Size = new System.Drawing.Size(118, 1);
             this.panel44.TabIndex = 31;
@@ -1464,7 +1499,7 @@
             this.mardi8.Controls.Add(this.panel46);
             this.mardi8.Controls.Add(this.panel47);
             this.mardi8.Location = new System.Drawing.Point(112, 230);
-            this.mardi8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mardi8.Margin = new System.Windows.Forms.Padding(2);
             this.mardi8.Name = "mardi8";
             this.mardi8.Size = new System.Drawing.Size(118, 67);
             this.mardi8.TabIndex = 40;
@@ -1503,7 +1538,7 @@
             // 
             this.panel46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel46.Location = new System.Drawing.Point(-1, 20);
-            this.panel46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel46.Margin = new System.Windows.Forms.Padding(2);
             this.panel46.Name = "panel46";
             this.panel46.Size = new System.Drawing.Size(118, 1);
             this.panel46.TabIndex = 32;
@@ -1512,7 +1547,7 @@
             // 
             this.panel47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel47.Location = new System.Drawing.Point(1, 42);
-            this.panel47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel47.Margin = new System.Windows.Forms.Padding(2);
             this.panel47.Name = "panel47";
             this.panel47.Size = new System.Drawing.Size(118, 1);
             this.panel47.TabIndex = 31;
@@ -1526,7 +1561,7 @@
             this.jeudi17.Controls.Add(this.panel49);
             this.jeudi17.Controls.Add(this.panel50);
             this.jeudi17.Location = new System.Drawing.Point(723, 373);
-            this.jeudi17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jeudi17.Margin = new System.Windows.Forms.Padding(2);
             this.jeudi17.Name = "jeudi17";
             this.jeudi17.Size = new System.Drawing.Size(118, 67);
             this.jeudi17.TabIndex = 57;
@@ -1565,7 +1600,7 @@
             // 
             this.panel49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel49.Location = new System.Drawing.Point(-1, 20);
-            this.panel49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel49.Margin = new System.Windows.Forms.Padding(2);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(118, 1);
             this.panel49.TabIndex = 32;
@@ -1574,7 +1609,7 @@
             // 
             this.panel50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel50.Location = new System.Drawing.Point(1, 42);
-            this.panel50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel50.Margin = new System.Windows.Forms.Padding(2);
             this.panel50.Name = "panel50";
             this.panel50.Size = new System.Drawing.Size(118, 1);
             this.panel50.TabIndex = 31;
@@ -1588,7 +1623,7 @@
             this.mercredi17.Controls.Add(this.panel52);
             this.mercredi17.Controls.Add(this.panel53);
             this.mercredi17.Location = new System.Drawing.Point(723, 301);
-            this.mercredi17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mercredi17.Margin = new System.Windows.Forms.Padding(2);
             this.mercredi17.Name = "mercredi17";
             this.mercredi17.Size = new System.Drawing.Size(118, 67);
             this.mercredi17.TabIndex = 51;
@@ -1627,7 +1662,7 @@
             // 
             this.panel52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel52.Location = new System.Drawing.Point(-1, 20);
-            this.panel52.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel52.Margin = new System.Windows.Forms.Padding(2);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(118, 1);
             this.panel52.TabIndex = 32;
@@ -1636,7 +1671,7 @@
             // 
             this.panel53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel53.Location = new System.Drawing.Point(1, 42);
-            this.panel53.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel53.Margin = new System.Windows.Forms.Padding(2);
             this.panel53.Name = "panel53";
             this.panel53.Size = new System.Drawing.Size(118, 1);
             this.panel53.TabIndex = 31;
@@ -1650,7 +1685,7 @@
             this.jeudi15.Controls.Add(this.panel55);
             this.jeudi15.Controls.Add(this.panel56);
             this.jeudi15.Location = new System.Drawing.Point(601, 373);
-            this.jeudi15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jeudi15.Margin = new System.Windows.Forms.Padding(2);
             this.jeudi15.Name = "jeudi15";
             this.jeudi15.Size = new System.Drawing.Size(118, 67);
             this.jeudi15.TabIndex = 56;
@@ -1689,7 +1724,7 @@
             // 
             this.panel55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel55.Location = new System.Drawing.Point(-1, 20);
-            this.panel55.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel55.Margin = new System.Windows.Forms.Padding(2);
             this.panel55.Name = "panel55";
             this.panel55.Size = new System.Drawing.Size(118, 1);
             this.panel55.TabIndex = 32;
@@ -1698,7 +1733,7 @@
             // 
             this.panel56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel56.Location = new System.Drawing.Point(1, 42);
-            this.panel56.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel56.Margin = new System.Windows.Forms.Padding(2);
             this.panel56.Name = "panel56";
             this.panel56.Size = new System.Drawing.Size(118, 1);
             this.panel56.TabIndex = 31;
@@ -1712,7 +1747,7 @@
             this.mercredi15.Controls.Add(this.panel58);
             this.mercredi15.Controls.Add(this.panel59);
             this.mercredi15.Location = new System.Drawing.Point(601, 301);
-            this.mercredi15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mercredi15.Margin = new System.Windows.Forms.Padding(2);
             this.mercredi15.Name = "mercredi15";
             this.mercredi15.Size = new System.Drawing.Size(118, 67);
             this.mercredi15.TabIndex = 50;
@@ -1751,7 +1786,7 @@
             // 
             this.panel58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel58.Location = new System.Drawing.Point(-1, 20);
-            this.panel58.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel58.Margin = new System.Windows.Forms.Padding(2);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(118, 1);
             this.panel58.TabIndex = 32;
@@ -1760,7 +1795,7 @@
             // 
             this.panel59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel59.Location = new System.Drawing.Point(1, 42);
-            this.panel59.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel59.Margin = new System.Windows.Forms.Padding(2);
             this.panel59.Name = "panel59";
             this.panel59.Size = new System.Drawing.Size(118, 1);
             this.panel59.TabIndex = 31;
@@ -1774,7 +1809,7 @@
             this.jeudi14.Controls.Add(this.panel61);
             this.jeudi14.Controls.Add(this.panel62);
             this.jeudi14.Location = new System.Drawing.Point(478, 373);
-            this.jeudi14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jeudi14.Margin = new System.Windows.Forms.Padding(2);
             this.jeudi14.Name = "jeudi14";
             this.jeudi14.Size = new System.Drawing.Size(118, 67);
             this.jeudi14.TabIndex = 55;
@@ -1813,7 +1848,7 @@
             // 
             this.panel61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel61.Location = new System.Drawing.Point(-1, 20);
-            this.panel61.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel61.Margin = new System.Windows.Forms.Padding(2);
             this.panel61.Name = "panel61";
             this.panel61.Size = new System.Drawing.Size(118, 1);
             this.panel61.TabIndex = 32;
@@ -1822,7 +1857,7 @@
             // 
             this.panel62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel62.Location = new System.Drawing.Point(1, 42);
-            this.panel62.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel62.Margin = new System.Windows.Forms.Padding(2);
             this.panel62.Name = "panel62";
             this.panel62.Size = new System.Drawing.Size(118, 1);
             this.panel62.TabIndex = 31;
@@ -1836,7 +1871,7 @@
             this.mercredi14.Controls.Add(this.panel64);
             this.mercredi14.Controls.Add(this.panel65);
             this.mercredi14.Location = new System.Drawing.Point(478, 301);
-            this.mercredi14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mercredi14.Margin = new System.Windows.Forms.Padding(2);
             this.mercredi14.Name = "mercredi14";
             this.mercredi14.Size = new System.Drawing.Size(118, 67);
             this.mercredi14.TabIndex = 49;
@@ -1875,7 +1910,7 @@
             // 
             this.panel64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel64.Location = new System.Drawing.Point(-1, 20);
-            this.panel64.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel64.Margin = new System.Windows.Forms.Padding(2);
             this.panel64.Name = "panel64";
             this.panel64.Size = new System.Drawing.Size(118, 1);
             this.panel64.TabIndex = 32;
@@ -1884,7 +1919,7 @@
             // 
             this.panel65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel65.Location = new System.Drawing.Point(1, 42);
-            this.panel65.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel65.Margin = new System.Windows.Forms.Padding(2);
             this.panel65.Name = "panel65";
             this.panel65.Size = new System.Drawing.Size(118, 1);
             this.panel65.TabIndex = 31;
@@ -1898,7 +1933,7 @@
             this.jeudi9.Controls.Add(this.panel67);
             this.jeudi9.Controls.Add(this.panel68);
             this.jeudi9.Location = new System.Drawing.Point(235, 373);
-            this.jeudi9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jeudi9.Margin = new System.Windows.Forms.Padding(2);
             this.jeudi9.Name = "jeudi9";
             this.jeudi9.Size = new System.Drawing.Size(118, 67);
             this.jeudi9.TabIndex = 53;
@@ -1937,7 +1972,7 @@
             // 
             this.panel67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel67.Location = new System.Drawing.Point(-1, 20);
-            this.panel67.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel67.Margin = new System.Windows.Forms.Padding(2);
             this.panel67.Name = "panel67";
             this.panel67.Size = new System.Drawing.Size(118, 1);
             this.panel67.TabIndex = 32;
@@ -1946,7 +1981,7 @@
             // 
             this.panel68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel68.Location = new System.Drawing.Point(1, 42);
-            this.panel68.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel68.Margin = new System.Windows.Forms.Padding(2);
             this.panel68.Name = "panel68";
             this.panel68.Size = new System.Drawing.Size(118, 1);
             this.panel68.TabIndex = 31;
@@ -1960,7 +1995,7 @@
             this.mercredi9.Controls.Add(this.panel70);
             this.mercredi9.Controls.Add(this.panel71);
             this.mercredi9.Location = new System.Drawing.Point(235, 301);
-            this.mercredi9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mercredi9.Margin = new System.Windows.Forms.Padding(2);
             this.mercredi9.Name = "mercredi9";
             this.mercredi9.Size = new System.Drawing.Size(118, 67);
             this.mercredi9.TabIndex = 47;
@@ -1999,7 +2034,7 @@
             // 
             this.panel70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel70.Location = new System.Drawing.Point(-1, 20);
-            this.panel70.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel70.Margin = new System.Windows.Forms.Padding(2);
             this.panel70.Name = "panel70";
             this.panel70.Size = new System.Drawing.Size(118, 1);
             this.panel70.TabIndex = 32;
@@ -2008,7 +2043,7 @@
             // 
             this.panel71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel71.Location = new System.Drawing.Point(1, 42);
-            this.panel71.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel71.Margin = new System.Windows.Forms.Padding(2);
             this.panel71.Name = "panel71";
             this.panel71.Size = new System.Drawing.Size(118, 1);
             this.panel71.TabIndex = 31;
@@ -2022,7 +2057,7 @@
             this.jeudi11.Controls.Add(this.panel73);
             this.jeudi11.Controls.Add(this.panel74);
             this.jeudi11.Location = new System.Drawing.Point(356, 373);
-            this.jeudi11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jeudi11.Margin = new System.Windows.Forms.Padding(2);
             this.jeudi11.Name = "jeudi11";
             this.jeudi11.Size = new System.Drawing.Size(118, 67);
             this.jeudi11.TabIndex = 54;
@@ -2061,7 +2096,7 @@
             // 
             this.panel73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel73.Location = new System.Drawing.Point(-1, 20);
-            this.panel73.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel73.Margin = new System.Windows.Forms.Padding(2);
             this.panel73.Name = "panel73";
             this.panel73.Size = new System.Drawing.Size(118, 1);
             this.panel73.TabIndex = 32;
@@ -2070,7 +2105,7 @@
             // 
             this.panel74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel74.Location = new System.Drawing.Point(1, 42);
-            this.panel74.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel74.Margin = new System.Windows.Forms.Padding(2);
             this.panel74.Name = "panel74";
             this.panel74.Size = new System.Drawing.Size(118, 1);
             this.panel74.TabIndex = 31;
@@ -2084,7 +2119,7 @@
             this.mercredi11.Controls.Add(this.panel76);
             this.mercredi11.Controls.Add(this.panel77);
             this.mercredi11.Location = new System.Drawing.Point(356, 301);
-            this.mercredi11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mercredi11.Margin = new System.Windows.Forms.Padding(2);
             this.mercredi11.Name = "mercredi11";
             this.mercredi11.Size = new System.Drawing.Size(118, 67);
             this.mercredi11.TabIndex = 48;
@@ -2123,7 +2158,7 @@
             // 
             this.panel76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel76.Location = new System.Drawing.Point(-1, 20);
-            this.panel76.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel76.Margin = new System.Windows.Forms.Padding(2);
             this.panel76.Name = "panel76";
             this.panel76.Size = new System.Drawing.Size(118, 1);
             this.panel76.TabIndex = 32;
@@ -2132,7 +2167,7 @@
             // 
             this.panel77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel77.Location = new System.Drawing.Point(1, 42);
-            this.panel77.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel77.Margin = new System.Windows.Forms.Padding(2);
             this.panel77.Name = "panel77";
             this.panel77.Size = new System.Drawing.Size(118, 1);
             this.panel77.TabIndex = 31;
@@ -2146,7 +2181,7 @@
             this.jeudi8.Controls.Add(this.panel79);
             this.jeudi8.Controls.Add(this.panel80);
             this.jeudi8.Location = new System.Drawing.Point(112, 373);
-            this.jeudi8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.jeudi8.Margin = new System.Windows.Forms.Padding(2);
             this.jeudi8.Name = "jeudi8";
             this.jeudi8.Size = new System.Drawing.Size(118, 67);
             this.jeudi8.TabIndex = 52;
@@ -2185,7 +2220,7 @@
             // 
             this.panel79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel79.Location = new System.Drawing.Point(-1, 20);
-            this.panel79.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel79.Margin = new System.Windows.Forms.Padding(2);
             this.panel79.Name = "panel79";
             this.panel79.Size = new System.Drawing.Size(118, 1);
             this.panel79.TabIndex = 32;
@@ -2194,7 +2229,7 @@
             // 
             this.panel80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel80.Location = new System.Drawing.Point(1, 42);
-            this.panel80.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel80.Margin = new System.Windows.Forms.Padding(2);
             this.panel80.Name = "panel80";
             this.panel80.Size = new System.Drawing.Size(118, 1);
             this.panel80.TabIndex = 31;
@@ -2208,7 +2243,7 @@
             this.mercredi8.Controls.Add(this.panel82);
             this.mercredi8.Controls.Add(this.panel83);
             this.mercredi8.Location = new System.Drawing.Point(112, 301);
-            this.mercredi8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mercredi8.Margin = new System.Windows.Forms.Padding(2);
             this.mercredi8.Name = "mercredi8";
             this.mercredi8.Size = new System.Drawing.Size(118, 67);
             this.mercredi8.TabIndex = 46;
@@ -2247,7 +2282,7 @@
             // 
             this.panel82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel82.Location = new System.Drawing.Point(-1, 20);
-            this.panel82.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel82.Margin = new System.Windows.Forms.Padding(2);
             this.panel82.Name = "panel82";
             this.panel82.Size = new System.Drawing.Size(118, 1);
             this.panel82.TabIndex = 32;
@@ -2256,7 +2291,7 @@
             // 
             this.panel83.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel83.Location = new System.Drawing.Point(1, 42);
-            this.panel83.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel83.Margin = new System.Windows.Forms.Padding(2);
             this.panel83.Name = "panel83";
             this.panel83.Size = new System.Drawing.Size(118, 1);
             this.panel83.TabIndex = 31;
@@ -2270,7 +2305,7 @@
             this.vendredi17.Controls.Add(this.panel85);
             this.vendredi17.Controls.Add(this.panel86);
             this.vendredi17.Location = new System.Drawing.Point(723, 444);
-            this.vendredi17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendredi17.Margin = new System.Windows.Forms.Padding(2);
             this.vendredi17.Name = "vendredi17";
             this.vendredi17.Size = new System.Drawing.Size(118, 67);
             this.vendredi17.TabIndex = 63;
@@ -2309,7 +2344,7 @@
             // 
             this.panel85.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel85.Location = new System.Drawing.Point(-1, 20);
-            this.panel85.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel85.Margin = new System.Windows.Forms.Padding(2);
             this.panel85.Name = "panel85";
             this.panel85.Size = new System.Drawing.Size(118, 1);
             this.panel85.TabIndex = 32;
@@ -2318,7 +2353,7 @@
             // 
             this.panel86.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel86.Location = new System.Drawing.Point(1, 42);
-            this.panel86.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel86.Margin = new System.Windows.Forms.Padding(2);
             this.panel86.Name = "panel86";
             this.panel86.Size = new System.Drawing.Size(118, 1);
             this.panel86.TabIndex = 31;
@@ -2332,7 +2367,7 @@
             this.vendredi15.Controls.Add(this.panel88);
             this.vendredi15.Controls.Add(this.panel89);
             this.vendredi15.Location = new System.Drawing.Point(601, 444);
-            this.vendredi15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendredi15.Margin = new System.Windows.Forms.Padding(2);
             this.vendredi15.Name = "vendredi15";
             this.vendredi15.Size = new System.Drawing.Size(118, 67);
             this.vendredi15.TabIndex = 62;
@@ -2371,7 +2406,7 @@
             // 
             this.panel88.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel88.Location = new System.Drawing.Point(-1, 20);
-            this.panel88.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel88.Margin = new System.Windows.Forms.Padding(2);
             this.panel88.Name = "panel88";
             this.panel88.Size = new System.Drawing.Size(118, 1);
             this.panel88.TabIndex = 32;
@@ -2380,7 +2415,7 @@
             // 
             this.panel89.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel89.Location = new System.Drawing.Point(1, 42);
-            this.panel89.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel89.Margin = new System.Windows.Forms.Padding(2);
             this.panel89.Name = "panel89";
             this.panel89.Size = new System.Drawing.Size(118, 1);
             this.panel89.TabIndex = 31;
@@ -2394,7 +2429,7 @@
             this.vendredi14.Controls.Add(this.panel91);
             this.vendredi14.Controls.Add(this.panel92);
             this.vendredi14.Location = new System.Drawing.Point(478, 444);
-            this.vendredi14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendredi14.Margin = new System.Windows.Forms.Padding(2);
             this.vendredi14.Name = "vendredi14";
             this.vendredi14.Size = new System.Drawing.Size(118, 67);
             this.vendredi14.TabIndex = 61;
@@ -2433,7 +2468,7 @@
             // 
             this.panel91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel91.Location = new System.Drawing.Point(-1, 20);
-            this.panel91.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel91.Margin = new System.Windows.Forms.Padding(2);
             this.panel91.Name = "panel91";
             this.panel91.Size = new System.Drawing.Size(118, 1);
             this.panel91.TabIndex = 32;
@@ -2442,7 +2477,7 @@
             // 
             this.panel92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel92.Location = new System.Drawing.Point(1, 42);
-            this.panel92.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel92.Margin = new System.Windows.Forms.Padding(2);
             this.panel92.Name = "panel92";
             this.panel92.Size = new System.Drawing.Size(118, 1);
             this.panel92.TabIndex = 31;
@@ -2456,7 +2491,7 @@
             this.vendredi9.Controls.Add(this.panel94);
             this.vendredi9.Controls.Add(this.panel95);
             this.vendredi9.Location = new System.Drawing.Point(235, 444);
-            this.vendredi9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendredi9.Margin = new System.Windows.Forms.Padding(2);
             this.vendredi9.Name = "vendredi9";
             this.vendredi9.Size = new System.Drawing.Size(118, 67);
             this.vendredi9.TabIndex = 59;
@@ -2495,7 +2530,7 @@
             // 
             this.panel94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel94.Location = new System.Drawing.Point(-1, 20);
-            this.panel94.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel94.Margin = new System.Windows.Forms.Padding(2);
             this.panel94.Name = "panel94";
             this.panel94.Size = new System.Drawing.Size(118, 1);
             this.panel94.TabIndex = 32;
@@ -2504,7 +2539,7 @@
             // 
             this.panel95.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel95.Location = new System.Drawing.Point(1, 42);
-            this.panel95.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel95.Margin = new System.Windows.Forms.Padding(2);
             this.panel95.Name = "panel95";
             this.panel95.Size = new System.Drawing.Size(118, 1);
             this.panel95.TabIndex = 31;
@@ -2518,7 +2553,7 @@
             this.vendredi11.Controls.Add(this.panel97);
             this.vendredi11.Controls.Add(this.panel98);
             this.vendredi11.Location = new System.Drawing.Point(356, 444);
-            this.vendredi11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendredi11.Margin = new System.Windows.Forms.Padding(2);
             this.vendredi11.Name = "vendredi11";
             this.vendredi11.Size = new System.Drawing.Size(118, 67);
             this.vendredi11.TabIndex = 60;
@@ -2557,7 +2592,7 @@
             // 
             this.panel97.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel97.Location = new System.Drawing.Point(-1, 20);
-            this.panel97.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel97.Margin = new System.Windows.Forms.Padding(2);
             this.panel97.Name = "panel97";
             this.panel97.Size = new System.Drawing.Size(118, 1);
             this.panel97.TabIndex = 32;
@@ -2566,7 +2601,7 @@
             // 
             this.panel98.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel98.Location = new System.Drawing.Point(1, 42);
-            this.panel98.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel98.Margin = new System.Windows.Forms.Padding(2);
             this.panel98.Name = "panel98";
             this.panel98.Size = new System.Drawing.Size(118, 1);
             this.panel98.TabIndex = 31;
@@ -2580,7 +2615,7 @@
             this.vendredi8.Controls.Add(this.panel100);
             this.vendredi8.Controls.Add(this.panel101);
             this.vendredi8.Location = new System.Drawing.Point(112, 444);
-            this.vendredi8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.vendredi8.Margin = new System.Windows.Forms.Padding(2);
             this.vendredi8.Name = "vendredi8";
             this.vendredi8.Size = new System.Drawing.Size(118, 67);
             this.vendredi8.TabIndex = 58;
@@ -2619,7 +2654,7 @@
             // 
             this.panel100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel100.Location = new System.Drawing.Point(-1, 20);
-            this.panel100.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel100.Margin = new System.Windows.Forms.Padding(2);
             this.panel100.Name = "panel100";
             this.panel100.Size = new System.Drawing.Size(118, 1);
             this.panel100.TabIndex = 32;
@@ -2628,15 +2663,15 @@
             // 
             this.panel101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel101.Location = new System.Drawing.Point(1, 42);
-            this.panel101.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel101.Margin = new System.Windows.Forms.Padding(2);
             this.panel101.Name = "panel101";
             this.panel101.Size = new System.Drawing.Size(118, 1);
             this.panel101.TabIndex = 31;
             // 
             // idbox
             // 
-            this.idbox.Location = new System.Drawing.Point(528, 90);
-            this.idbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.idbox.Location = new System.Drawing.Point(597, 88);
+            this.idbox.Margin = new System.Windows.Forms.Padding(2);
             this.idbox.Name = "idbox";
             this.idbox.Size = new System.Drawing.Size(92, 20);
             this.idbox.TabIndex = 64;
@@ -2644,18 +2679,33 @@
             // label113
             // 
             this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(454, 93);
+            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.Location = new System.Drawing.Point(510, 91);
             this.label113.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(18, 13);
+            this.label113.Size = new System.Drawing.Size(24, 18);
             this.label113.TabIndex = 66;
             this.label113.Text = "ID";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(10, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 110;
+            this.pictureBox1.TabStop = false;
             // 
             // chef_gestion_emploi_filiere
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(850, 521);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label113);
             this.Controls.Add(this.idbox);
             this.Controls.Add(this.vendredi17);
@@ -2699,7 +2749,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -2723,7 +2772,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.jourbox);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "chef_gestion_emploi_filiere";
             this.Text = "chef_gestion_emploi_filiere";
             this.Load += new System.EventHandler(this.chef_gestion_emploi_filiere_Load);
@@ -2809,6 +2858,7 @@
             this.vendredi11.PerformLayout();
             this.vendredi8.ResumeLayout(false);
             this.vendredi8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2836,7 +2886,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox hfbox;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -3044,5 +3093,6 @@
         private System.Windows.Forms.Panel panel101;
         private System.Windows.Forms.TextBox idbox;
         private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

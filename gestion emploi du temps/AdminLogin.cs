@@ -19,6 +19,8 @@ namespace gestion_emploi_du_temps
             InitializeComponent();
             textBox1.BackColor=Color.AliceBlue;
             textBox2.BackColor = Color.AliceBlue;
+            // textBox2.UseSystemPasswordChar = true;
+            textBox2.PasswordChar ='*';
             //pictureBox3. = Color.FromArgb(55, 77, 123);
         }
 
@@ -45,7 +47,8 @@ namespace gestion_emploi_du_temps
                 int i = Convert.ToInt32(result);
                 if(i!=0)
                 {
-                    MessageBox.Show("login successe");
+                    // MessageBox.Show("login successe");
+                    errolabel.Text = "welcome Admin";
                     LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                     obj.Hide();
                     new admin_acceuil(i).Show();
@@ -53,7 +56,9 @@ namespace gestion_emploi_du_temps
                 }
                 else
                 {
-                    MessageBox.Show("the user doesn't existe");
+                    // MessageBox.Show("the user doesn't existe");
+                    // label3.Text = "user dosen't existe ";
+                    errolabel.Text = "username ou mot de passe incorect !";
                 }
 
                 
@@ -71,6 +76,21 @@ namespace gestion_emploi_du_temps
         }
 
         private void AdminLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void errolabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
