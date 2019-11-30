@@ -78,6 +78,11 @@ namespace gestion_emploi_du_temps
         {
           
         }
+
+        private void adminLogin1_Load_2(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

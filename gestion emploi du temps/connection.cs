@@ -14,8 +14,8 @@ namespace gestion_emploi_du_temps
         public SqlConnection conn;
         public connection()
         {
-            //this.conn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
-            this.conn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            this.conn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            //this.conn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
 
         }
         //select * dans une table entree//
@@ -37,14 +37,14 @@ namespace gestion_emploi_du_temps
         public DataTable query(string requete)
         {
             DataTable dt = new DataTable();
-           // this.conn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
-           // conn.Open();
+          this.conn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            conn.Open();
             using (conn)
             {
                 using (SqlCommand cmd = new SqlCommand(requete, conn))
                 {
 
-                    conn.Open();
+                   // conn.Open();
                     SqlDataReader reader = cmd.ExecuteReader();
                     dt.Load(reader);
                 }
