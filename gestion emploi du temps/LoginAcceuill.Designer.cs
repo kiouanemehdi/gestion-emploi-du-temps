@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginAcceuill));
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.adminLogin1 = new gestion_emploi_du_temps.AdminLogin();
             this.eseignantLogin1 = new gestion_emploi_du_temps.EseignantLogin();
             this.chefLogincs2 = new gestion_emploi_du_temps.ChefLogincs();
             this.chefLogincs1 = new gestion_emploi_du_temps.ChefLogincs();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -53,10 +53,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(0, 170);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(-2, 135);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(232, 65);
+            this.button1.Size = new System.Drawing.Size(177, 53);
             this.button1.TabIndex = 0;
             this.button1.Text = "Admin";
             this.button1.UseVisualStyleBackColor = false;
@@ -70,10 +69,20 @@
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 543);
+            this.panel1.Size = new System.Drawing.Size(175, 441);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(30, 10);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(110, 120);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 3;
+            this.pictureBox3.TabStop = false;
             // 
             // button3
             // 
@@ -82,10 +91,9 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(0, 373);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(0, 303);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(232, 68);
+            this.button3.Size = new System.Drawing.Size(174, 55);
             this.button3.TabIndex = 2;
             this.button3.Text = "Enseignant";
             this.button3.UseVisualStyleBackColor = false;
@@ -95,13 +103,13 @@
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(0, 271);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(0, 220);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(232, 69);
+            this.button2.Size = new System.Drawing.Size(174, 56);
             this.button2.TabIndex = 1;
             this.button2.Text = "Chef";
             this.button2.UseVisualStyleBackColor = false;
@@ -111,78 +119,67 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(284, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(180, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(753, 140);
+            this.pictureBox2.Size = new System.Drawing.Size(711, 114);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(172, -2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(8, 446);
+            this.panel2.TabIndex = 14;
             // 
             // adminLogin1
             // 
             this.adminLogin1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.adminLogin1.BackColor = System.Drawing.Color.AliceBlue;
-            this.adminLogin1.Location = new System.Drawing.Point(302, 147);
-            this.adminLogin1.Margin = new System.Windows.Forms.Padding(4);
+            this.adminLogin1.Location = new System.Drawing.Point(226, 119);
             this.adminLogin1.Name = "adminLogin1";
-            this.adminLogin1.Size = new System.Drawing.Size(713, 336);
+            this.adminLogin1.Size = new System.Drawing.Size(535, 273);
             this.adminLogin1.TabIndex = 10;
             // 
             // eseignantLogin1
             // 
             this.eseignantLogin1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.eseignantLogin1.BackColor = System.Drawing.Color.AliceBlue;
-            this.eseignantLogin1.Location = new System.Drawing.Point(302, 147);
-            this.eseignantLogin1.Margin = new System.Windows.Forms.Padding(4);
+            this.eseignantLogin1.Location = new System.Drawing.Point(226, 119);
             this.eseignantLogin1.Name = "eseignantLogin1";
-            this.eseignantLogin1.Size = new System.Drawing.Size(713, 336);
+            this.eseignantLogin1.Size = new System.Drawing.Size(535, 273);
             this.eseignantLogin1.TabIndex = 13;
             // 
             // chefLogincs2
             // 
             this.chefLogincs2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chefLogincs2.BackColor = System.Drawing.Color.AliceBlue;
-            this.chefLogincs2.Location = new System.Drawing.Point(302, 147);
-            this.chefLogincs2.Margin = new System.Windows.Forms.Padding(4);
+            this.chefLogincs2.Location = new System.Drawing.Point(226, 119);
             this.chefLogincs2.Name = "chefLogincs2";
-            this.chefLogincs2.Size = new System.Drawing.Size(713, 336);
+            this.chefLogincs2.Size = new System.Drawing.Size(535, 273);
             this.chefLogincs2.TabIndex = 12;
             // 
             // chefLogincs1
             // 
             this.chefLogincs1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chefLogincs1.BackColor = System.Drawing.Color.White;
-            this.chefLogincs1.Location = new System.Drawing.Point(600, 205);
-            this.chefLogincs1.Margin = new System.Windows.Forms.Padding(5);
+            this.chefLogincs1.Location = new System.Drawing.Point(450, 167);
+            this.chefLogincs1.Margin = new System.Windows.Forms.Padding(4);
             this.chefLogincs1.Name = "chefLogincs1";
-            this.chefLogincs1.Size = new System.Drawing.Size(12, 1);
+            this.chefLogincs1.Size = new System.Drawing.Size(9, 1);
             this.chefLogincs1.TabIndex = 4;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(230, -3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 549);
-            this.panel2.TabIndex = 14;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(40, 12);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(147, 148);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
             // 
             // LoginAcceuill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1187, 543);
+            this.ClientSize = new System.Drawing.Size(890, 441);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.adminLogin1);
             this.Controls.Add(this.eseignantLogin1);
@@ -191,13 +188,12 @@
             this.Controls.Add(this.chefLogincs1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginAcceuill";
             this.Text = "LoginAcceuill";
             this.Load += new System.EventHandler(this.LoginAcceuill_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

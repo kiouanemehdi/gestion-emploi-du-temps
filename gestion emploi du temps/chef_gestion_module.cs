@@ -143,5 +143,10 @@ namespace gestion_emploi_du_temps
             textBox1.Text = selectedRow.Cells[1].Value.ToString();
             comboBox1.Text = selectedRow.Cells[2].Value.ToString();
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

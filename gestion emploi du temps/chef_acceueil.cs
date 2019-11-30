@@ -44,7 +44,7 @@ namespace gestion_emploi_du_temps
             username = (string)dt.Rows[0]["chef_username"];
               tele = (string)dt.Rows[0]["portable"];
             label1.Text = prenom + " " + nom;
-            label3.Text = "Filière  " + filiere;
+            label2.Text = "Filière  " + filiere;
 
         }
         private void afficher_milieu(Control c)
@@ -120,5 +120,10 @@ namespace gestion_emploi_du_temps
 
         }
         public static int getfilere() { return filierecef; }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
