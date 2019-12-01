@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ens_mon_emploi));
             this.label2 = new System.Windows.Forms.Label();
             this.semestrebox = new System.Windows.Forms.ComboBox();
             this.panel84 = new System.Windows.Forms.Panel();
@@ -233,6 +234,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel84.SuspendLayout();
             this.panel48.SuspendLayout();
             this.panel87.SuspendLayout();
@@ -274,10 +276,12 @@
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(432, 65);
@@ -288,6 +292,7 @@
             // 
             // semestrebox
             // 
+            this.semestrebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.semestrebox.FormattingEnabled = true;
             this.semestrebox.Location = new System.Drawing.Point(559, 65);
             this.semestrebox.Name = "semestrebox";
@@ -297,6 +302,7 @@
             // 
             // panel84
             // 
+            this.panel84.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel84.Controls.Add(this.label94);
             this.panel84.Controls.Add(this.label95);
@@ -353,6 +359,7 @@
             // 
             // panel48
             // 
+            this.panel48.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel48.Controls.Add(this.label58);
             this.panel48.Controls.Add(this.label59);
@@ -409,6 +416,7 @@
             // 
             // panel87
             // 
+            this.panel87.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel87.Controls.Add(this.label97);
             this.panel87.Controls.Add(this.label98);
@@ -465,6 +473,7 @@
             // 
             // panel30
             // 
+            this.panel30.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel30.Controls.Add(this.label40);
             this.panel30.Controls.Add(this.label41);
@@ -521,6 +530,7 @@
             // 
             // panel90
             // 
+            this.panel90.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel90.Controls.Add(this.label100);
             this.panel90.Controls.Add(this.label101);
@@ -577,6 +587,7 @@
             // 
             // panel51
             // 
+            this.panel51.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel51.Controls.Add(this.label61);
             this.panel51.Controls.Add(this.label62);
@@ -633,6 +644,7 @@
             // 
             // panel93
             // 
+            this.panel93.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel93.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel93.Controls.Add(this.label103);
             this.panel93.Controls.Add(this.label104);
@@ -689,6 +701,7 @@
             // 
             // panel24
             // 
+            this.panel24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel24.Controls.Add(this.label34);
             this.panel24.Controls.Add(this.label35);
@@ -745,6 +758,7 @@
             // 
             // panel96
             // 
+            this.panel96.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel96.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel96.Controls.Add(this.label106);
             this.panel96.Controls.Add(this.label107);
@@ -801,6 +815,7 @@
             // 
             // panel54
             // 
+            this.panel54.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel54.Controls.Add(this.label64);
             this.panel54.Controls.Add(this.label65);
@@ -857,6 +872,7 @@
             // 
             // panel99
             // 
+            this.panel99.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel99.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel99.Controls.Add(this.label109);
             this.panel99.Controls.Add(this.label110);
@@ -913,6 +929,7 @@
             // 
             // panel33
             // 
+            this.panel33.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel33.Controls.Add(this.label43);
             this.panel33.Controls.Add(this.label44);
@@ -969,6 +986,7 @@
             // 
             // panel57
             // 
+            this.panel57.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel57.Controls.Add(this.label67);
             this.panel57.Controls.Add(this.label68);
@@ -1025,6 +1043,7 @@
             // 
             // panel27
             // 
+            this.panel27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel27.Controls.Add(this.label37);
             this.panel27.Controls.Add(this.label38);
@@ -1081,6 +1100,7 @@
             // 
             // panel60
             // 
+            this.panel60.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel60.Controls.Add(this.label70);
             this.panel60.Controls.Add(this.label71);
@@ -1137,6 +1157,7 @@
             // 
             // panel36
             // 
+            this.panel36.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel36.Controls.Add(this.label46);
             this.panel36.Controls.Add(this.label47);
@@ -1193,6 +1214,7 @@
             // 
             // panel63
             // 
+            this.panel63.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel63.Controls.Add(this.label73);
             this.panel63.Controls.Add(this.label74);
@@ -1249,6 +1271,7 @@
             // 
             // panel18
             // 
+            this.panel18.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel18.Controls.Add(this.label28);
             this.panel18.Controls.Add(this.label29);
@@ -1305,6 +1328,7 @@
             // 
             // panel66
             // 
+            this.panel66.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel66.Controls.Add(this.label76);
             this.panel66.Controls.Add(this.label77);
@@ -1361,6 +1385,7 @@
             // 
             // panel39
             // 
+            this.panel39.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel39.Controls.Add(this.label49);
             this.panel39.Controls.Add(this.label50);
@@ -1417,6 +1442,7 @@
             // 
             // panel69
             // 
+            this.panel69.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel69.Controls.Add(this.label79);
             this.panel69.Controls.Add(this.label80);
@@ -1473,6 +1499,7 @@
             // 
             // panel15
             // 
+            this.panel15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.label25);
             this.panel15.Controls.Add(this.label26);
@@ -1529,6 +1556,7 @@
             // 
             // panel72
             // 
+            this.panel72.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel72.Controls.Add(this.label82);
             this.panel72.Controls.Add(this.label83);
@@ -1585,6 +1613,7 @@
             // 
             // panel42
             // 
+            this.panel42.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel42.Controls.Add(this.label52);
             this.panel42.Controls.Add(this.label53);
@@ -1641,6 +1670,7 @@
             // 
             // panel75
             // 
+            this.panel75.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel75.Controls.Add(this.label85);
             this.panel75.Controls.Add(this.label86);
@@ -1697,6 +1727,7 @@
             // 
             // panel21
             // 
+            this.panel21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel21.Controls.Add(this.label31);
             this.panel21.Controls.Add(this.label32);
@@ -1753,6 +1784,7 @@
             // 
             // panel78
             // 
+            this.panel78.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel78.Controls.Add(this.label88);
             this.panel78.Controls.Add(this.label89);
@@ -1809,6 +1841,7 @@
             // 
             // panel45
             // 
+            this.panel45.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel45.Controls.Add(this.label55);
             this.panel45.Controls.Add(this.label56);
@@ -1865,6 +1898,7 @@
             // 
             // panel81
             // 
+            this.panel81.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel81.Controls.Add(this.label91);
             this.panel81.Controls.Add(this.label92);
@@ -1921,6 +1955,7 @@
             // 
             // panel12
             // 
+            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.label24);
             this.panel12.Controls.Add(this.label11);
@@ -1977,6 +2012,7 @@
             // 
             // panel11
             // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel11.BackColor = System.Drawing.Color.Black;
             this.panel11.Controls.Add(this.label17);
             this.panel11.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -1997,6 +2033,7 @@
             // 
             // panel10
             // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel10.BackColor = System.Drawing.Color.Black;
             this.panel10.Controls.Add(this.label16);
             this.panel10.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2017,6 +2054,7 @@
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BackColor = System.Drawing.Color.Black;
             this.panel9.Controls.Add(this.label14);
             this.panel9.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2037,6 +2075,7 @@
             // 
             // panel8
             // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BackColor = System.Drawing.Color.Black;
             this.panel8.Controls.Add(this.label15);
             this.panel8.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2057,6 +2096,7 @@
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.label13);
             this.panel7.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2077,6 +2117,7 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Controls.Add(this.label12);
             this.panel6.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2097,6 +2138,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label19);
             this.panel2.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2117,6 +2159,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.label20);
             this.panel3.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2137,6 +2180,7 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Controls.Add(this.label21);
             this.panel4.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2157,6 +2201,7 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.label22);
             this.panel5.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2177,6 +2222,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label18);
             this.panel1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
@@ -2197,6 +2243,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -2207,12 +2254,25 @@
             this.label4.TabIndex = 109;
             this.label4.Text = "Mon Emploi Du Temps";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 110;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // ens_mon_emploi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1131, 607);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel84);
             this.Controls.Add(this.panel48);
@@ -2342,6 +2402,7 @@
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2554,5 +2615,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

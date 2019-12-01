@@ -48,7 +48,7 @@ namespace gestion_emploi_du_temps
 
                     // MessageBox.Show("the users existe");
                     errorlabel.Text = "welcome chef departement";
-LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
+                    LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                     obj.Hide();
                     new chef_acceueil(i).Show();
                     
@@ -56,7 +56,7 @@ LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                 }
                 else
                 {
-                       errorlabel.Text= "username ou mot de passe incorect !";
+                       errorlabel.Text= "username ou mot de passe incorrect !";
                 }
 
                 /*  cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;

@@ -303,6 +303,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(124, 18);
@@ -313,6 +314,7 @@
             // 
             // jourbox
             // 
+            this.jourbox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jourbox.FormattingEnabled = true;
             this.jourbox.Location = new System.Drawing.Point(237, 15);
             this.jourbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -322,6 +324,7 @@
             // 
             // hdbox
             // 
+            this.hdbox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hdbox.FormattingEnabled = true;
             this.hdbox.Location = new System.Drawing.Point(237, 46);
             this.hdbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -331,6 +334,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(124, 48);
@@ -341,6 +345,7 @@
             // 
             // modulebox
             // 
+            this.modulebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.modulebox.FormattingEnabled = true;
             this.modulebox.Location = new System.Drawing.Point(532, 46);
             this.modulebox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -351,6 +356,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(428, 48);
@@ -361,6 +367,7 @@
             // 
             // sallebox
             // 
+            this.sallebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.sallebox.FormattingEnabled = true;
             this.sallebox.Items.AddRange(new object[] {
             "1"});
@@ -373,6 +380,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(428, 18);
@@ -383,6 +391,7 @@
             // 
             // groupebox
             // 
+            this.groupebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupebox.FormattingEnabled = true;
             this.groupebox.Location = new System.Drawing.Point(796, 46);
             this.groupebox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -393,6 +402,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(701, 46);
@@ -403,6 +413,7 @@
             // 
             // semestrebox
             // 
+            this.semestrebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.semestrebox.FormattingEnabled = true;
             this.semestrebox.Location = new System.Drawing.Point(796, 15);
             this.semestrebox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -414,6 +425,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(701, 16);
@@ -424,6 +436,7 @@
             // 
             // ensbox
             // 
+            this.ensbox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ensbox.FormattingEnabled = true;
             this.ensbox.Location = new System.Drawing.Point(532, 108);
             this.ensbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -433,6 +446,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(428, 110);
@@ -443,6 +457,7 @@
             // 
             // elementbox
             // 
+            this.elementbox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.elementbox.FormattingEnabled = true;
             this.elementbox.Location = new System.Drawing.Point(532, 78);
             this.elementbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -453,6 +468,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(428, 81);
@@ -463,6 +479,7 @@
             // 
             // typebox
             // 
+            this.typebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.typebox.FormattingEnabled = true;
             this.typebox.Items.AddRange(new object[] {
             "TD",
@@ -476,6 +493,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(124, 108);
@@ -486,6 +504,7 @@
             // 
             // hfbox
             // 
+            this.hfbox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hfbox.FormattingEnabled = true;
             this.hfbox.Location = new System.Drawing.Point(237, 75);
             this.hfbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -495,6 +514,7 @@
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(124, 78);
@@ -506,6 +526,7 @@
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button4.BackColor = System.Drawing.Color.Black;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -521,6 +542,7 @@
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -536,6 +558,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -551,6 +574,7 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.label18);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -572,6 +596,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.label19);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -593,6 +618,7 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.label20);
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -614,6 +640,7 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BackColor = System.Drawing.Color.Black;
             this.panel4.Controls.Add(this.label21);
             this.panel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -635,6 +662,7 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.label22);
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -656,6 +684,7 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.BackColor = System.Drawing.Color.Black;
             this.panel6.Controls.Add(this.label12);
             this.panel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -680,6 +709,7 @@
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BackColor = System.Drawing.Color.Black;
             this.panel7.Controls.Add(this.label13);
             this.panel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -701,6 +731,7 @@
             // 
             // panel8
             // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BackColor = System.Drawing.Color.Black;
             this.panel8.Controls.Add(this.label15);
             this.panel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -722,6 +753,7 @@
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BackColor = System.Drawing.Color.Black;
             this.panel9.Controls.Add(this.label14);
             this.panel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -743,6 +775,7 @@
             // 
             // panel10
             // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel10.BackColor = System.Drawing.Color.Black;
             this.panel10.Controls.Add(this.label16);
             this.panel10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -764,6 +797,7 @@
             // 
             // panel11
             // 
+            this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel11.BackColor = System.Drawing.Color.Black;
             this.panel11.Controls.Add(this.label17);
             this.panel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -785,6 +819,7 @@
             // 
             // lundi8
             // 
+            this.lundi8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lundi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lundi8.Controls.Add(this.label24);
             this.lundi8.Controls.Add(this.label11);
@@ -846,6 +881,7 @@
             // 
             // lundi9
             // 
+            this.lundi9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lundi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lundi9.Controls.Add(this.label25);
             this.lundi9.Controls.Add(this.label26);
@@ -906,6 +942,7 @@
             // 
             // lundi14
             // 
+            this.lundi14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lundi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lundi14.Controls.Add(this.label28);
             this.lundi14.Controls.Add(this.label29);
@@ -966,6 +1003,7 @@
             // 
             // lundi11
             // 
+            this.lundi11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lundi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lundi11.Controls.Add(this.label31);
             this.lundi11.Controls.Add(this.label32);
@@ -1026,6 +1064,7 @@
             // 
             // lundi17
             // 
+            this.lundi17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lundi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lundi17.Controls.Add(this.label34);
             this.lundi17.Controls.Add(this.label35);
@@ -1086,6 +1125,7 @@
             // 
             // lundi15
             // 
+            this.lundi15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lundi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lundi15.Controls.Add(this.label37);
             this.lundi15.Controls.Add(this.label38);
@@ -1146,6 +1186,7 @@
             // 
             // mardi17
             // 
+            this.mardi17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mardi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mardi17.Controls.Add(this.label40);
             this.mardi17.Controls.Add(this.label41);
@@ -1157,6 +1198,7 @@
             this.mardi17.Name = "mardi17";
             this.mardi17.Size = new System.Drawing.Size(157, 82);
             this.mardi17.TabIndex = 45;
+            this.mardi17.Click += new System.EventHandler(this.mardi17_Click);
             // 
             // label40
             // 
@@ -1205,6 +1247,7 @@
             // 
             // mardi15
             // 
+            this.mardi15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mardi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mardi15.Controls.Add(this.label43);
             this.mardi15.Controls.Add(this.label44);
@@ -1216,6 +1259,7 @@
             this.mardi15.Name = "mardi15";
             this.mardi15.Size = new System.Drawing.Size(157, 82);
             this.mardi15.TabIndex = 44;
+            this.mardi15.Click += new System.EventHandler(this.mardi15_Click);
             // 
             // label43
             // 
@@ -1264,6 +1308,7 @@
             // 
             // mardi14
             // 
+            this.mardi14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mardi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mardi14.Controls.Add(this.label46);
             this.mardi14.Controls.Add(this.label47);
@@ -1275,6 +1320,7 @@
             this.mardi14.Name = "mardi14";
             this.mardi14.Size = new System.Drawing.Size(157, 82);
             this.mardi14.TabIndex = 43;
+            this.mardi14.Click += new System.EventHandler(this.mardi14_Click);
             // 
             // label46
             // 
@@ -1323,6 +1369,7 @@
             // 
             // mardi9
             // 
+            this.mardi9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mardi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mardi9.Controls.Add(this.label49);
             this.mardi9.Controls.Add(this.label50);
@@ -1334,6 +1381,8 @@
             this.mardi9.Name = "mardi9";
             this.mardi9.Size = new System.Drawing.Size(157, 82);
             this.mardi9.TabIndex = 41;
+            this.mardi9.Click += new System.EventHandler(this.mardi9_Click);
+            this.mardi9.Paint += new System.Windows.Forms.PaintEventHandler(this.mardi9_Paint);
             // 
             // label49
             // 
@@ -1382,6 +1431,7 @@
             // 
             // mardi11
             // 
+            this.mardi11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mardi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mardi11.Controls.Add(this.label52);
             this.mardi11.Controls.Add(this.label53);
@@ -1393,6 +1443,7 @@
             this.mardi11.Name = "mardi11";
             this.mardi11.Size = new System.Drawing.Size(157, 82);
             this.mardi11.TabIndex = 42;
+            this.mardi11.Click += new System.EventHandler(this.mardi11_Click);
             // 
             // label52
             // 
@@ -1441,6 +1492,7 @@
             // 
             // mardi8
             // 
+            this.mardi8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mardi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mardi8.Controls.Add(this.label55);
             this.mardi8.Controls.Add(this.label56);
@@ -1452,6 +1504,7 @@
             this.mardi8.Name = "mardi8";
             this.mardi8.Size = new System.Drawing.Size(157, 82);
             this.mardi8.TabIndex = 40;
+            this.mardi8.Click += new System.EventHandler(this.mardi8_Click_1);
             // 
             // label55
             // 
@@ -1500,6 +1553,7 @@
             // 
             // jeudi17
             // 
+            this.jeudi17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jeudi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jeudi17.Controls.Add(this.label58);
             this.jeudi17.Controls.Add(this.label59);
@@ -1511,6 +1565,7 @@
             this.jeudi17.Name = "jeudi17";
             this.jeudi17.Size = new System.Drawing.Size(157, 82);
             this.jeudi17.TabIndex = 57;
+            this.jeudi17.Click += new System.EventHandler(this.jeudi17_Click);
             // 
             // label58
             // 
@@ -1559,6 +1614,7 @@
             // 
             // mercredi17
             // 
+            this.mercredi17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mercredi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mercredi17.Controls.Add(this.label61);
             this.mercredi17.Controls.Add(this.label62);
@@ -1570,6 +1626,7 @@
             this.mercredi17.Name = "mercredi17";
             this.mercredi17.Size = new System.Drawing.Size(157, 82);
             this.mercredi17.TabIndex = 51;
+            this.mercredi17.Click += new System.EventHandler(this.mercredi17_Click);
             // 
             // label61
             // 
@@ -1618,6 +1675,7 @@
             // 
             // jeudi15
             // 
+            this.jeudi15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jeudi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jeudi15.Controls.Add(this.label64);
             this.jeudi15.Controls.Add(this.label65);
@@ -1629,6 +1687,7 @@
             this.jeudi15.Name = "jeudi15";
             this.jeudi15.Size = new System.Drawing.Size(157, 82);
             this.jeudi15.TabIndex = 56;
+            this.jeudi15.Click += new System.EventHandler(this.jeudi15_Click);
             // 
             // label64
             // 
@@ -1677,6 +1736,7 @@
             // 
             // mercredi15
             // 
+            this.mercredi15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mercredi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mercredi15.Controls.Add(this.label67);
             this.mercredi15.Controls.Add(this.label68);
@@ -1688,6 +1748,7 @@
             this.mercredi15.Name = "mercredi15";
             this.mercredi15.Size = new System.Drawing.Size(157, 82);
             this.mercredi15.TabIndex = 50;
+            this.mercredi15.Click += new System.EventHandler(this.mercredi15_Click);
             // 
             // label67
             // 
@@ -1736,6 +1797,7 @@
             // 
             // jeudi14
             // 
+            this.jeudi14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jeudi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jeudi14.Controls.Add(this.label70);
             this.jeudi14.Controls.Add(this.label71);
@@ -1747,6 +1809,7 @@
             this.jeudi14.Name = "jeudi14";
             this.jeudi14.Size = new System.Drawing.Size(157, 82);
             this.jeudi14.TabIndex = 55;
+            this.jeudi14.Click += new System.EventHandler(this.jeudi14_Click);
             // 
             // label70
             // 
@@ -1795,6 +1858,7 @@
             // 
             // mercredi14
             // 
+            this.mercredi14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mercredi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mercredi14.Controls.Add(this.label73);
             this.mercredi14.Controls.Add(this.label74);
@@ -1806,6 +1870,7 @@
             this.mercredi14.Name = "mercredi14";
             this.mercredi14.Size = new System.Drawing.Size(157, 82);
             this.mercredi14.TabIndex = 49;
+            this.mercredi14.Click += new System.EventHandler(this.mercredi14_Click);
             // 
             // label73
             // 
@@ -1854,6 +1919,7 @@
             // 
             // jeudi9
             // 
+            this.jeudi9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jeudi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jeudi9.Controls.Add(this.label76);
             this.jeudi9.Controls.Add(this.label77);
@@ -1865,6 +1931,7 @@
             this.jeudi9.Name = "jeudi9";
             this.jeudi9.Size = new System.Drawing.Size(157, 82);
             this.jeudi9.TabIndex = 53;
+            this.jeudi9.Click += new System.EventHandler(this.jeudi9_Click);
             // 
             // label76
             // 
@@ -1913,6 +1980,7 @@
             // 
             // mercredi9
             // 
+            this.mercredi9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mercredi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mercredi9.Controls.Add(this.label79);
             this.mercredi9.Controls.Add(this.label80);
@@ -1924,6 +1992,7 @@
             this.mercredi9.Name = "mercredi9";
             this.mercredi9.Size = new System.Drawing.Size(157, 82);
             this.mercredi9.TabIndex = 47;
+            this.mercredi9.Click += new System.EventHandler(this.mercredi9_Click);
             // 
             // label79
             // 
@@ -1972,6 +2041,7 @@
             // 
             // jeudi11
             // 
+            this.jeudi11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jeudi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jeudi11.Controls.Add(this.label82);
             this.jeudi11.Controls.Add(this.label83);
@@ -1983,6 +2053,7 @@
             this.jeudi11.Name = "jeudi11";
             this.jeudi11.Size = new System.Drawing.Size(157, 82);
             this.jeudi11.TabIndex = 54;
+            this.jeudi11.Click += new System.EventHandler(this.jeudi11_Click);
             // 
             // label82
             // 
@@ -2031,6 +2102,7 @@
             // 
             // mercredi11
             // 
+            this.mercredi11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mercredi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mercredi11.Controls.Add(this.label85);
             this.mercredi11.Controls.Add(this.label86);
@@ -2042,6 +2114,7 @@
             this.mercredi11.Name = "mercredi11";
             this.mercredi11.Size = new System.Drawing.Size(157, 82);
             this.mercredi11.TabIndex = 48;
+            this.mercredi11.Click += new System.EventHandler(this.mercredi11_Click);
             // 
             // label85
             // 
@@ -2090,6 +2163,7 @@
             // 
             // jeudi8
             // 
+            this.jeudi8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.jeudi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jeudi8.Controls.Add(this.label88);
             this.jeudi8.Controls.Add(this.label89);
@@ -2101,6 +2175,7 @@
             this.jeudi8.Name = "jeudi8";
             this.jeudi8.Size = new System.Drawing.Size(157, 82);
             this.jeudi8.TabIndex = 52;
+            this.jeudi8.Click += new System.EventHandler(this.jeudi8_Click);
             // 
             // label88
             // 
@@ -2149,6 +2224,7 @@
             // 
             // mercredi8
             // 
+            this.mercredi8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.mercredi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mercredi8.Controls.Add(this.label91);
             this.mercredi8.Controls.Add(this.label92);
@@ -2160,6 +2236,7 @@
             this.mercredi8.Name = "mercredi8";
             this.mercredi8.Size = new System.Drawing.Size(157, 82);
             this.mercredi8.TabIndex = 46;
+            this.mercredi8.Click += new System.EventHandler(this.mercredi8_Click);
             // 
             // label91
             // 
@@ -2208,6 +2285,7 @@
             // 
             // vendredi17
             // 
+            this.vendredi17.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vendredi17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vendredi17.Controls.Add(this.label94);
             this.vendredi17.Controls.Add(this.label95);
@@ -2219,6 +2297,7 @@
             this.vendredi17.Name = "vendredi17";
             this.vendredi17.Size = new System.Drawing.Size(157, 82);
             this.vendredi17.TabIndex = 63;
+            this.vendredi17.Click += new System.EventHandler(this.vendredi17_Click);
             // 
             // label94
             // 
@@ -2267,6 +2346,7 @@
             // 
             // vendredi15
             // 
+            this.vendredi15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vendredi15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vendredi15.Controls.Add(this.label97);
             this.vendredi15.Controls.Add(this.label98);
@@ -2278,6 +2358,7 @@
             this.vendredi15.Name = "vendredi15";
             this.vendredi15.Size = new System.Drawing.Size(157, 82);
             this.vendredi15.TabIndex = 62;
+            this.vendredi15.Click += new System.EventHandler(this.vendredi15_Click);
             // 
             // label97
             // 
@@ -2326,6 +2407,7 @@
             // 
             // vendredi14
             // 
+            this.vendredi14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vendredi14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vendredi14.Controls.Add(this.label100);
             this.vendredi14.Controls.Add(this.label101);
@@ -2337,6 +2419,7 @@
             this.vendredi14.Name = "vendredi14";
             this.vendredi14.Size = new System.Drawing.Size(157, 82);
             this.vendredi14.TabIndex = 61;
+            this.vendredi14.Click += new System.EventHandler(this.vendredi14_Click);
             // 
             // label100
             // 
@@ -2385,6 +2468,7 @@
             // 
             // vendredi9
             // 
+            this.vendredi9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vendredi9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vendredi9.Controls.Add(this.label103);
             this.vendredi9.Controls.Add(this.label104);
@@ -2396,6 +2480,7 @@
             this.vendredi9.Name = "vendredi9";
             this.vendredi9.Size = new System.Drawing.Size(157, 82);
             this.vendredi9.TabIndex = 59;
+            this.vendredi9.Click += new System.EventHandler(this.vendredi9_Click);
             // 
             // label103
             // 
@@ -2444,6 +2529,7 @@
             // 
             // vendredi11
             // 
+            this.vendredi11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vendredi11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vendredi11.Controls.Add(this.label106);
             this.vendredi11.Controls.Add(this.label107);
@@ -2455,6 +2541,7 @@
             this.vendredi11.Name = "vendredi11";
             this.vendredi11.Size = new System.Drawing.Size(157, 82);
             this.vendredi11.TabIndex = 60;
+            this.vendredi11.Click += new System.EventHandler(this.vendredi11_Click);
             // 
             // label106
             // 
@@ -2503,6 +2590,7 @@
             // 
             // vendredi8
             // 
+            this.vendredi8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.vendredi8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.vendredi8.Controls.Add(this.label109);
             this.vendredi8.Controls.Add(this.label110);
@@ -2514,6 +2602,7 @@
             this.vendredi8.Name = "vendredi8";
             this.vendredi8.Size = new System.Drawing.Size(157, 82);
             this.vendredi8.TabIndex = 58;
+            this.vendredi8.Click += new System.EventHandler(this.vendredi8_Click);
             // 
             // label109
             // 
@@ -2562,6 +2651,8 @@
             // 
             // idbox
             // 
+            this.idbox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.idbox.Enabled = false;
             this.idbox.Location = new System.Drawing.Point(796, 108);
             this.idbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.idbox.Name = "idbox";
@@ -2570,6 +2661,7 @@
             // 
             // label113
             // 
+            this.label113.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label113.AutoSize = true;
             this.label113.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label113.Location = new System.Drawing.Point(713, 112);

@@ -371,122 +371,7 @@ namespace gestion_emploi_du_temps
         {
             seance_click("Lundi", "17:30", "19:00");
         }
-        private void mardi8_Click(object sender, EventArgs e)
-        {
-            seance_click("mardi", "8:00", "9:30");
-        }
-
-        private void mardi9_Click(object sender, EventArgs e)
-        {
-            seance_click("mardi", "9:45", "11:15");
-        }
-
-        private void mardi11_Click(object sender, EventArgs e)
-        {
-            seance_click("mardi", "11:30", "13:00");
-        }
-
-        private void mardi14_Click(object sender, EventArgs e)
-        {
-            seance_click("mardi", "14:00", "15:30");
-        }
-
-        private void mardi15_Click(object sender, EventArgs e)
-        {
-            seance_click("mardi", "15:45", "17:15");
-        }
-
-        private void mardi17_Click(object sender, EventArgs e)
-        {
-            seance_click("mardi", "17:30", "19:00");
-        }
-        private void mercredi8_Click(object sender, EventArgs e)
-        {
-            seance_click("mercredi", "8:00", "9:30");
-        }
-
-        private void mercredi9_Click(object sender, EventArgs e)
-        {
-            seance_click("mercredi", "9:45", "11:15");
-        }
-
-        private void mercredi11_Click(object sender, EventArgs e)
-        {
-            seance_click("mercredi", "11:30", "13:00");
-        }
-
-        private void mercredi14_Click(object sender, EventArgs e)
-        {
-            seance_click("mercredi", "14:00", "15:30");
-        }
-
-        private void mercredi15_Click(object sender, EventArgs e)
-        {
-            seance_click("mercredi", "15:45", "17:15");
-        }
-
-        private void mercredi17_Click(object sender, EventArgs e)
-        {
-            seance_click("mercredi", "17:30", "19:00");
-        }
-        private void jeudi8_Click(object sender, EventArgs e)
-        {
-            seance_click("jeudi", "8:00", "9:30");
-        }
-
-        private void jeudi9_Click(object sender, EventArgs e)
-        {
-            seance_click("jeudi", "9:45", "11:15");
-        }
-
-        private void jeudi11_Click(object sender, EventArgs e)
-        {
-            seance_click("jeudi", "11:30", "13:00");
-        }
-
-        private void jeudi14_Click(object sender, EventArgs e)
-        {
-            seance_click("jeudi", "14:00", "15:30");
-        }
-
-        private void jeudi15_Click(object sender, EventArgs e)
-        {
-            seance_click("jeudi", "15:45", "17:15");
-        }
-
-        private void jeudi17_Click(object sender, EventArgs e)
-        {
-            seance_click("jeudi", "17:30", "19:00");
-        }
-        private void vendredi8_Click(object sender, EventArgs e)
-        {
-            seance_click("vendredi", "8:00", "9:30");
-        }
-
-        private void vendredi9_Click(object sender, EventArgs e)
-        {
-            seance_click("vendredi", "9:45", "11:15");
-        }
-
-        private void vendredi11_Click(object sender, EventArgs e)
-        {
-            seance_click("vendredi", "11:30", "13:00");
-        }
-
-        private void vendredi14_Click(object sender, EventArgs e)
-        {
-            seance_click("vendredi", "14:00", "15:30");
-        }
-
-        private void vendredi15_Click(object sender, EventArgs e)
-        {
-            seance_click("vendredi", "15:45", "17:15");
-        }
-
-        private void vendredi17_Click(object sender, EventArgs e)
-        {
-            seance_click("vendredi", "17:30", "19:00");
-        }
+        
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -560,6 +445,152 @@ namespace gestion_emploi_du_temps
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void mardi9_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void mardi8_Click_1(object sender, EventArgs e)
+        {
+            seance_click("mardi", "8:00", "9:30");
+        }
+
+        private void mardi9_Click(object sender, EventArgs e)
+        {
+            seance_click("mardi", "9:45", "11:15");
+        }
+
+        private void mardi11_Click(object sender, EventArgs e)
+        {
+            seance_click("mardi", "11:30", "13:00");
+        }
+
+        private void mardi14_Click(object sender, EventArgs e)
+        {
+            seance_click("mardi", "14:00", "15:30");
+        }
+
+        private void mardi15_Click(object sender, EventArgs e)
+        {
+            seance_click("mardi", "15:45", "17:15");
+        }
+
+        private void mardi17_Click(object sender, EventArgs e)
+        {
+            seance_click("mardi", "17:30", "19:00");
+        }
+        private void mercredi8_Click(object sender, EventArgs e)
+        {
+seance_click("mercredi", "8:00", "9:30");
+        }
+
+        private void mercredi9_Click(object sender, EventArgs e)
+        {
+ seance_click("mercredi", "9:45", "11:15");
+        }
+
+        private void mercredi11_Click(object sender, EventArgs e)
+        {
+seance_click("mercredi", "11:30", "13:00");
+        }
+
+        private void mercredi14_Click(object sender, EventArgs e)
+        {
+seance_click("mercredi", "14:00", "15:30");
+        }
+
+        private void mercredi15_Click(object sender, EventArgs e)
+        {
+            seance_click("mercredi", "15:45", "17:15");
+        }
+
+        private void mercredi17_Click(object sender, EventArgs e)
+        {
+            seance_click("mercredi", "17:30", "19:00");
+        }
+        private void jeudi8_Click(object sender, EventArgs e)
+        {
+            seance_click("jeudi", "8:00", "9:30");
+
+          
+        }
+
+        private void jeudi9_Click(object sender, EventArgs e)
+        {
+            seance_click("jeudi", "9:45", "11:15");
+
+     
+        }
+
+        private void jeudi11_Click(object sender, EventArgs e)
+        {
+            seance_click("jeudi", "11:30", "13:00");
+
+     
+        }
+
+        private void jeudi14_Click(object sender, EventArgs e)
+        {
+            seance_click("jeudi", "14:00", "15:30");
+
+        }
+
+        private void jeudi15_Click(object sender, EventArgs e)
+        {
+
+            seance_click("jeudi", "15:45", "17:15");
+
+     
+        }
+
+        private void jeudi17_Click(object sender, EventArgs e)
+        {
+            seance_click("jeudi", "17:30", "19:00");
+        }
+
+        private void vendredi8_Click(object sender, EventArgs e)
+        {
+
+
+            seance_click("vendredi", "8:00", "9:30");
+
+        }
+
+        private void vendredi9_Click(object sender, EventArgs e)
+        {
+
+            seance_click("vendredi", "9:45", "11:15");
+
+        }
+
+        private void vendredi11_Click(object sender, EventArgs e)
+        {
+
+            seance_click("vendredi", "11:30", "13:00");
+
+
+        }
+
+        private void vendredi14_Click(object sender, EventArgs e)
+        {
+
+            seance_click("vendredi", "14:00", "15:30");
+
+
+        }
+
+        private void vendredi15_Click(object sender, EventArgs e)
+        {
+            seance_click("vendredi", "15:45", "17:15");
+
+            
+        }
+
+        private void vendredi17_Click(object sender, EventArgs e)
+        {
+seance_click("vendredi", "17:30", "19:00");
         }
     }
 }

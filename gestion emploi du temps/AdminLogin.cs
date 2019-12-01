@@ -47,7 +47,7 @@ namespace gestion_emploi_du_temps
                 int i = Convert.ToInt32(result);
                 if(i!=0)
                 {
-                     MessageBox.Show("login successe");
+                    // MessageBox.Show("login successe");
                     errolabel.Text = "welcome Admin";
                     LoginAcceuill obj = (LoginAcceuill)Application.OpenForms["LoginAcceuill"];
                     obj.Hide();

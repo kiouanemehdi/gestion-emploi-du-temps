@@ -107,5 +107,10 @@ namespace gestion_emploi_du_temps
         {
             refresh();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

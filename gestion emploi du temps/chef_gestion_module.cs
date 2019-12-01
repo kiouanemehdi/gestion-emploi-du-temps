@@ -65,7 +65,7 @@ namespace gestion_emploi_du_temps
         private void refreshGrid()
         {
             int filiere = chef_acceueil.getfilere();
-            sqlAdapter = new SqlDataAdapter("select  id_module,nom_module,id_semestre from Module where id_filiere='"+ filiere+"'", conn.conn);
+            sqlAdapter = new SqlDataAdapter("select  id_module as Id,nom_module as Nom,id_semestre as Semestre from Module where id_filiere='"+ filiere+"'", conn.conn);
             sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
             dataset = new DataSet();

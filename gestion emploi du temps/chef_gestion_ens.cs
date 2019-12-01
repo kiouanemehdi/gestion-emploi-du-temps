@@ -69,9 +69,9 @@ namespace gestion_emploi_du_temps
 
             cn.conn.Open();
             cmd.ExecuteNonQuery();
-
+       cn.conn.Close();
             int resultat = int.Parse(cmd.Parameters["@resultat"].Value.ToString());
-            cn.conn.Close();
+     
             if (resultat == 1)
                 MessageBox.Show("email format invalid");
             else if (resultat == 2)
@@ -89,36 +89,42 @@ namespace gestion_emploi_du_temps
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("valid_email_tele", cn.conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = emailbox.Text;
-            cmd.Parameters.Add("@tele", SqlDbType.VarChar).Value = telebox.Text;
-            cmd.Parameters.Add("@resultat", SqlDbType.Int).Direction = ParameterDirection.Output;
-
-            cn.conn.Open();
-            cmd.ExecuteNonQuery();
-
-            int resultat = int.Parse(cmd.Parameters["@resultat"].Value.ToString());
-            cn.conn.Close();
-            if (resultat == 1)
-                MessageBox.Show("email format invalid");
-            else if (resultat == 2)
-                MessageBox.Show("numero de telephone format invalid");
-            else
+            try
             {
-                try
+                SqlCommand cmd = new SqlCommand("valid_email_tele", cn.conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@email", SqlDbType.VarChar).Value = emailbox.Text;
+                cmd.Parameters.Add("@tele", SqlDbType.VarChar).Value = telebox.Text;
+                cmd.Parameters.Add("@resultat", SqlDbType.Int).Direction = ParameterDirection.Output;
+
+                cn.conn.Open();
+                cmd.ExecuteNonQuery();
+                cn.conn.Close();
+                int resultat = int.Parse(cmd.Parameters["@resultat"].Value.ToString());
+
+                if (resultat == 1)
+                    MessageBox.Show("email format invalid");
+                else if (resultat == 2)
+                    MessageBox.Show("numero de telephone format invalid");
+                else
                 {
+
                     if (cn.execute_query("insert into Enseignant values('" + nombox.Text + "', '" + prenombox.Text + "', '" + userbox.Text + "', '" + passbox.Text + "', '" + emailbox.Text + "', '" + telebox.Text + "')"))
                     {
                         MessageBox.Show("Bien ajouter");
                         refresh();
                     }
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.Message);
+                    /*else
+                        */
                 }
             }
+            catch (SqlException exx)
+            {
+
+                MessageBox.Show(exx.Message);
+
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

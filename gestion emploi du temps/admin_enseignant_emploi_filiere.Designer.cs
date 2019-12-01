@@ -286,7 +286,7 @@
             // 
             // filierebox
             // 
-            this.filierebox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.filierebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.filierebox.FormattingEnabled = true;
             this.filierebox.Location = new System.Drawing.Point(316, 80);
             this.filierebox.Name = "filierebox";
@@ -296,7 +296,7 @@
             // 
             // groupebox
             // 
-            this.groupebox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupebox.FormattingEnabled = true;
             this.groupebox.Location = new System.Drawing.Point(822, 80);
             this.groupebox.Name = "groupebox";
@@ -306,7 +306,7 @@
             // 
             // semestrebox
             // 
-            this.semestrebox.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.semestrebox.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.semestrebox.FormattingEnabled = true;
             this.semestrebox.Location = new System.Drawing.Point(589, 80);
             this.semestrebox.Name = "semestrebox";
@@ -316,7 +316,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(240, 78);
@@ -328,7 +328,7 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(731, 78);
@@ -340,7 +340,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(481, 78);
@@ -2306,6 +2306,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

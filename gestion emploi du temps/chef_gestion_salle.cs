@@ -102,7 +102,7 @@ namespace gestion_emploi_du_temps
             idbox.Clear();
             nombox.Clear();
             capacitebox.Clear();
-            typebox.Items.Clear();
+            typebox.Text="";
         }
 
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)

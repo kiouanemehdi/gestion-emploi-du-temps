@@ -41,7 +41,9 @@ namespace gestion_emploi_du_temps
 
         private void ens_acceuil_Load(object sender, EventArgs e)
         {
-          //  MessageBox.Show(""+ IdEnseignant);
+            //  MessageBox.Show(""+ IdEnseignant);
+            ens_profile ps = new ens_profile(this, prenom, nom, username, email, tele);
+            afficher_milieu(ps);
 
         }
         private void afficher_milieu(Control c)

@@ -44,7 +44,7 @@ refreshGrid();
                 cmd.Parameters.Add("@enseignat_N", SqlDbType.VarChar).Value = comboBox2.Text;
                conn.conn.Open();
                 cmd.ExecuteNonQuery();
-               sqlAdapter = new SqlDataAdapter("SELECT id_element as IdlElement,nom_element as Nom,M.nom_module as ModuleId,email as email,es.nom_enseignant as EnseignantId FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=m.id_module", conn.conn);
+               sqlAdapter = new SqlDataAdapter("SELECT id_element as [Id],nom_element as [Nom],M.nom_module as [Module],es.nom_enseignant as [Enseignant] FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=m.id_module", conn.conn);
                 sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
                 dataset = new DataSet();
@@ -98,10 +98,10 @@ refreshGrid();
             
                 MessageBox.Show("Bien modifier");
 
-               // refresh();
-            
-            
-            
+            refreshGrid();
+
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)

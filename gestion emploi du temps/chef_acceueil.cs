@@ -70,6 +70,8 @@ namespace gestion_emploi_du_temps
         private void chef_acceueil_Load(object sender, EventArgs e)
         {
             //MessageBox.Show(""+IdFiliere);
+            chef_profile cp = new chef_profile(this, prenom, nom, username, filiere, email, tele);
+            afficher_milieu(cp);
         }
 
         private void button2_Click(object sender, EventArgs e)
