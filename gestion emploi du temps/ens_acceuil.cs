@@ -27,7 +27,7 @@ namespace gestion_emploi_du_temps
         public ens_acceuil(int id)
         {
             InitializeComponent();
-            InitializeComponent();
+           
             cn = new connection();
             this.IdEnseignant = id;
             DataTable dt = cn.query("select * from Enseignant where id_enseignant='" + IdEnseignant + "'");
@@ -36,6 +36,7 @@ namespace gestion_emploi_du_temps
             username = (string)dt.Rows[0]["ens_username"];
             tele = (string)dt.Rows[0]["portable"];
             email = (string)dt.Rows[0]["email"];
+            label1.Text = nom;
         }
 
         private void ens_acceuil_Load(object sender, EventArgs e)
@@ -85,7 +86,12 @@ namespace gestion_emploi_du_temps
 
         private void button5_Click(object sender, EventArgs e)
         {
-            LoginAcceuill login = new LoginAcceuill();
+           
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+ LoginAcceuill login = new LoginAcceuill();
             login.Show();
             this.Close();
         }

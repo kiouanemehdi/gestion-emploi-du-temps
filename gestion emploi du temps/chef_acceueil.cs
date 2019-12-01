@@ -44,7 +44,7 @@ namespace gestion_emploi_du_temps
             username = (string)dt.Rows[0]["chef_username"];
               tele = (string)dt.Rows[0]["portable"];
             label1.Text = prenom + " " + nom;
-            label2.Text = "Filière  " + filiere;
+            label3.Text = "" + filiere;
 
         }
         private void afficher_milieu(Control c)
@@ -92,10 +92,14 @@ namespace gestion_emploi_du_temps
 
         private void button7_Click(object sender, EventArgs e)
         {
-            chef_gestion_element gse = new chef_gestion_element();
-            afficher_milieu(gse);
+            chef_gestion_element gs = new chef_gestion_element();
+            afficher_milieu(gs);
         }
-
+        /*private void Gest_Click(object sender, EventArgs e)
+        {
+            chef_gestion_element gs = new chef_gestion_element();
+            afficher_milieu(gs);
+        }*/
         private void button5_Click(object sender, EventArgs e)
         {
             chef_choix_emploi ce = new chef_choix_emploi(idFiliere);
@@ -104,9 +108,7 @@ namespace gestion_emploi_du_temps
 
         private void button6_Click(object sender, EventArgs e)
         {
-            LoginAcceuill login = new LoginAcceuill();
-            login.Show();
-            this.Close();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -124,6 +126,13 @@ namespace gestion_emploi_du_temps
         private void label3_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            LoginAcceuill login = new LoginAcceuill();
+            login.Show();
+            this.Close();
         }
     }
 }

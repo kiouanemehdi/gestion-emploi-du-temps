@@ -20,14 +20,16 @@ namespace gestion_emploi_du_temps
         private int index;
         public chef_gestion_element()
         {
+            InitializeComponent();
             conn = new connection();
             conn.conn.Open();
+refreshGrid();
         }
 
         private void chef_gestion_element_Load(object sender, EventArgs e)
         {
             remplir();
-            refreshGrid();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,7 +130,8 @@ namespace gestion_emploi_du_temps
         private void refreshGrid()
         {
             int filiere = chef_acceueil.getfilere();
-            sqlAdapter = new SqlDataAdapter("SELECT id_element as IdlElement,nom_element as Nom,M.nom_module as ModuleId,email as email,es.nom_enseignant as EnseignantId FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=m.id_module where id_filiere=" + filiere, conn.conn);
+            
+            sqlAdapter = new SqlDataAdapter("SELECT id_element as IdlElement,nom_element as Nom,M.nom_module as ModuleId,email as email,es.nom_enseignant as EnseignantId FROM Element E ,Module M,Enseignant es where E.id_enseignant=es.id_enseignant and E.id_module=M.id_module and id_filiere='" + filiere+"'", conn.conn);
             sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
             dataset = new DataSet();
@@ -152,7 +155,8 @@ namespace gestion_emploi_du_temps
         }
         private void remplir()
         {
-            SqlCommand sc = new SqlCommand("select * from Module", conn.conn);
+            int filiere = chef_acceueil.getfilere();
+            SqlCommand sc = new SqlCommand("select * from Module where id_filiere='" + filiere + "'", conn.conn);
             SqlDataAdapter sda = new SqlDataAdapter(sc);
             DataTable tb = new DataTable();
             sda.Fill(tb);
