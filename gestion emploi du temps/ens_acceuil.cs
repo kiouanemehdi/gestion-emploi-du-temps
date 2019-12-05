@@ -23,13 +23,15 @@ namespace gestion_emploi_du_temps
         private string username;
         public string Username { get => username; set => username = value; }
         private int idAdmin;
+		public static int ide;
         public int IdEnseignant { get => idAdmin; set => idAdmin = value; }
         public ens_acceuil(int id)
         {
             InitializeComponent();
-           
+			ide = id;
             cn = new connection();
             this.IdEnseignant = id;
+			
             DataTable dt = cn.query("select * from Enseignant where id_enseignant='" + IdEnseignant + "'");
             nom = (string)dt.Rows[0]["nom_enseignant"];
             prenom = (string)dt.Rows[0]["prenom_enseignant"];
@@ -97,5 +99,11 @@ namespace gestion_emploi_du_temps
             login.Show();
             this.Close();
         }
+		public static int getEndeignantid()
+		{
+			return ide;
+
+
+		}
     }
 }

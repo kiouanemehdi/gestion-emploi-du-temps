@@ -15,11 +15,12 @@ namespace gestion_emploi_du_temps
     {
         SqlConnection cn;
         int idEnseignant;
+		public int nombreheureenseigne;
         public ens_mon_emploi(int idEnseignant)
         {
-            cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            //  cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
 
-           // cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true ; MultipleActiveResultSets=true;");
+           cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true ; MultipleActiveResultSets=true;");
             try
             {
                 cn.Open();
@@ -31,6 +32,7 @@ namespace gestion_emploi_du_temps
             }
             InitializeComponent();
             this.idEnseignant = idEnseignant;
+			enseignantHour1.Hide();
         }
 
         private void ens_mon_emploi_Load(object sender, EventArgs e)
@@ -112,5 +114,19 @@ namespace gestion_emploi_du_temps
         {
             this.Close();
         }
-    }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			enseignantHour1.Show();
+			SqlCommand cmd = new SqlCommand("heureEnseigne", cn);
+			cmd.CommandType = CommandType.StoredProcedure;
+			cmd.Parameters.Add("@idE", SqlDbType.Int).Value = idEnseignant;
+			cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+			cmd.ExecuteNonQuery();
+			nombreheureenseigne = int.Parse(cmd.Parameters["@a"].Value.ToString());
+		
+			
+		}
+	
+	}
 }

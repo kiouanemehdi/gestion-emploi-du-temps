@@ -14,12 +14,13 @@ namespace gestion_emploi_du_temps
     {
         SqlConnection cn;
         int idf;
+		private bool showWithGroupe;
         public chef_gestion_emploi_filiere(int idf)
         {
             InitializeComponent();
-           // this.cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            this.cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
 
-           this.cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+          // this.cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
             try
             {
                 cn.Open();
@@ -85,7 +86,7 @@ namespace gestion_emploi_du_temps
             semestrebox.DisplayMember = "nom_semestre";
             semestrebox.ValueMember = "id_semestre";
             //module
-            sc = new SqlCommand("select * from Module M,Filiere F,ChefDpt CH,Semestre S where S.id_semestre= M.id_semestre and M.id_filiere=F.id_filiere and f.id_filiere=CH.id_filiere and F.id_filiere='" + idf + "' and S.id_semestre='" + semestrebox.Text + "'", cn);
+            sc = new SqlCommand("select * from Module M,Filiere F,ChefDpt CH,Semestre S where S.id_semestre= M.id_semestre and M.id_filiere=F.id_filiere and f.id_filiere=CH.id_filiere and F.id_filiere='" + idf + "' and S.id_semestre='" + semestrebox.SelectedValue.ToString() + "'", cn);
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
             sda.Fill(tb);
@@ -97,7 +98,7 @@ namespace gestion_emploi_du_temps
             sda = new SqlDataAdapter(sc);
             tb = new DataTable();
             sda.Fill(tb);
-            elementbox.DataSource = tb;
+            elementbox.DataSource = tb; 
             elementbox.DisplayMember = "nom_element";
             elementbox.ValueMember = "id_element";
             // enseinant
@@ -156,8 +157,19 @@ namespace gestion_emploi_du_temps
 
         private void seance(string jour, string hdebut, string hfin, Label label1, Label label2, Label label3)
         {
-            String query = "select * from seance S ,Element M,module MO,semestre Se,Filiere F , Salle SA,Groupe G ,Enseignant E where E.id_enseignant=S.id_enseignant and G.id_groupe=S.id_groupe and SA.id_salle=S.id_salle and  S.id_element=M.id_element and MO.id_semestre=SE.id_semestre and MO.id_module=S.id_module and S.heure_debut='" + hdebut + "' and S.heure_fin='" + hfin + "' and MO.id_filiere=F.id_filiere and jour='" + jour + "' and nom_semestre='" + semestrebox.Text + "'and F.id_filiere='" + idf + "' and G.nom_groupe = '" + groupebox.Text + "'";
-            SqlCommand smd = new SqlCommand(query, cn);
+			String query;
+			if (showWithGroupe)
+			{
+				 query = "select * from seance S ,Element M,module MO,semestre Se,Filiere F , Salle SA,Groupe G ,Enseignant E where E.id_enseignant=S.id_enseignant and G.id_groupe=S.id_groupe and SA.id_salle=S.id_salle and  S.id_element=M.id_element and MO.id_semestre=SE.id_semestre and MO.id_module=S.id_module and S.heure_debut='" + hdebut + "' and S.heure_fin='" + hfin + "' and MO.id_filiere=F.id_filiere and jour='" + jour + "' and nom_semestre='" + semestrebox.Text + "'and F.id_filiere='" + idf + "' and G.nom_groupe='"+groupebox.Text+"'";
+
+
+			}
+			else
+			{
+				 query = "select * from seance S ,Element M,module MO,semestre Se,Filiere F , Salle SA,Groupe G ,Enseignant E where E.id_enseignant=S.id_enseignant and G.id_groupe=S.id_groupe and SA.id_salle=S.id_salle and  S.id_element=M.id_element and MO.id_semestre=SE.id_semestre and MO.id_module=S.id_module and S.heure_debut='" + hdebut + "' and S.heure_fin='" + hfin + "' and MO.id_filiere=F.id_filiere and jour='" + jour + "' and nom_semestre='" + semestrebox.Text + "'and F.id_filiere='" + idf + "'";
+
+			}
+			SqlCommand smd = new SqlCommand(query, cn);
             SqlDataReader dr1 = smd.ExecuteReader();
 
 
@@ -261,6 +273,7 @@ namespace gestion_emploi_du_temps
 
         private void semestrebox_SelectedIndexChanged(object sender, EventArgs e)
         {
+			showWithGroupe = false;
             refresh();
             modulebox.DataSource = null;
             changer_module();
@@ -268,55 +281,60 @@ namespace gestion_emploi_du_temps
 
         private void semestrebox_SelectedValueChanged(object sender, EventArgs e)
         {
+			showWithGroupe = false;
             refresh();
         }
 
         private void groupebox_SelectedIndexChanged(object sender, EventArgs e)
         {
+			showWithGroupe = true;
             refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-                try
-                {
-                    SqlCommand cmd = new SqlCommand("ajout_seance", cn);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    TimeSpan time = TimeSpan.Parse(hdbox.Text);
-                    TimeSpan time1 = TimeSpan.Parse(hfbox.Text);
-                    cmd.Parameters.Add("@jour", SqlDbType.VarChar).Value = jourbox.Text;
-                    cmd.Parameters.Add("@hd", SqlDbType.Time).Value = time;
-                    cmd.Parameters.Add("@hf", SqlDbType.Time).Value = time1;
-                cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;
-                cmd.Parameters.Add("@salle", SqlDbType.Int).Value = sallebox.SelectedValue;
+			
+			if (typebox.Text != "" & semestrebox.Text!="" & hdbox.Text!="" & hfbox.Text!="" & jourbox.Text!="" & ensbox.Text!="" & elementbox.Text!="" & modulebox.Text!=""  )
+				try
+				{
+					SqlCommand cmd = new SqlCommand("ajout_seance", cn);
+					cmd.CommandType = CommandType.StoredProcedure;
+					TimeSpan time = TimeSpan.Parse(hdbox.Text);
+					TimeSpan time1 = TimeSpan.Parse(hfbox.Text);
+					cmd.Parameters.Add("@jour", SqlDbType.VarChar).Value = jourbox.Text;
+					cmd.Parameters.Add("@hd", SqlDbType.Time).Value = time;
+					cmd.Parameters.Add("@hf", SqlDbType.Time).Value = time1;
+					cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;
+					cmd.Parameters.Add("@salle", SqlDbType.Int).Value = sallebox.SelectedValue;
 
-                cmd.Parameters.Add("@semestre", SqlDbType.Int).Value = semestrebox.SelectedValue;
-                    cmd.Parameters.Add("@element", SqlDbType.Int).Value = elementbox.SelectedValue;
-                    cmd.Parameters.Add("@module", SqlDbType.Int).Value = modulebox.SelectedValue;
-                    cmd.Parameters.Add("@groupe", SqlDbType.Int).Value = groupebox.SelectedValue;
-                   
-                    cmd.Parameters.Add("@filiere", SqlDbType.Int).Value = idf;
-                    cmd.Parameters.Add("@type", SqlDbType.VarChar).Value = typebox.Text;
-                cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
-                cmd.ExecuteNonQuery();
-                int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
+					cmd.Parameters.Add("@semestre", SqlDbType.Int).Value = semestrebox.SelectedValue;
+					cmd.Parameters.Add("@element", SqlDbType.Int).Value = elementbox.SelectedValue;
+					cmd.Parameters.Add("@module", SqlDbType.Int).Value = modulebox.SelectedValue;
+					cmd.Parameters.Add("@groupe", SqlDbType.Int).Value = groupebox.SelectedValue;
 
-                if (a == 0)
-                {
-                    MessageBox.Show("seance bien ajouter");
-                    refresh();
-                }
-                else
-                {
-                    MessageBox.Show("Choisissez un temps disponible");
-                    
-                }
-                }
-            catch(SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+					cmd.Parameters.Add("@filiere", SqlDbType.Int).Value = idf;
+					cmd.Parameters.Add("@type", SqlDbType.VarChar).Value = typebox.Text;
+					cmd.Parameters.Add("@a", SqlDbType.Int).Direction = ParameterDirection.Output;
+					cmd.ExecuteNonQuery();
+					int a = int.Parse(cmd.Parameters["@a"].Value.ToString());
 
+					if (a == 0)
+					{
+						MessageBox.Show("seance bien ajouter");
+						refresh();
+					}
+					else
+					{
+						MessageBox.Show("Choisissez un temps disponible");
+
+					}
+				}
+				catch (SqlException ex)
+				{
+					MessageBox.Show(ex.Message);
+				}
+			else
+				MessageBox.Show("Svp Remplire tous les champ");
             
         }
 
@@ -592,5 +610,26 @@ seance_click("mercredi", "14:00", "15:30");
         {
 seance_click("vendredi", "17:30", "19:00");
         }
-    }
+
+		private void typebox_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			string texte;
+			texte = typebox.SelectedItem.ToString();
+          if(texte=="COURS")
+			{
+				groupebox.Enabled = false;
+			}else
+			{
+				groupebox.Enabled = true;
+
+			}
+
+
+		}
+
+		private void jourbox_SelectedIndexChanged(object sender, EventArgs e)
+		{
+		//	MessageBox.Show("touch");
+		}
+	}
 }

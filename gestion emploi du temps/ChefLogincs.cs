@@ -56,7 +56,7 @@ namespace gestion_emploi_du_temps
                 }
                 else
                 {
-                       errorlabel.Text= "username ou mot de passe incorrect !";
+                       errorlabel.Text= "username ou mot de passe incorrect !!";
                 }
 
                 /*  cmd.Parameters.Add("@ens", SqlDbType.Int).Value = ensbox.SelectedValue;

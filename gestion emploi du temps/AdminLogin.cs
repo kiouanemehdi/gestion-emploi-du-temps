@@ -58,7 +58,7 @@ namespace gestion_emploi_du_temps
                 {
                     // MessageBox.Show("the user doesn't existe");
                     // label3.Text = "user dosen't existe ";
-                    errolabel.Text = "username ou mot de passe incorect !";
+                    errolabel.Text = "username ou mot de passe incorect !!";
                 }
 
                 

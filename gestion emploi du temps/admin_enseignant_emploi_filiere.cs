@@ -17,7 +17,7 @@ namespace gestion_emploi_du_temps
         public bool valeur;
         public admin_enseignant_emploi_filiere()
         {
-            cn = new SqlConnection(@"Data Source=DESKTOP-NK0LUDA\KIOUANE; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
+            cn = new SqlConnection(@"Data Source=DESKTOP-OTRDL55\SQLEXPRESS; Initial Catalog=gestion_emploi; Integrated Security=true;MultipleActiveResultSets=true;");
             try
             {
                 cn.Open();

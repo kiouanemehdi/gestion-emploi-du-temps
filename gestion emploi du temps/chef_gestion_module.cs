@@ -36,11 +36,13 @@ namespace gestion_emploi_du_temps
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string moduleN, semestre,requete;
+            string moduleN,requete,semestre;
+          
             moduleN = textBox1.Text;
-            semestre = comboBox1.Text;
+            semestre = comboBox1.SelectedValue.ToString();
+           
             int filiere = chef_acceueil.getfilere();
-            requete = "insert into Module values('"+moduleN+"','" + filiere + "','"+semestre+ "')";
+            requete = "insert into Module values('"+moduleN+"','" + semestre + "','"+filiere+ "')";
             SqlCommand cmd = new SqlCommand(requete,conn.conn);//conn.conn.Open();
             cmd.ExecuteNonQuery();
             refreshGrid();
@@ -51,8 +53,8 @@ namespace gestion_emploi_du_temps
             conn = new connection();
             string moduleN;
             moduleN = textBox1.Text;
-            int semestre;
-            semestre = Convert.ToInt32(comboBox1.Text);
+            string semestre;
+            semestre = comboBox1.SelectedValue.ToString();
             DataGridViewRow selectedRow = dataGridView1.Rows[index];
            string idmodule=selectedRow.Cells[0].Value.ToString();
             int i = Convert.ToInt32(idmodule);
@@ -65,7 +67,7 @@ namespace gestion_emploi_du_temps
         private void refreshGrid()
         {
             int filiere = chef_acceueil.getfilere();
-            sqlAdapter = new SqlDataAdapter("select  id_module as Id,nom_module as Nom,id_semestre as Semestre from Module where id_filiere='"+ filiere+"'", conn.conn);
+            sqlAdapter = new SqlDataAdapter("select  id_module as Id,nom_module as Nom,nom_semestre as Semestre from Module m ,Semestre s where m.id_semestre=s.id_semestre and  m.id_filiere='" + filiere+"'", conn.conn);
             sqlCommand = new SqlCommandBuilder(sqlAdapter);
 
             dataset = new DataSet();
@@ -132,6 +134,7 @@ namespace gestion_emploi_du_temps
             comboBox1.DataSource = tb;
             comboBox1.DisplayMember = "nom_semestre";
             comboBox1.ValueMember = "id_semestre";
+           
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

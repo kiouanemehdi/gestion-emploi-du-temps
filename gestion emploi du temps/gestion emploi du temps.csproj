@@ -156,6 +156,12 @@
     <Compile Include="emploi_salle.Designer.cs">
       <DependentUpon>emploi_salle.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnseignantHour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnseignantHour.Designer.cs">
+      <DependentUpon>EnseignantHour.cs</DependentUpon>
+    </Compile>
     <Compile Include="ens_acceuil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="emploi_salle.resx">
       <DependentUpon>emploi_salle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnseignantHour.resx">
+      <DependentUpon>EnseignantHour.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ens_acceuil.resx">
       <DependentUpon>ens_acceuil.cs</DependentUpon>
